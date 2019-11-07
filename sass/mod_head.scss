@@ -9,6 +9,23 @@
 .header{
    position:relative;
     .mod_header{
-        
+        min-width:1180px;
+        background-color:#fff;
+        position:relative;
+        .mod_top{
+            height:30px;
+            background-color:rgba(241,241,241,0.7);
+            .mod_contain{
+                width:1180px;
+                height:30px;
+                .mod_address{
+                    
+                }
+            }
+        }
+        .mod_bottom{
+            margin-top:25px auto 0px auto;
+            height:70px;
+        }
     }
 }
