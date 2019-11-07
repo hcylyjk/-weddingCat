@@ -8,7 +8,7 @@ npm install --save-dev gulp-concat
 npm install --save-dev gulp-uglify
 4.sass编译
 npm install --save-dev gulp-sass
-5.图片压缩
+5.图片压缩(有丢失)
 npm install --save-dev gulp-imagemin
 6.自动刷新
 npm install --save-dev gulp-connect
