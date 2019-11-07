@@ -41,12 +41,6 @@ gulp.task('minifyCss',function (){//css
 });
 
 
-gulp.task('imgmin',function (){//图片
-    return gulp.src('./img/*.*')
-    .pipe(gulp.dest('./dist/img'))
-    .pipe(connect.reload())
-});
-
 gulp.task('reload',function (done){//自动更新
     connect.server({
         livereload: true,
@@ -64,20 +58,11 @@ gulp.task('watchs',function (){
     gulp.watch('./js/*.js',gulp.series('uglifyJs'));//监视js变化
     gulp.watch('./*.html',gulp.series('minifyHtmlIndex'));//监视Indexhtml变化
     gulp.watch('./html/*.html',gulp.series('minifyHtmlChildrens'));//监视子页面html变化
-    gulp.watch('./img/*.*',gulp.series('imgmin'));//监视图片变化
 });
 
 gulp.task('run',gulp.series('reload','watchs'));
 
-gulp.task('build',gulp.parallel(//打包
-    gulp.series('sass'),
-    gulp.series('minifyCss'),
-    gulp.series('uglifyJs'),
-    gulp.series('imgmin'),
-    gulp.series('minifyHtmlIndex'),
-    gulp.series('minifyHtmlChildrens')
-    )
-);
+
 
 
 
