@@ -3,3 +3,66 @@
 /*测试文字2*/
 .header {
   position: relative; }
+  .header .mod_header {
+    min-width: 1180px;
+    background-color: #fff;
+    position: relative; }
+    .header .mod_header .mod_top {
+      height: 30px;
+      background-color: rgba(241, 241, 241, 0.7); }
+      .header .mod_header .mod_top .mod_contain {
+        width: 1180px;
+        height: 30px;
+        margin: 0 auto;
+        line-height: 30px;
+        font-size: 12px; }
+    .header .mod_header .mod_bottom {
+      margin-top: 25px auto 0px auto;
+      height: 70px; }
+
+.mod_top_right {
+  position: relative; }
+  .mod_top_right ul {
+    width: auto; }
+    .mod_top_right ul li {
+      float: left;
+      padding: 0 8px; }
+      .mod_top_right ul li a {
+        display: inline-block;
+        cursor: pointer;
+        height: 30px;
+        font-size: 12px;
+        color: #4D4B4B; }
+      .mod_top_right ul li .mod_regit {
+        color: #ff7385; }
+      .mod_top_right ul li i {
+        display: inline-block;
+        padding: 0 3px;
+        font-size: 12px;
+        color: #4D4B4B;
+        font-weight: 600; }
+      .mod_top_right ul li .mod_phone {
+        font-size: 14px;
+        font-weight: 700; }
+
+.mod_top_left {
+  position: relative; }
+  .mod_top_left .mod_address {
+    text-align: left; }
+    .mod_top_left .mod_address span i {
+      color: #ff7385;
+      font-size: 12px;
+      font-weight: 700; }
+    .mod_top_left .mod_address .fl .mod_city {
+      margin-left: 4px; }
+    .mod_top_left .mod_address .fl a .mod_big {
+      padding: 0 5px; }
+    .mod_top_left .mod_address .fl .mod_year {
+      margin-left: 10px;
+      position: relative; }
+      .mod_top_left .mod_address .fl .mod_year sup {
+        position: absolute;
+        top: -11px;
+        right: -14px;
+        color: #ff7385;
+        font-weight: 500; }
