@@ -148,10 +148,16 @@
                 font-size:18px;
             }
             i{
+                display:inline-block;
                 font-size:15px;
                 font-weight:500;
                 margin-left:4px;
+                transition: all 0.5s;
+                position: relative;
+                top: -2px;
             }
+            
+            // 公用样式滑动导航栏
             .mod_active{
                 color:#ff7385;
                 padding-bottom: 8px;
@@ -159,7 +165,16 @@
             }
             .mod_first{
                 color:#ff7385;
+                transition: all 0.5s;
             }
+        }
+        li:hover i{
+                margin-bottom:3px;
+                transform:rotate(180deg);
+                color:#ff7385;         
+        }
+        li:hover a{
+            color:#ff7385;
         }
         .mod_one{
             padding:0;
@@ -190,3 +205,7 @@
 .mod_hover:hover{
     color:#ff7385;
 }
+
+
+     
+

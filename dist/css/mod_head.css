@@ -100,15 +100,26 @@
       display: inline-block;
       font-size: 18px; }
     .mod_bottom_right ul li i {
+      display: inline-block;
       font-size: 15px;
       font-weight: 500;
-      margin-left: 4px; }
+      margin-left: 4px;
+      transition: all 0.5s;
+      position: relative;
+      top: -2px; }
     .mod_bottom_right ul li .mod_active {
       color: #ff7385;
       padding-bottom: 8px;
       border-bottom: 2px solid #ff7385; }
     .mod_bottom_right ul li .mod_first {
-      color: #ff7385; }
+      color: #ff7385;
+      transition: all 0.5s; }
+  .mod_bottom_right ul li:hover i {
+    margin-bottom: 3px;
+    transform: rotate(180deg);
+    color: #ff7385; }
+  .mod_bottom_right ul li:hover a {
+    color: #ff7385; }
   .mod_bottom_right ul .mod_one {
     padding: 0; }
     .mod_bottom_right ul .mod_one span {
