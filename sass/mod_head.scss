@@ -9,9 +9,7 @@
 .header{
    position:relative;
     .mod_header{
-        min-width:1180px;
-        background-color:#fff;
-        position:relative;
+        margin:0 auto;
         .mod_top{
             height:30px;
             background-color:rgba(241,241,241,0.7);
@@ -62,6 +60,10 @@
             .mod_phone{
                  font-size:14px;
                  font-weight: 700;
+            }
+            .mod_text{
+                font-weight:700;
+                color:#6c6c6c
             }
         }
     }
@@ -146,9 +148,9 @@
                 font-size:18px;
             }
             i{
-                font-size:13px;
+                font-size:15px;
                 font-weight:500;
-                margin-left:5px;
+                margin-left:4px;
             }
             .mod_active{
                 color:#ff7385;
@@ -171,4 +173,20 @@
             
         }
     }
+}
+
+.mod_address{
+    .fl{
+         a {
+             span:hover{
+            color:#ff7385;
+            text-decoration:underline;        }
+    }
+    }
+}
+.mod_year:hover{
+    color:#ff7385;
+}
+.mod_hover:hover{
+    color:#ff7385;
 }

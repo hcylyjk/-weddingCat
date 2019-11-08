@@ -4,9 +4,7 @@
 .header {
   position: relative; }
   .header .mod_header {
-    min-width: 1180px;
-    background-color: #fff;
-    position: relative; }
+    margin: 0 auto; }
     .header .mod_header .mod_top {
       height: 30px;
       background-color: rgba(241, 241, 241, 0.7); }
@@ -47,6 +45,9 @@
       .mod_top_right ul li .mod_phone {
         font-size: 14px;
         font-weight: 700; }
+      .mod_top_right ul li .mod_text {
+        font-weight: 700;
+        color: #6c6c6c; }
 
 .mod_top_left {
   position: relative; }
@@ -99,9 +100,9 @@
       display: inline-block;
       font-size: 18px; }
     .mod_bottom_right ul li i {
-      font-size: 13px;
+      font-size: 15px;
       font-weight: 500;
-      margin-left: 5px; }
+      margin-left: 4px; }
     .mod_bottom_right ul li .mod_active {
       color: #ff7385;
       padding-bottom: 8px;
@@ -115,4 +116,14 @@
       width: 1px;
       height: 20px;
       background-color: #6c6c6c;
-      margin: 10px 2px 0 2px; }
+      margin: 12px 2px 0 2px; }
+
+.mod_address .fl a span:hover {
+  color: #ff7385;
+  text-decoration: underline; }
+
+.mod_year:hover {
+  color: #ff7385; }
+
+.mod_hover:hover {
+  color: #ff7385; }

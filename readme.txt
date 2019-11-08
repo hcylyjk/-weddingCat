@@ -12,7 +12,8 @@ npm install --save-dev gulp-sass
 npm install --save-dev gulp-imagemin
 6.自动刷新
 npm install --save-dev gulp-connect
-
+7.css
+npm install --save-dev gulp-minify-css
 
 文件路径存放规范：
 1.*** dist文件夹里有各自的 image 文件，大家可以把自己用到的图片放到里面。
