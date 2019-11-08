@@ -300,6 +300,38 @@
         background-position: top center;
         .l_firstGroup{
             padding-top: 154px;
+            .l_group-text{
+                padding-right: 170px;
+                text-align: right;
+                margin-top: 112px;
+                width: 580px;
+                .l_big-text{
+                    margin-bottom: 10px;
+                    font-size: 32px;
+                    color: #3d3d3d;
+                }
+                .l_small-text{
+                    font-size: 18px;
+                    color: #999;
+                }
+            }
+            .l_group-img{
+                display: block;
+                width: 430px;
+                z-index: 10;
+                .l_firstGroup-img-sm{
+                    position: relative;
+                    .l_firstGroup-img-ul{
+                        display: inline;
+                        bottom: 0;
+                        position: absolute;
+                        top: 78px;
+                        li img{
+                            margin: 0 0 10px 15px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
