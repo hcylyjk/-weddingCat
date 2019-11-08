@@ -2,8 +2,75 @@
   position: relative;
   width: 1180px;
   padding: 10px 0;
-  box-sizing: content-box;
-  height: 60px;
+  height: 80px;
   margin: 0 auto; }
+  .h_search .h_img_bg {
+    line-height: 80px; }
   .h_search .h_find {
-    margin-left: 30px; }
+    margin-left: 150px;
+    position: relative;
+    line-height: 80px; }
+    .h_search .h_find input {
+      width: 480px;
+      height: 40px;
+      padding: 1px 0px 1px 20px;
+      border: 1px solid #e6e6e6; }
+    .h_search .h_find i {
+      position: absolute;
+      right: 13px;
+      top: 2px;
+      color: #ff7385;
+      font-size: 20px; }
+
+.h_move {
+  position: relative;
+  margin-top: 13px; }
+  .h_move a img {
+    width: 50px;
+    height: 50px; }
+  .h_move a .h_txt {
+    margin: 3px 0 0 5px;
+    color: #4D4B4B; }
+    .h_move a .h_txt span {
+      display: block;
+      font-size: 18px; }
+
+.h_img {
+  height: 42px;
+  vertical-align: middle; }
+
+.h_nav ul li {
+  text-align: center;
+  float: left;
+  height: 40px;
+  font-size: 16px;
+  color: #4D4B4B;
+  line-height: 34px;
+  margin-right: 15px; }
+  .h_nav ul li a {
+    display: inline-block;
+    padding: 3px 4px 9px 4px;
+    color: #4D4B4B; }
+  .h_nav ul li .h_not {
+    display: inline-block;
+    transition: all 0.5s; }
+
+.h_nav ul .h_platform {
+  position: relative;
+  background-color: #ff7385;
+  color: #fff;
+  width: 220px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  letter-spacing: 1px; }
+  .h_nav ul .h_platform i {
+    display: inline-block;
+    margin-right: 5px; }
+
+.h_nav ul li:hover .h_not {
+  transform: rotate(180deg);
+  color: #ff7385; }
+
+.h_nav ul li:hover a {
+  color: #ff7385; }
