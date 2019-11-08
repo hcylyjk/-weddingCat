@@ -16,29 +16,23 @@
 <body>
     <!-- 头部引用的-->
     <div class="header">
-       
+        <!-- $('.header').load('mod_head.html') -->
     </div>
-
-
     <!-- <div>这是中间部分你们自己写</div> -->
 
     <!-- 头部引用的-->
     <div class="footer">
-       
+        <!-- $('.footer').load('mod_footer.html') -->
     </div>
-
-    <script>
-        $('.header').load('mod_head.html');
-        $('.footer').load('mod_footer.html')
-
-        window.onload = function () {
-            $('.mod_bottom_right ul li:nth-of-type(3) a').addClass('mod_active');
-            $('.mod_bottom_right ul li:nth-of-type(3) i').addClass('mod_first');
-        }
-    </script>
-
-
-
 </body>
+<script>
+
+    window.onload = function () {
+        $('.mod_bottom_right ul li:nth-of-type(3) a').addClass('mod_active');
+        $('.mod_bottom_right ul li:nth-of-type(3) i').addClass('mod_first');
+    }
+
+</script>
+
 
 </html>

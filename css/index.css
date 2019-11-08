@@ -1,2 +1,9 @@
-@charset "UTF-8";
-/* 测试文字 */
+.h_search {
+  position: relative;
+  width: 1180px;
+  padding: 10px 0;
+  box-sizing: content-box;
+  height: 60px;
+  margin: 0 auto; }
+  .h_search .h_find {
+    margin-left: 30px; }

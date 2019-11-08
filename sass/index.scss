@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+//@desc '公用头部样式'
+//@autor  'hcy'
+//@date  '2019-11-8'
+
+.h_search{
+    position: relative;
+    width:1180px;
+    padding:10px 0;
+    box-sizing: content-box;
+    height:60px;
+    margin:0 auto;
+    .h_find{
+        margin-left:30px;
+        position:relative;
+        i{
+            position:absolute;
+            right:-3px;
+            top:2px;
+        }
+    }
+}
+.h_move{
+    position:relative;
+}
+.h_img{
+    height:60px;
+}
