@@ -17,8 +17,11 @@
         line-height: 30px;
         font-size: 12px; }
     .header .mod_header .mod_bottom {
-      margin-top: 25px auto 0px auto;
-      height: 70px; }
+      width: 1180px;
+      margin: 0 auto; }
+      .header .mod_header .mod_bottom .mad_bottom_all {
+        margin-top: 25px;
+        margin-bottom: 5px; }
 
 .mod_top_right {
   position: relative; }
@@ -66,3 +69,50 @@
         right: -14px;
         color: #ff7385;
         font-weight: 500; }
+
+.mod_bottom_left {
+  position: relative; }
+  .mod_bottom_left a .mod_cat {
+    font-size: 47px;
+    color: #ff7385; }
+  .mod_bottom_left a .mod_hun {
+    margin: 15px 0 0 16px;
+    padding: 0 16px;
+    border-left: 1px solid #6c6c6c; }
+    .mod_bottom_left a .mod_hun p {
+      margin-top: -5px;
+      font-size: 22px; }
+    .mod_bottom_left a .mod_hun span {
+      letter-spacing: 2px;
+      font-size: 15px; }
+  .mod_bottom_left .mod_fill {
+    display: inline-block; }
+
+.mod_bottom_right {
+  position: relative;
+  margin-top: 9px;
+  height: 62px; }
+  .mod_bottom_right ul li {
+    float: left;
+    padding: 10px 15px; }
+    .mod_bottom_right ul li a {
+      display: inline-block;
+      font-size: 18px; }
+    .mod_bottom_right ul li i {
+      font-size: 13px;
+      font-weight: 500;
+      margin-left: 5px; }
+    .mod_bottom_right ul li .mod_active {
+      color: #ff7385;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #ff7385; }
+    .mod_bottom_right ul li .mod_first {
+      color: #ff7385; }
+  .mod_bottom_right ul .mod_one {
+    padding: 0; }
+    .mod_bottom_right ul .mod_one span {
+      display: inline-block;
+      width: 1px;
+      height: 20px;
+      background-color: #6c6c6c;
+      margin: 10px 2px 0 2px; }
