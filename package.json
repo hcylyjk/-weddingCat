@@ -1,7 +1,7 @@
 {
   "name": "weddingCat",
   "version": "1.0.0",
-  "description": "",
+  "description": "项目所添加的内容：\r 导入gulp\r 1.\r npm install gulp --save-dev\r 2.文件合并\r npm install --save-dev gulp-concat\r 3.js文件压缩\r npm install --save-dev gulp-uglify\r 4.sass编译\r npm install --save-dev gulp-sass\r 5.图片压缩(有丢失)\r npm install --save-dev gulp-imagemin\r 6.自动刷新\r npm install --save-dev gulp-connect",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,5 +18,13 @@
     "gulp-minify-html": "^1.0.6",
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hcylyjk/-weddingCat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hcylyjk/-weddingCat/issues"
+  },
+  "homepage": "https://github.com/hcylyjk/-weddingCat#readme"
 }
