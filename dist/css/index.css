@@ -7,6 +7,7 @@
   .h_search .h_img_bg {
     line-height: 80px; }
   .h_search .h_find {
+<<<<<<< HEAD
     margin-left: 150px;
     position: relative;
     line-height: 80px; }
@@ -74,3 +75,17 @@
 
 .h_nav ul li:hover a {
   color: #ff7385; }
+=======
+    margin-left: 30px;
+    position: relative; }
+    .h_search .h_find i {
+      position: absolute;
+      right: -3px;
+      top: 2px; }
+
+.h_move {
+  position: relative; }
+
+.h_img {
+  height: 60px; }
+>>>>>>> 9c20a81acd2977a69e3100564d0794c79c077a2a
