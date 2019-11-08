@@ -4,9 +4,7 @@
 .header {
   position: relative; }
   .header .mod_header {
-    width: 1180px;
-    margin: 0 auto;
-    background-color: #fff; }
+    margin: 0 auto; }
     .header .mod_header .mod_top {
       height: 30px;
       background-color: rgba(241, 241, 241, 0.7); }
