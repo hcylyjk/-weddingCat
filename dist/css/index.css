@@ -6,4 +6,15 @@
   height: 60px;
   margin: 0 auto; }
   .h_search .h_find {
-    margin-left: 30px; }
+    margin-left: 30px;
+    position: relative; }
+    .h_search .h_find i {
+      position: absolute;
+      right: -3px;
+      top: 2px; }
+
+.h_move {
+  position: relative; }
+
+.h_img {
+  height: 60px; }
