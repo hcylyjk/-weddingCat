@@ -61,6 +61,8 @@
           font-size: 15px;
           text-align: center;
           padding: 6px 0; }
+        .l_wrapper .l_nav-list .l_layer .l_rectangle ._banck:hover {
+          color: red; }
       .l_wrapper .l_nav-list .l_layer .l_mask {
         position: absolute;
         top: 0;
@@ -78,9 +80,105 @@
       color: #fff;
       font-weight: bold;
       text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); }
-  .l_wrapper p {
+  .l_wrapper .l_banner-des {
     text-align: center;
     font-size: 24px;
     color: #f6f6f6;
     margin-top: 270px;
     letter-spacing: 1.1px; }
+  .l_wrapper .l_banner-btn-download {
+    margin: 186px auto 0;
+    border: 2px solid #fff;
+    width: 396px;
+    height: 56px;
+    border-radius: 100px;
+    position: relative;
+    background: transparent;
+    cursor: pointer; }
+    .l_wrapper .l_banner-btn-download .l_mask {
+      position: absolute;
+      width: 396px;
+      height: 56px;
+      border-radius: 100px;
+      background: transparent; }
+    .l_wrapper .l_banner-btn-download .l_mask:hover {
+      background: #fff;
+      opacity: 0.2; }
+    .l_wrapper .l_banner-btn-download p {
+      font-size: 18px;
+      line-height: 52px;
+      color: #fff;
+      text-align: center; }
+  .l_wrapper .l_banner-btn-qr {
+    margin: 9px auto 0;
+    position: relative;
+    width: 395px;
+    height: 46px;
+    background: transparent; }
+    .l_wrapper .l_banner-btn-qr .l_banner-btn-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 395px;
+      height: 46px;
+      background: transparent;
+      border-radius: 100px;
+      z-index: 10; }
+    .l_wrapper .l_banner-btn-qr .l_banner-btn-bg:hover {
+      background: #fff;
+      opacity: 0.2;
+      cursor: pointer; }
+    .l_wrapper .l_banner-btn-qr p {
+      font-size: 18px;
+      line-height: 42px;
+      color: #fff;
+      text-align: center; }
+      .l_wrapper .l_banner-btn-qr p i {
+        font-size: 24px;
+        color: #fff;
+        padding-right: 13px;
+        position: relative;
+        top: 2px; }
+    .l_wrapper .l_banner-btn-qr .l_banner-btn-qrimg {
+      position: absolute;
+      width: 160px;
+      height: 186px;
+      background-color: #fff;
+      box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.13);
+      padding: 15px 30px 0 30px;
+      left: 50%;
+      margin: 8px 0 0 -112px;
+      display: none; }
+      .l_wrapper .l_banner-btn-qr .l_banner-btn-qrimg .l_qr-invitation {
+        position: relative; }
+        .l_wrapper .l_banner-btn-qr .l_banner-btn-qrimg .l_qr-invitation .l_qr {
+          position: absolute;
+          top: 50%;
+          left: 6%; }
+        .l_wrapper .l_banner-btn-qr .l_banner-btn-qrimg .l_qr-invitation .l_download_qr {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin: 42px 0 0 -24px; }
+      .l_wrapper .l_banner-btn-qr .l_banner-btn-qrimg p {
+        font-size: 18px;
+        line-height: 42px;
+        text-align: center;
+        position: absolute;
+        top: 160px;
+        left: 45px;
+        color: #000; }
+  .l_wrapper .l_templet {
+    height: 1077px; }
+    .l_wrapper .l_templet .l_templet-text {
+      margin: 0 auto;
+      padding: 92px 0 37px 0; }
+      .l_wrapper .l_templet .l_templet-text .l_big-text {
+        font-size: 40px;
+        text-align: center;
+        color: #3d3d3d;
+        margin-bottom: 10px; }
+      .l_wrapper .l_templet .l_templet-text .l_small-text {
+        font-size: 20px;
+        text-align: center;
+        color: #666; }

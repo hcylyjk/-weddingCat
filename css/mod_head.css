@@ -12,12 +12,6 @@
       background-color: rgba(241, 241, 241, 0.7); }
       .header .mod_header .mod_top .mod_contain {
         width: 1180px;
-<<<<<<< HEAD
-        height: 30px; }
-    .header .mod_header .mod_bottom {
-      margin-top: 25px auto 0px auto;
-      height: 70px; }
-=======
         height: 30px;
         margin: 0 auto;
         line-height: 30px;
@@ -121,5 +115,4 @@
       width: 1px;
       height: 20px;
       background-color: #6c6c6c;
-      margin: 10px 2px 0 2px; }
->>>>>>> 947e48d86b451b0e278fad1984d80d8642b287e2
+      margin: 12px 2px 0 2px; }
