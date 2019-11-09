@@ -15,18 +15,5 @@ $('.h_list li').hover(function(){
     $(this).css('background','#efecec');
 });
 
-// 二维码显示
-$('.h_enter').on('hover',function(){
-    $('.h_erw').css('z-index','320');
-    $('.h_hidden').css('z-index','50');
-    $('.h_li').css('z-index','50');
-    $('.h_carousel').css('z-index','50');
-})
-$('.h_erw').on('mouseleave',function(){
-    $('.h_erw').css('z-index','100');
-    $('.h_hidden').css('z-index','200');
-    $('.h_li').css('z-index','300');
-    $('.h_carousel').css('z-index','300');
-})
 
 
