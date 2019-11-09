@@ -15,40 +15,63 @@ body {
     top: 175px;
     left: 175px;
     width: 218px;
-    height: 348px;
+    height: 350px;
     background: #ffffff; }
-    .k_banner .K_left_nav .k_list {
-      padding-top: 10px;
-      position: relative;
-      width: 182px;
+    .k_banner .K_left_nav .k_show {
       height: 70px;
-      margin-left: 34px;
       box-sizing: border-box;
-      border-bottom: 1px solid #E0E0E0; }
-      .k_banner .K_left_nav .k_list:last-child {
-        border-bottom: none; }
-      .k_banner .K_left_nav .k_list i {
-        font-size: 20px;
-        color: #999999; }
-      .k_banner .K_left_nav .k_list .icon-ktv {
-        font-size: 25px; }
-      .k_banner .K_left_nav .k_list .icon-liren {
-        font-size: 25px; }
-      .k_banner .K_left_nav .k_list span {
+      border-bottom: 1px solid transparent;
+      border-top: 1px solid transparent;
+      position: relative; }
+      .k_banner .K_left_nav .k_show:hover .k_top {
+        color: #FF7385; }
+      .k_banner .K_left_nav .k_show:hover {
+        border-bottom: 1px solid #999999;
+        border-top: 1px solid #999999; }
+      .k_banner .K_left_nav .k_show:hover .k_list {
+        border-bottom: 1px solid transparent; }
+      .k_banner .K_left_nav .k_show .k_list {
+        margin-left: 34px;
+        width: 182px;
+        height: 69px;
         position: absolute;
-        left: 35px;
-        top: 10px;
-        font-size: 16px;
-        color: #3d3d3d; }
-      .k_banner .K_left_nav .k_list ul {
-        display: flex;
-        position: absolute;
-        left: 35px; }
-        .k_banner .K_left_nav .k_list ul li {
-          line-height: 30px;
-          color: #999999; }
-          .k_banner .K_left_nav .k_list ul li:nth-child(1) {
-            padding-right: 15px; }
+        top: -0.5px;
+        border-bottom: 1px solid #999999;
+        z-index: 2; }
+        .k_banner .K_left_nav .k_show .k_list .k_top {
+          padding-top: 10px;
+          height: 20px;
+          position: relative; }
+          .k_banner .K_left_nav .k_show .k_list .k_top a {
+            width: 182px;
+            height: 30px;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0; }
+          .k_banner .K_left_nav .k_show .k_list .k_top .k_flg {
+            width: 5px;
+            height: 69px;
+            background: #FF7385;
+            position: absolute;
+            left: -34px;
+            top: 0;
+            display: none; }
+          .k_banner .K_left_nav .k_show .k_list .k_top span {
+            padding-left: 15px; }
+          .k_banner .K_left_nav .k_show .k_list .k_top i:last-of-type {
+            margin-left: 55px; }
+        .k_banner .K_left_nav .k_show .k_list ul {
+          display: flex;
+          padding-top: 10px;
+          margin-left: 20px; }
+          .k_banner .K_left_nav .k_show .k_list ul li {
+            margin-left: 10px;
+            color: #999999; }
+            .k_banner .K_left_nav .k_show .k_list ul li:hover {
+              color: #FF7385; }
+      .k_banner .K_left_nav .k_show:hover .k_top .k_flg {
+        display: block; }
 
 /* 主内容区*/
 .k_content {
