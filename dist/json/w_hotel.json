@@ -1,0 +1,14 @@
+[
+    {"imgSrc":"../img/w_image/index/ia_300000031.jpg","hotelName":"深圳观澜湖度假酒店  [龙华新区]","hotelPriceNum":"￥4288-9999/桌      容纳: 22桌","classify":"fiveStar","imgSize":"1"},
+    {"imgSrc":"../img/w_image/index/ia_300000032.jpg","hotelName":"深圳观澜格兰云天国际酒店  [龙华新区]","hotelPriceNum":"￥2680-8999/桌      容纳: 56桌","classify":"fiveStar","imgSize":"3"},
+    {"imgSrc":"../img/w_image/index/ia_300000033.jpg","hotelName":"深圳福朋喜来登酒店  [福田区]","hotelPriceNum":"￥6388-9388/桌      容纳: 29桌","classify":"fiveStar","imgSize":"3"},
+    {"imgSrc":"../img/w_image/index/ia_300000034.jpg","hotelName":"深圳星河丽思卡尔顿酒店  [福田区]","hotelPriceNum":"￥6999-18999/桌      容纳: 36桌","classify":"fiveStar","imgSize":"2"},
+    {"imgSrc":"../img/w_image/index/ia_300000035.jpg","hotelName":"深圳观澜格兰云天国际酒店  [龙华新区]","hotelPriceNum":"￥2680-8999/桌      容纳: 56桌","classify":"outDoor","imgSize":"3"},
+    {"imgSrc":"../img/w_image/index/ia_300000036.jpg","hotelName":"海上世界蛇口文化艺术中心紫苑  [南山区]","hotelPriceNum":"￥0-0/桌      容纳: 10桌","classify":"outDoor","imgSize":"3"},
+    {"imgSrc":"../img/w_image/index/ia_300000037.jpg","hotelName":"博林圣海伦酒店  [福田区]","hotelPriceNum":"￥2588-10888/桌      容纳: 30桌","classify":"outDoor","imgSize":"1"},
+    {"imgSrc":"../img/w_image/index/ia_300000038.jpg","hotelName":"深圳福朋喜来登酒店  [福田区]","hotelPriceNum":"￥6388-9388/桌      容纳: 29桌","classify":"outDoor","imgSize":"2"},
+    {"imgSrc":"../img/w_image/index/ia_300000039.jpg","hotelName":"佳宁娜（福田店）  [福田区]","hotelPriceNum":"￥2880-6988/桌      容纳: 48桌","classify":"special","imgSize":"1"},
+    {"imgSrc":"../img/w_image/index/ia_300000040.jpg","hotelName":"禾香湾粤菜酒家  [龙岗区]","hotelPriceNum":"￥1888-6688/桌      容纳: 48桌","classify":"special","imgSize":"2"},
+    {"imgSrc":"../img/w_image/index/ia_300000041.jpg","hotelName":"佳宁娜（广场店）  [罗湖区]","hotelPriceNum":"￥2880-6988/桌      容纳: 60桌","classify":"special","imgSize":"3"},
+    {"imgSrc":"../img/w_image/index/ia_300000042.jpg","hotelName":"海上皇（友谊店）  [罗湖区]","hotelPriceNum":"￥1988-6388/桌      容纳: 22桌","classify":"special","imgSize":"3"}
+]
