@@ -1,0 +1,31 @@
+.mod_right {
+  position: fixed;
+  bottom: 87px;
+  right: 10px; }
+  .mod_right .mod_online {
+    width: 42px;
+    text-align: center; }
+    .mod_right .mod_online ul .h_inline {
+      height: 100px;
+      background-color: #ff7385;
+      padding: 1px; }
+      .mod_right .mod_online ul .h_inline a {
+        color: #fff;
+        display: block;
+        padding: 23px 5px 7px 5px; }
+        .mod_right .mod_online ul .h_inline a i {
+          font-size: 19px; }
+    .mod_right .mod_online ul li {
+      border-bottom: 1px solid #fff;
+      height: 70px;
+      background-color: rgba(21, 16, 13, 0.9); }
+      .mod_right .mod_online ul li a {
+        color: #fff;
+        display: block;
+        padding: 11px 7px 7px 7px; }
+        .mod_right .mod_online ul li a i {
+          display: block;
+          font-size: 19px; }
+
+.mod_tran {
+  transform: rotate(180deg); }
