@@ -1,0 +1,21 @@
+@charset "UTF-8";
+//头部
+.j_header{
+    width: 100%;
+    height: 125px;
+}
+//内容区
+.j_container{
+    width: 100%;
+    height: 100%;
+}
+.j_banner{
+    background: url(../dist/img/j_image/ia_3000000277.jpg) no-repeat;
+    position: relative;
+    min-width: 1180px;
+    height: 420px;
+    // background-color: #f6f6f6;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    background-size: 100%;
+}
