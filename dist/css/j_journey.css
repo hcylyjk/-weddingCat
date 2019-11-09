@@ -404,6 +404,8 @@ body {
   background-color: #fff;
   text-align: center; }
 
-.j_city_items a span {
-  font-size: 20px;
-  text-align: center; }
+.j_city_items .j_c {
+  width: 100%;
+  height: 87px;
+  padding: 16px 0 0;
+  color: #c5c5c5; }

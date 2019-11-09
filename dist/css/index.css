@@ -198,9 +198,11 @@
   z-index: 666;
   box-sizing: border-box; }
 
+.h_move:hover .h_erw {
+  display: block !important; }
+
 .h_carousel {
   position: relative;
   z-index: 300; }
-
-.h_move:hover .h_erw {
-  display: block !important; }
+  .h_carousel .h_slides li {
+    position: relative; }

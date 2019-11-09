@@ -41,13 +41,14 @@ img{
 	clear: both;
 	visibility: hidden;
 	/*opacity: 0.5;*/
-}/*万能清除浮动工具*/
-
+}
 .container{
 	width:1180px;
 	margin:0 auto;
 }
+
 .containers{
 	width:1200px;
 	margin:0 auto;
 }
+
