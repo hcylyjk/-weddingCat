@@ -1,8 +1,85 @@
 @charset "UTF-8";
+/* banner图*/
+body{
+	overflow-x: hidden;
+}
 .k_banner{
-	width: 1920px;
+	width: 100%;
 	height: 420px;
 	img{
-		width:1920px;
+		position: relative;
+		left: 50%;
+		margin-left: -960px;
 	}
+	.K_left_nav{
+		position: absolute;
+		top: 175px;
+		left: 175px;
+		width: 218px;
+		height: 348px;
+		background: #ffffff;
+		.k_list{
+			padding-top: 10px;
+			position: relative;
+			width: 182px;
+			height: 70px;
+			margin-left: 34px;
+			box-sizing: border-box;
+			border-bottom: 1px solid #E0E0E0;
+			
+			&:last-child{
+				border-bottom:none;
+			}
+			i{
+				font-size: 20px;
+				color: #999999;
+			}
+			.icon-ktv{
+				font-size: 25px;
+			}
+			.icon-liren{
+				font-size: 25px;
+			}
+			span{
+				position: absolute;
+				left: 35px;
+				top: 10px;
+				font-size: 16px;
+				color: #3d3d3d;
+			}
+			ul{
+				display: flex;
+				position: absolute;
+				left: 35px;
+				li{
+					line-height: 30px;
+					color: #999999;;
+					&:nth-child(1){
+						padding-right: 15px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* 主内容区*/
+.k_content{
+	width: 100%;
+	background:#F5F5F5;
+ .advantage{
+	 width: 1180px;
+	 height: 80px;
+	 margin: 0 auto;
+	 img{
+		 padding-top: 20px;
+	 }
+	 img:nth-child(2){
+		 margin-left: 15px;
+	 }
+	 img:nth-child(3){
+		margin-left: 16px;
+	}
+ }
+
 }
