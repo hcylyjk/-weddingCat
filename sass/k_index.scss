@@ -81,27 +81,77 @@ body{
 					li{
 						margin-left: 10px;
 						color: #999999;
-						&:hover{
+						&:hover a{
 							color: #FF7385;
 						}
 					}
 				}
 			}
 			
-			&:hover .k_top .k_flg{
-				display: block;
-			}
+			// &:hover .k_top .k_flg{//js实现
+			// 	display: block;
+			// }
+			
 		}
 	}
 
 	// nav弹出模块
 	.k_pull{
-		width: 200px;
+		width: 280px;
 		height: 350px;
-		background: yellowgreen;
+		background: #ffffff;
 		position: absolute;
-		left: 0;
-		top: 0;
+		left: 393px;
+		top: 175px;
+		display: none;
+		h3{
+			padding: 15px 0 5px 20px;
+			a:hover{
+				color: #FF7385;
+			}
+		}
+		ul{
+			display: flex;
+			flex-wrap: wrap;
+			border-top: 1px solid #e0e0e0;
+			li{
+				margin: 7px 0;
+				width: 80px;
+				height: 16px;
+				padding:0 5px;
+				border-right: 1px solid #e0e0e0;
+				text-align:center;
+				a{
+					font-size: 13px;
+					&:hover{
+						color: #FF7385;
+					}
+				}
+			}
+		}
+		.pull_bottom{
+			width: 230px;
+			height: 40px;
+			margin: 20px auto;
+			span{
+				width: 108px;
+				height: 40px;
+				line-height: 40px;
+				border: 1px solid #999999;
+				margin-right: 1px;
+				text-align: center;
+				display: inline-block;
+				background: #ffffff;
+				border-radius: 5px;
+				&:hover{
+					background: #FF7385;
+					color: #ffffff;
+				}
+				&:hover a{
+					color: #ffffff;
+				}
+			}
+		}
 	}
 }
 
@@ -125,3 +175,9 @@ body{
  }
 
 }
+
+
+// .k_banner .K_left_nav .k_show:hover{
+// 	border-right: 3px solid #ffffff;
+	
+// }
