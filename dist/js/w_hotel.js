@@ -67,10 +67,6 @@ $.ajax({
     // jsonpCallback: 'myCallback',
     // timeout: 5000,//设置超时时间
     success: function myCallback(data) {
-        // console.log(data);
-        // console.log(data.length);
-        // console.log(typeof data[0]);
-        // console.log(data[1].imgSrc);
         for (var i = 0; i < data.length; i++) {
             $('.hotel_classify_content').each(function (index, item) {
                 //寻找对应的类别
@@ -108,21 +104,8 @@ $.ajax({
                         }
                     })
                 }
-                // console.log(item);
-
             })
-
-            // console.log($('.hotel_classify_content').length);
-
-            // for(var j = 0,len = $('.hotel_classify_content').length;j<len)
-            // $('.hotel_classify_content').attr('classify')
         }
-        // data.each(function(index,value,arr){
-        //     console.log(index);
-        //     console.log(value);
-        //     console.log(arr);
-
-        // })
     },
     error: function (err) {
         alert('请求失败');
@@ -133,3 +116,54 @@ $.ajax({
     // }
 });
 
+var advert1 = new Swiper('#advert_swiper1', {
+    loop: true, // 循环模式选项
+    autoplay: {
+        delay: 4000,
+        stopOnLastSlide: false,
+        disableOnInteraction: false,
+    },
+    effect: 'fade'
+});
+var strategy = swiperSlide('#strategy_swiper1')
+
+// 换一换点击事件
+$('.refresh').click(function () {
+    var mt = $('.comment_list').css('margin-top')
+    switch (mt) {
+        case '0px':
+            $('.comment_list').css('margin-top', '-260px')
+            break;
+        case '-260px':
+            $('.comment_list').css('margin-top', '-520px')
+            break;
+        case '-520px':
+            $('.comment_list').css('margin-top', '0px')
+            break;
+    }
+})
+$.ajax({
+    url: '../json/w_comment.json',
+    type: 'get',
+    success: function myCallback(data) {
+        for (var i = 0; i < data.length; i++) {
+            var $comList = $('.comment_list li')
+            for (var k = 0; k < $comList.length; k++) {
+                var $thisbox = $($comList[k])
+                //判断是否有内容
+                if ($thisbox.attr('haveComInfo') == 'false') {
+                    $thisbox.find('a img').attr('src',data[i].imgSrc);
+                    $thisbox.find('.comment_box .comment_username').text(data[i].username);
+                    $thisbox.find('.comment_box .comment_hotelname').text(data[i].hotelname);
+                    $thisbox.find('.comment_box .comment_info').text(data[i].say);
+                    $thisbox.attr('haveComInfo', 'true');
+                    break;
+                }
+            }
+        }
+    },
+    error: function (err) {
+        alert('请求失败');
+        console.log(err.status);
+    },
+});
