@@ -72,6 +72,13 @@ body {
               color: #FF7385; }
       .k_banner .K_left_nav .k_show:hover .k_top .k_flg {
         display: block; }
+  .k_banner .k_pull {
+    width: 200px;
+    height: 350px;
+    background: yellowgreen;
+    position: absolute;
+    left: 0;
+    top: 0; }
 
 /* 主内容区*/
 .k_content {

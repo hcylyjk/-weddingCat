@@ -93,6 +93,16 @@ body{
 			}
 		}
 	}
+
+	// nav弹出模块
+	.k_pull{
+		width: 200px;
+		height: 350px;
+		background: yellowgreen;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
 }
 
 /* 主内容区*/
