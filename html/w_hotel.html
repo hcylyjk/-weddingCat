@@ -21,7 +21,7 @@
         <script> $('.header').load('mod_head.html');</script>
     </div>
     <section class="banner">
-        <div class="swiper-container" id="mySwiper">
+        <div class="swiper-container swiper_banner" id="mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img src="../img/w_image/index/ia_300000076.png" alt="">
@@ -50,8 +50,323 @@
             <div class="swiper-button-next"></div>
         </div>
     </section>
-    <div class="center">
-        
+    <div id="main">
+        <div class="hotel_main containers">
+            <div class="show_service clearfix">
+                <div>
+                    <div class="service_dec service_dec1" index='1'>
+                        <div class="service_dec_line"></div>
+                    </div>
+                    <div class="service_dec service_dec2" index='2'>
+                        <div class="service_dec_line"></div>
+                    </div>
+                    <div class="service_dec service_dec3" index='3'>
+                        <div class="service_dec_line"></div>
+                    </div>
+                    <div class="service_dec service_dec4" index='4'></div>
+                    <div class="query_date">
+
+                    </div>
+                </div>
+            </div>
+            <div class="show_slide_pic">
+                <div class="slide_pic" index='1'>
+                    <div class="slide_pic_header slide_pic_header1"></div>
+                    <div class="slide">
+                        <div class="swiper-container swiper_slide" id="slide_swiper1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div>
+                                        <img src="../img/w_image/index/ia_300000018.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>
+                                        <img src="../img/w_image/index/ia_300000019.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>
+                                        <img src="../img/w_image/index/ia_300000020.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 导航按钮 -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide_pic" index='2'>
+                    <div class="slide_pic_header slide_pic_header2"></div>
+                    <div class="slide">
+                        <div class="swiper-container swiper_slide" id="slide_swiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div>
+                                        <img src="../img/w_image/index/ia_300000021.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>
+                                        <img src="../img/w_image/index/ia_300000022.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>
+                                        <img src="../img/w_image/index/ia_300000023.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 导航按钮 -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide_pic" index='3'>
+                    <div class="slide_pic_header slide_pic_header3"></div>
+                    <div class="slide">
+                        <div class="swiper-container swiper_slide" id="slide_swiper3">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div>
+                                        <img src="../img/w_image/index/ia_300000024.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>
+                                        <img src="../img/w_image/index/ia_300000025.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>
+                                        <img src="../img/w_image/index/ia_300000026.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>
+                                        <img src="../img/w_image/index/ia_300000027.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 导航按钮 -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide_pic" index='4'>
+                    <div class="slide_pic_header slide_pic_header4"></div>
+                    <div class="slide">
+                        <div class="swiper-container swiper_slide" id="slide_swiper4">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div>
+                                        <img src="../img/w_image/index/ia_300000028.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>
+                                        <img src="../img/w_image/index/ia_300000029.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>
+                                        <img src="../img/w_image/index/ia_300000030.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 导航按钮 -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 标题 -->
+            <div class="show_hotel">
+                <div class="show_hotel_icon"></div>
+            </div>
+            <!-- 酒店展示 -->
+            <div class="show_hotel_information">
+                <!-- 五星酒店 -->
+                <div class="hotel_classify_content" classify="fiveStar">
+                    <div class="hcc_title hcct_bg1"></div>
+                    <div class="hcc_size1 hcc_info" haveInfo="false" imgSize="1">
+                        <a href="javascript:">
+                            <dl>
+                                <dt><img src="" alt=""></dt>
+                                <dd>
+                                    <p><span class="hcc_hotel_name"></span></p>
+                                    <p class="hcc_hotel_pricenum"></p>
+                                    <div class="hcc_hotel_iconright"></div>
+                                </dd>
+                            </dl>
+                        </a>
+                    </div>
+                    <div class="hcc_size3 hcc_info" imgSize="3">
+                        <div haveInfo="false">
+                            <a href="javascript:">
+                                <dl>
+                                    <dt><img src="" alt=""></dt>
+                                    <dd>
+                                        <p><span class="hcc_hotel_name"></span></p>
+                                        <p class="hcc_hotel_pricenum"></p>
+                                        <div class="hcc_hotel_iconright"></div>
+                                    </dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div haveInfo="false">
+                            <a href="javascript:">
+                                <dl>
+                                    <dt><img src="" alt=""></dt>
+                                    <dd>
+                                        <p><span class="hcc_hotel_name"></span></p>
+                                        <p class="hcc_hotel_pricenum"></p>
+                                        <div class="hcc_hotel_iconright"></div>
+                                    </dd>
+                                </dl>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hcc_size2 hcc_info" imgSize="2" haveInfo="false">
+                        <a href="javascript:">
+                            <dl>
+                                <dt><img src="" alt=""></dt>
+                                <dd>
+                                    <p><span class="hcc_hotel_name"></span></p>
+                                    <p class="hcc_hotel_pricenum"></p>
+                                    <div class="hcc_hotel_iconright"></div>
+                                </dd>
+                            </dl>
+                        </a>
+                    </div>
+                </div>
+                <!-- 西餐户外 -->
+                <div class="hotel_classify_content" classify="outDoor">
+                    <div class="hcc_title hcct_bg2"></div>
+
+                    <div class="hcc_size3 hcc_info" imgSize="3">
+                        <div haveInfo="false">
+                            <a href="javascript:">
+                                <dl>
+                                    <dt><img src="" alt=""></dt>
+                                    <dd>
+                                        <p><span class="hcc_hotel_name"></span></p>
+                                        <p class="hcc_hotel_pricenum"></p>
+                                        <div class="hcc_hotel_iconright"></div>
+                                    </dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div haveInfo="false">
+                            <a href="javascript:">
+                                <dl>
+                                    <dt><img src="" alt=""></dt>
+                                    <dd>
+                                        <p><span class="hcc_hotel_name"></span></p>
+                                        <p class="hcc_hotel_pricenum"></p>
+                                        <div class="hcc_hotel_iconright"></div>
+                                    </dd>
+                                </dl>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hcc_size1 hcc_info" haveInfo="false" imgSize="1">
+                        <a href="javascript:">
+                            <dl>
+                                <dt><img src="" alt=""></dt>
+                                <dd>
+                                    <p><span class="hcc_hotel_name"></span></p>
+                                    <p class="hcc_hotel_pricenum"></p>
+                                    <div class="hcc_hotel_iconright"></div>
+                                </dd>
+                            </dl>
+                        </a>
+                    </div>
+                    <div class="hcc_size2 hcc_info" imgSize="2" haveInfo="false">
+                        <a href="javascript:">
+                            <dl>
+                                <dt><img src="" alt=""></dt>
+                                <dd>
+                                    <p><span class="hcc_hotel_name"></span></p>
+                                    <p class="hcc_hotel_pricenum"></p>
+                                    <div class="hcc_hotel_iconright"></div>
+                                </dd>
+                            </dl>
+                        </a>
+                    </div>
+                </div>
+                <!-- 特色酒店 -->
+                <div class="hotel_classify_content" classify="special">
+                    <div class="hcc_title hcct_bg3"></div>
+                    <div class="hcc_size1 hcc_info" haveInfo="false" imgSize="1">
+                        <a>
+                            <dl>
+                                <dt><img src="" alt=""></dt>
+                                <dd>
+                                    <p><span class="hcc_hotel_name"></span></p>
+                                    <p class="hcc_hotel_pricenum"></p>
+                                    <div class="hcc_hotel_iconright"></div>
+                                </dd>
+                            </dl>
+                        </a>
+                    </div>
+                    <div class="hcc_size2 hcc_info" imgSize="2" haveInfo="false">
+                        <a>
+                            <dl>
+                                <dt><img src="" alt=""></dt>
+                                <dd>
+                                    <p><span class="hcc_hotel_name"></span></p>
+                                    <p class="hcc_hotel_pricenum"></p>
+                                    <div class="hcc_hotel_iconright"></div>
+                                </dd>
+                            </dl>
+                        </a>
+                    </div>
+                    <div class="hcc_size3 hcc_info" imgSize="3">
+                        <div haveInfo="false">
+                            <a>
+                                <dl>
+                                    <dt><img src="" alt=""></dt>
+                                    <dd>
+                                        <p><span class="hcc_hotel_name"></span></p>
+                                        <p class="hcc_hotel_pricenum"></p>
+                                        <div class="hcc_hotel_iconright"></div>
+                                    </dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div haveInfo="false">
+                            <a>
+                                <dl>
+                                    <dt><img src="" alt=""></dt>
+                                    <dd>
+                                        <p><span class="hcc_hotel_name"></span></p>
+                                        <p class="hcc_hotel_pricenum"></p>
+                                        <div class="hcc_hotel_iconright"></div>
+                                    </dd>
+                                </dl>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- 标题 -->
+
+            <!-- 快速导航 -->
+            <div class="show_hotel_content">
+                <div class="fast_nav_left_content">
+                    1111
+                </div>
+                <div class="fast_nav_right_content">
+                    111
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 <script src="../js/swiper.min.js"></script>
