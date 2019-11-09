@@ -171,17 +171,15 @@
 
 .h_hidden {
   position: absolute;
-  width: 159px;
+  left: -11px;
+  width: 157px;
   height: 193px;
   background-color: #fff;
   z-index: 200; }
 
-.h_enter:hover .h_hidden {
-  background-color: transparent; }
-
 .h_nav .h_li {
   position: relative;
-  z-index: 50; }
+  z-index: 300; }
   .h_nav .h_li li {
     float: left;
     height: 40px;
@@ -206,4 +204,4 @@
 
 .h_carousel {
   position: relative;
-  z-index: 50; }
+  z-index: 300; }
