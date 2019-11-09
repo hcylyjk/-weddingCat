@@ -11,11 +11,13 @@ body {
 
 .j_container {
   width: 1180px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 210px; }
 
 .j_hot_warp {
   padding: 40px 0;
-  margin-left: -20px; }
+  width: 100%;
+  height: 130px; }
 
 .j_hot_tip {
   width: 190px;
@@ -51,8 +53,7 @@ body {
   height: 93px;
   padding: 37px 0 0 33px;
   margin-left: 20px;
-  background-color: #fff;
-  border-right: 1px solid #ff7385; }
+  background-color: #fff; }
 
 .j_hot_item span {
   position: relative;
@@ -69,5 +70,340 @@ body {
 .j_hot_item div h2 {
   color: #000;
   font-size: 24px;
-  font-weight: bold;
-  padding-bottom: 5px; }
+  font-weight: bold; }
+
+.j_hotitem3 {
+  width: 267px;
+  height: 93px;
+  padding: 37px 0 0 33px;
+  margin-left: 20px;
+  background-color: #fff; }
+
+.j_hotitem3 span {
+  position: relative;
+  top: -33px;
+  display: inline-block;
+  width: 56px;
+  height: 52px; }
+
+.j_hotitem3 div {
+  display: inline-block;
+  margin-left: 15px; }
+
+.j_hotitem3 div h2 {
+  color: #000;
+  font-size: 24px;
+  font-weight: bold; }
+
+.j_hotitem4 {
+  width: 267px;
+  height: 93px;
+  padding: 37px 0 0 33px;
+  margin-left: 20px;
+  background-color: #fff; }
+
+.j_hotitem4 span {
+  position: relative;
+  top: -33px;
+  display: inline-block;
+  width: 56px;
+  height: 52px; }
+
+.j_hotitem4 div {
+  display: inline-block;
+  margin-left: 15px; }
+
+.j_hotitem4 div h2 {
+  color: #000;
+  font-size: 24px;
+  font-weight: bold; }
+
+.j_fixed_nav {
+  width: 100%;
+  height: 60px;
+  background: #2f2f2f;
+  position: fixed;
+  top: 0;
+  left: 0; }
+
+.j_fixed_inner {
+  width: 1180px;
+  margin: 0 auto;
+  text-align: center; }
+
+.j_fixed_inner a {
+  display: inline-block;
+  width: 180px;
+  height: 26px;
+  padding: 17px 0 13px;
+  color: #fff;
+  border-bottom: 4px solid transparent;
+  font-size: 20px; }
+
+.j_city_juest {
+  width: 100%;
+  height: 320px;
+  background: #fff;
+  padding: 40px 0 20px; }
+
+.j_citywarp {
+  width: 1180px;
+  height: 320px;
+  margin: 0 auto; }
+
+.j_cityT {
+  height: 40px; }
+
+.j_cityT h2 {
+  line-height: 40px;
+  font-size: 24px; }
+
+.j_cityBlist {
+  padding: 20px;
+  width: 1220px;
+  margin-left: -20px; }
+
+.j_cityBlist ul {
+  width: 10000px;
+  position: relative;
+  height: 100%; }
+
+.j_cityBlist ul li {
+  position: relative;
+  width: 380px;
+  height: 240px;
+  margin-right: 20px;
+  overflow: hidden;
+  float: left; }
+
+.j_cityBlist ul li img {
+  width: 100%; }
+
+.j_cityBlist ul li a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.j_cityBlist ul li a .j_info {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
+  left: 0; }
+
+.j_cityBlist ul li a .j_info .j_name {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  top: 80px;
+  left: 152px;
+  z-index: 1000; }
+
+.j_info .j_before {
+  background: #999;
+  width: 182px;
+  height: 5px;
+  position: absolute;
+  top: 110px;
+  left: 110px; }
+
+.j_info .j_num {
+  padding-top: 14px;
+  font-size: 14px;
+  position: absolute;
+  top: 110px;
+  left: 164px;
+  color: #fff; }
+
+.j_month_juest {
+  width: 100%;
+  padding: 40px 0 20px;
+  height: 450px; }
+
+.j_monthcenter {
+  width: 1180px;
+  margin: 0 auto; }
+
+.j_monthtitle {
+  width: 1180px; }
+
+.j_monthtitle h2 {
+  display: inline;
+  font-size: 30px;
+  color: #333; }
+
+.j_monthtitle a {
+  float: right;
+  margin-top: 18px;
+  font-size: 16px;
+  color: #333; }
+
+.j_month_list {
+  padding: 20px;
+  position: relative;
+  width: 1200px;
+  height: 310px;
+  margin-left: -20px; }
+
+.j_month_list ul {
+  width: 10000px; }
+
+.j_month_list ul li {
+  width: 380px;
+  height: 310px;
+  margin-right: 20px;
+  float: left; }
+
+.j_month_list ul li a {
+  display: block;
+  width: 100%;
+  height: 100%; }
+
+.j_month_list ul li a img {
+  width: 100%;
+  height: 100%; }
+
+.j_month_list_names {
+  width: 100%;
+  height: 70px;
+  font-size: 20px;
+  line-height: 70px;
+  background: #fff; }
+
+.j_month_list_names span {
+  color: #c5c5c5;
+  margin-left: 10px; }
+
+.j_cameraman {
+  width: 100%;
+  height: 280px;
+  padding: 47px 0 63px;
+  background: #fff; }
+
+.j_cameraman_center {
+  width: 1180px;
+  margin: 0 auto; }
+
+.j_team_title {
+  font-size: 36px;
+  color: #3d3d3d; }
+
+.en {
+  font-size: 24px; }
+
+.j_teaml .j_team_des {
+  padding-top: 22px;
+  padding-right: 70px;
+  font-size: 14px;
+  color: #4d4d4d;
+  text-align: justify; }
+
+.j_teaml a {
+  color: #ff7385;
+  font-size: 14px;
+  line-height: 30px; }
+
+.j_teamr {
+  width: 840px;
+  height: 280px; }
+
+.j_teamr a {
+  float: left;
+  position: relative;
+  width: 140px;
+  height: 100%; }
+
+.j_teamr a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.58);
+  opacity: 0; }
+
+.j_teamr a span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  z-index: 1000; }
+
+.j_take_city {
+  width: 100%;
+  padding: 0 0 40px;
+  height: 335px;
+  background-color: #2f2f2f; }
+
+.j_takebg {
+  width: 1180px;
+  margin: 0 auto; }
+
+.j_title_warp {
+  width: 100%;
+  height: 90px;
+  padding: 40px 0 3px;
+  line-height: 46px;
+  position: relative; }
+
+.j_title_warp .spanl {
+  width: 475px;
+  height: 1px;
+  background: #ccc;
+  margin-top: 47px; }
+
+.j_title_warp .spanr {
+  width: 475px;
+  height: 1px;
+  background: #ccc;
+  margin-top: 47px; }
+
+.j_title_warp h2 {
+  font-size: 30px;
+  color: #fff;
+  letter-spacing: 6px;
+  position: absolute;
+  top: 46px;
+  left: 514px; }
+
+.j_title_warp h2 i {
+  display: block;
+  font-family: Arial,sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 2.3px;
+  line-height: 1; }
+
+.j_city_list {
+  width: 1180PX;
+  margin: 0 auto;
+  padding: 55px 0 20px;
+  text-align: center; }
+
+.j_city_items {
+  position: relative;
+  display: inline-block;
+  width: 130px;
+  height: 150px;
+  margin: 0 7px; }
+
+.j_city_items a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #2f2f2f;
+  background-color: #fff;
+  text-align: center; }
+
+.j_city_items a span {
+  font-size: 20px;
+  text-align: center; }
