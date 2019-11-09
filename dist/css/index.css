@@ -85,7 +85,7 @@
     left: -7px;
     width: 116px;
     min-height: 40px;
-    z-index: 222;
+    z-index: 777;
     background-color: #fff; }
     .h_self .h_get .h_list {
       position: relative;
@@ -94,7 +94,7 @@
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
       background-color: #fff;
       height: 205px;
-      z-index: 222; }
+      z-index: 777; }
       .h_self .h_get .h_list .h_before {
         margin: 10px 23px 0 23px;
         background-color: #ff7385;
@@ -133,7 +133,7 @@
 .h_erw {
   position: absolute;
   top: 52px;
-  z-index: 222;
+  z-index: 100;
   background-color: #fff;
   width: 138px;
   height: 175px;
@@ -156,7 +156,7 @@
   border: 10px solid transparent;
   border-bottom-color: #f6e6e6;
   opacity: 0.5;
-  z-index: 222; }
+  z-index: 100; }
 
 .h_arr1 {
   position: absolute;
@@ -167,23 +167,21 @@
   border: 8px solid transparent;
   border-bottom-color: #ffffff;
   opacity: 0.5;
-  z-index: 222; }
+  z-index: 102; }
 
 .h_hidden {
   position: absolute;
-  top: -8px;
-  left: -10px;
   width: 159px;
   height: 193px;
   background-color: #fff;
-  z-index: 333; }
+  z-index: 200; }
 
-.h_txt:hover .h_hidden {
+.h_enter:hover .h_hidden {
   background-color: transparent; }
 
 .h_nav .h_li {
   position: relative;
-  z-index: 666; }
+  z-index: 50; }
   .h_nav .h_li li {
     float: left;
     height: 40px;
@@ -208,4 +206,4 @@
 
 .h_carousel {
   position: relative;
-  z-index: 228; }
+  z-index: 50; }
