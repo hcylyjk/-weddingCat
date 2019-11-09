@@ -7,7 +7,7 @@
     .l_banner{
         height: 751px;
         width: 100%;
-        background: url(../dist/img/l_image/l_invitations/ia_400000067.jpg) center no-repeat;
+        background: url(../img/l_image/l_invitations/ia_400000067.jpg) center no-repeat;
     }
     .l_container{
         width: 1180px;
@@ -23,7 +23,7 @@
         float: left;
         width: 118px;
         height: 61px;
-        background: url(../dist/img/l_image/l_invitations/log_03.jpg) no-repeat;
+        background: url(../img/l_image/l_invitations/log_03.jpg) no-repeat;
         text-indent: -9999px;
     }
     .l_nav-list{
@@ -296,7 +296,7 @@
     // 简介
     .l_content{
         height: 1476px;
-        background: url(../dist/img/l_image/l_invitations/ia_400000068.png) no-repeat;
+        background: url(../img/l_image/l_invitations/ia_400000068.png) no-repeat;
         background-position: top center;
         .l_firstGroup{
             padding-top: 154px;
@@ -336,6 +336,132 @@
         .l_secoundGroup{
             margin-top: 39px;
             height: 405px;
+            .l_group-img{
+                position: relative;
+                left: -110px;
+                .l_firstImg{
+                    position: absolute;
+                    left: 306px;
+                    top: 5px;
+                    z-index: 10;
+                }
+                .l_add-img{
+                    position: absolute;
+                    top: 48px;
+                    left: 205px;
+                }
+            }
+            .l_group-img div{
+                box-shadow: 5px 9px 29px 0 rgba(0,0,0,0.2);
+            }
+            .l_group-text{
+                width: 666px;
+                margin-top: 138px;
+                .l_big-text{
+                    margin-bottom: 10px;
+                    font-size: 32px;
+                    color: #3d3d3d;
+                }
+                .l_small-text{
+                    font-size: 18px;
+                    color: #999;
+                }
+            }
+        }
+        .l_thirldGroup{
+            height: 438px;
+            padding-left: 100px;
+            .l_group-text{
+                padding-top: 107px;
+                text-align: right;
+                margin-left: -210px;
+                width: 646px;
+                .l_big-text{
+                    margin-bottom: 10px;
+                    font-size: 32px;
+                    color: #3d3d3d;
+                }
+                .l_small-text{
+                    font-size: 18px;
+                    color: #999;
+                }
+            }
+            .l_group-img{
+                width: 430px;
+                div{
+                    position: absolute;
+                }
+                .l_first{
+                    padding-top: 90px;
+                    margin-left: -100px;
+                    z-index: 1;
+                    img{
+                        box-shadow: -5px 6px 17px 0 rgba(0,0,0,0.2);
+                    }
+                }
+                .l_secound{
+                    padding: 20px 0 0 110px;
+                    z-index: 1;
+                }
+                .l_thirld{
+                    padding-left: 160px;
+                    img{
+                        box-shadow: -5px 6px 17px 0 rgba(0,0,0,0.2);
+                    }
+                }
+            }
+        }
+    }
+    // 功能部分
+    .l_function{
+        height: 611px;
+        .l_function-text{
+            .l_big-text{
+                font-size: 40px;
+                text-align: center;
+                color: #3d3d3d;
+            }
+            .l_small-text{
+                font-size: 20px;
+                text-align: center;
+                color: #666;
+                padding-bottom: 72px;
+            }
+        }
+        .l_function-img{
+            margin-left: 50px;
+            ul li{
+                width: 200px;
+                height: 200px;
+                margin-right: 82px;
+                float: left;
+                .l_fun-img{
+                    position: relative;
+                    text-align: center;
+                    height: 114px;
+                    img{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        margin: auto;
+                    }
+                }
+                .l_big-text{
+                    font-size: 22px;
+                    text-align: center;
+                    color: #3d3d3d;
+                    margin-bottom: 10px;
+                }
+                .l_small-text{
+                    font-size: 16px;
+                    color: #666;
+                    padding-bottom: 50px;
+                    text-align: center;
+                    line-height: 1.25;
+                }
+            }
         }
     }
 }
