@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+//@desc '公用头部样式'
+//@autor  'hcy'
+//@date  '2019-11-9'
+
+.mod_right{
+    position:fixed;
+    bottom:87px;
+    right:10px;
+    .mod_online{
+        width:42px;
+        text-align:center;
+        ul{
+            .h_inline{
+                height:100px;
+                background-color:#ff7385;
+                padding: 1px;
+                a{
+                    color:#fff;
+                    display:block;
+                    padding: 23px 5px 7px 5px;
+                    i{
+                        font-size:19px;
+                    }
+                }
+                
+            }
+            li{
+                border-bottom:1px solid #fff;
+                height:70px;
+                background-color:rgba(21,16,13,0.9);
+                a{
+                    color:#fff;
+                    display:block;
+                    padding: 11px 7px 7px 7px;
+                    i{
+                        display:block;
+                        font-size:19px;
+                    }
+                }
+            }
+        }
+    }
+}
+.mod_tran{
+    transform:rotate(180deg)
+}
