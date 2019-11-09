@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/* banner图*/
+body {
+  overflow-x: hidden; }
+
+.k_banner {
+  width: 100%;
+  height: 420px; }
+  .k_banner img {
+    position: relative;
+    left: 50%;
+    margin-left: -960px; }
+  .k_banner .K_left_nav {
+    position: absolute;
+    top: 175px;
+    left: 175px;
+    width: 218px;
+    height: 348px;
+    background: #ffffff; }
+    .k_banner .K_left_nav .k_list {
+      padding-top: 10px;
+      position: relative;
+      width: 182px;
+      height: 70px;
+      margin-left: 34px;
+      box-sizing: border-box;
+      border-bottom: 1px solid #E0E0E0; }
+      .k_banner .K_left_nav .k_list:last-child {
+        border-bottom: none; }
+      .k_banner .K_left_nav .k_list i {
+        font-size: 20px;
+        color: #999999; }
+      .k_banner .K_left_nav .k_list .icon-ktv {
+        font-size: 25px; }
+      .k_banner .K_left_nav .k_list .icon-liren {
+        font-size: 25px; }
+      .k_banner .K_left_nav .k_list span {
+        position: absolute;
+        left: 35px;
+        top: 10px;
+        font-size: 16px;
+        color: #3d3d3d; }
+      .k_banner .K_left_nav .k_list ul {
+        display: flex;
+        position: absolute;
+        left: 35px; }
+        .k_banner .K_left_nav .k_list ul li {
+          line-height: 30px;
+          color: #999999; }
+          .k_banner .K_left_nav .k_list ul li:nth-child(1) {
+            padding-right: 15px; }
+
+/* 主内容区*/
+.k_content {
+  width: 100%;
+  background: #F5F5F5; }
+  .k_content .advantage {
+    width: 1180px;
+    height: 80px;
+    margin: 0 auto; }
+    .k_content .advantage img {
+      padding-top: 20px; }
+    .k_content .advantage img:nth-child(2) {
+      margin-left: 15px; }
+    .k_content .advantage img:nth-child(3) {
+      margin-left: 16px; }

@@ -41,4 +41,13 @@ img{
 	clear: both;
 	visibility: hidden;
 	/*opacity: 0.5;*/
+<<<<<<< HEAD
 }/*万能清除浮动工具*/
+=======
+}/*万能清除浮动工具*/
+
+.container{
+	width:1180px;
+	margin:0 auto;
+}
+>>>>>>> 4e1c15923eefbde9df12cd807ff6e923bba9e74d
