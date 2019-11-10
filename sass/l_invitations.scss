@@ -464,4 +464,49 @@
             }
         }
     }
+    // 评价展示开始
+    .l_appraise{
+        height: 1071px;
+        background: url(../img/l_image/l_invitations/ia_400000068.png) no-repeat top center;
+        .l_appraise-text{
+            padding-top: 176px;
+            .l_big-text{
+                margin-bottom: 10px;
+                text-align: center;
+                font-size: 40px;
+                color: #3d3d3d;
+            }
+            .l_small-text p{
+                font-size: 18px;
+                text-align: center;
+                color: #999;
+            }
+        }
+        .l_appraise-img{
+            position: relative;
+            div{
+                position: absolute;
+                object-fit: contain;
+                box-shadow: 0 0 35px 0px rgba(0,0,0,0.2);
+                background: #fff;
+            }
+            .l_appraise-img-1{
+                margin: 47px 0 0 100px;
+                p{
+                    width: 306px;
+                    line-height: 1.86;
+                    color: #4b4b4b;
+                    font-size: 14px;
+                    position: absolute;
+                    top: 118px;
+                    left: 168px;
+                }
+                span{
+                    position: absolute;
+                    top: 172px;
+                    left: 404px;
+                }
+            }
+        }
+    }
 }
