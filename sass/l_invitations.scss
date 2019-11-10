@@ -489,6 +489,10 @@
                 object-fit: contain;
                 box-shadow: 0 0 35px 0px rgba(0,0,0,0.2);
                 background: #fff;
+                img{
+                    position: relative;
+                    top: 3px;
+                }
             }
             .l_appraise-img-1{
                 margin: 47px 0 0 100px;
@@ -505,6 +509,50 @@
                     position: absolute;
                     top: 172px;
                     left: 404px;
+                }
+            }
+            .l_appraise-img-2{
+                margin:125px 0 0 635px;
+                z-index: 2;
+                p{
+                    width: 146px;
+                    font-size: 14px;
+                    line-height: 1.86;
+                    color: #4b4b4b;
+                    position: absolute;
+                    top: 137px;
+                    left: 159px;
+                }
+                span{
+                    position: absolute;
+                    top: 244px;
+                    left: 208px;
+                }
+            }
+            .l_appraise-img-3{
+                margin: 294px 0 0 174px;
+                z-index: 3;
+                p{
+                    width: 146px;
+                    font-size: 14px;
+                    line-height: 1.86;
+                    color: #4b4b4b;
+                    position: absolute;
+                    left:155px;
+                    top: 127px;
+                }
+            }
+            .l_appraise-img-4{
+                margin: 459px 0 0 519px;
+                z-index: 4;
+                p{
+                    width: 302px;
+                    font-size: 14px;
+                    line-height: 1.86;
+                    color: #4b4b4b;
+                    position: absolute;
+                    left:164px;
+                    top: 112px;
                 }
             }
         }
