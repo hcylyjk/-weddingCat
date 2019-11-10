@@ -104,6 +104,9 @@ body{
 		left: 393px;
 		top: 175px;
 		display: none;
+		.pull_list{
+			position: relative;
+		}
 		h3{
 			padding: 15px 0 5px 20px;
 			a:hover{
@@ -116,9 +119,9 @@ body{
 			border-top: 1px solid #e0e0e0;
 			li{
 				margin: 7px 0;
-				width: 80px;
+				// width: 80px;
 				height: 16px;
-				padding:0 5px;
+				padding:0 14px;
 				border-right: 1px solid #e0e0e0;
 				text-align:center;
 				a{
@@ -132,13 +135,16 @@ body{
 		.pull_bottom{
 			width: 230px;
 			height: 40px;
-			margin: 20px auto;
+			padding-left: 25px;
+			position: absolute;
+			left: 10px;
+			top:250px;
 			span{
-				width: 108px;
+				width: 100px;
 				height: 40px;
 				line-height: 40px;
 				border: 1px solid #999999;
-				margin-right: 1px;
+				margin-right: 10px;
 				text-align: center;
 				display: inline-block;
 				background: #ffffff;
@@ -174,10 +180,27 @@ body{
 	}
  }
 
+//  商品展示矩阵
+.k_plan{
+	height: 654px;
+	width: 1180px;
+	margin: 0 auto;
+	margin-top: 50px;
+	.title{
+		width: 1180px;
+		height: 40px;
+		border-bottom: 1px solid #CCCCCC;
+		h3{
+			font-size: 24px;
+			color: #3d3d3d;
+			display: inline;
+		}
+		span{
+			padding-left: 50px;
+		}
+	}
+}
+
 }
 
 
-// .k_banner .K_left_nav .k_show:hover{
-// 	border-right: 3px solid #ffffff;
-	
-// }

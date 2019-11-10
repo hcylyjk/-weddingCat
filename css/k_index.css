@@ -78,6 +78,8 @@ body {
     left: 393px;
     top: 175px;
     display: none; }
+    .k_banner .k_pull .pull_list {
+      position: relative; }
     .k_banner .k_pull h3 {
       padding: 15px 0 5px 20px; }
       .k_banner .k_pull h3 a:hover {
@@ -88,9 +90,8 @@ body {
       border-top: 1px solid #e0e0e0; }
       .k_banner .k_pull ul li {
         margin: 7px 0;
-        width: 80px;
         height: 16px;
-        padding: 0 5px;
+        padding: 0 14px;
         border-right: 1px solid #e0e0e0;
         text-align: center; }
         .k_banner .k_pull ul li a {
@@ -100,13 +101,16 @@ body {
     .k_banner .k_pull .pull_bottom {
       width: 230px;
       height: 40px;
-      margin: 20px auto; }
+      padding-left: 25px;
+      position: absolute;
+      left: 10px;
+      top: 250px; }
       .k_banner .k_pull .pull_bottom span {
-        width: 108px;
+        width: 100px;
         height: 40px;
         line-height: 40px;
         border: 1px solid #999999;
-        margin-right: 1px;
+        margin-right: 10px;
         text-align: center;
         display: inline-block;
         background: #ffffff;
@@ -131,3 +135,18 @@ body {
       margin-left: 15px; }
     .k_content .advantage img:nth-child(3) {
       margin-left: 16px; }
+  .k_content .k_plan {
+    height: 654px;
+    width: 1180px;
+    margin: 0 auto;
+    margin-top: 50px; }
+    .k_content .k_plan .title {
+      width: 1180px;
+      height: 40px;
+      border-bottom: 1px solid #CCCCCC; }
+      .k_content .k_plan .title h3 {
+        font-size: 24px;
+        color: #3d3d3d;
+        display: inline; }
+      .k_content .k_plan .title span {
+        padding-left: 50px; }
