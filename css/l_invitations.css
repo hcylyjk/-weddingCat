@@ -447,3 +447,203 @@
           position: absolute;
           left: 164px;
           top: 112px; }
+  .l_wrapper .l_footer {
+    min-height: 650px;
+    background: url(../img/l_image/l_invitations/footer_background.jpg) no-repeat top center; }
+    .l_wrapper .l_footer .l_footer-text .l_big-text {
+      padding-top: 122px;
+      text-align: center;
+      font-size: 48px;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 10px; }
+    .l_wrapper .l_footer .l_footer-text .l_small-text {
+      text-align: center;
+      font-size: 20px;
+      color: #fff; }
+    .l_wrapper .l_footer .l_footer-img {
+      width: 450px;
+      margin: 37px auto 0; }
+      .l_wrapper .l_footer .l_footer-img .l_footer-img-1 {
+        float: left; }
+        .l_wrapper .l_footer .l_footer-img .l_footer-img-1 .l_small-text {
+          color: #fff;
+          font-size: 19px; }
+        .l_wrapper .l_footer .l_footer-img .l_footer-img-1 .l_footer-qr {
+          width: 120px;
+          height: 120px;
+          padding: 5px;
+          margin-top: 5px;
+          background: #fff;
+          position: relative; }
+          .l_wrapper .l_footer .l_footer-img .l_footer-img-1 .l_footer-qr img {
+            position: absolute;
+            top: 5px;
+            left: 5px; }
+      .l_wrapper .l_footer .l_footer-img .l_footer-img-2 {
+        float: left;
+        height: 130px;
+        opacity: 0.5;
+        border: 1px solid #fff;
+        border-radius: 0;
+        margin: 30px 45px;
+        background: #fff; }
+      .l_wrapper .l_footer .l_footer-img .l_footer-img-3 {
+        float: left; }
+        .l_wrapper .l_footer .l_footer-img .l_footer-img-3 a {
+          z-index: 11; }
+        .l_wrapper .l_footer .l_footer-img .l_footer-img-3 .l_ios {
+          width: 192px;
+          height: 50px;
+          border: 1px solid #fff;
+          border-radius: 4px;
+          margin-top: 28px;
+          position: relative; }
+          .l_wrapper .l_footer .l_footer-img .l_footer-img-3 .l_ios p {
+            color: #fff;
+            line-height: 50px;
+            text-align: center; }
+            .l_wrapper .l_footer .l_footer-img .l_footer-img-3 .l_ios p img {
+              padding-right: 10px;
+              position: relative;
+              top: 14px; }
+        .l_wrapper .l_footer .l_footer-img .l_footer-img-3 .l_Android {
+          width: 192px;
+          height: 50px;
+          border: 1px solid #fff;
+          border-radius: 4px;
+          margin-top: 28px;
+          position: relative; }
+          .l_wrapper .l_footer .l_footer-img .l_footer-img-3 .l_Android p {
+            color: #fff;
+            line-height: 50px;
+            text-align: center; }
+            .l_wrapper .l_footer .l_footer-img .l_footer-img-3 .l_Android p img {
+              padding-right: 10px;
+              position: relative;
+              top: 14px; }
+        .l_wrapper .l_footer .l_footer-img .l_footer-img-3 .l_mask {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 192px;
+          height: 50px;
+          overflow: hidden; }
+        .l_wrapper .l_footer .l_footer-img .l_footer-img-3 .l_mask:hover {
+          background: #fff;
+          opacity: 0.2; }
+    .l_wrapper .l_footer .l_footer-test {
+      text-align: center;
+      margin: 120px 0 92px;
+      color: #fff;
+      font-size: 16px; }
+    .l_wrapper .l_footer .l_weeding-tutorials {
+      position: relative;
+      width: 100%;
+      height: auto;
+      background: rgba(0, 0, 0, 0.66);
+      padding: 68px 0 82px;
+      text-align: center; }
+      .l_wrapper .l_footer .l_weeding-tutorials .l_weeding-tutorials-title {
+        color: #fff;
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 31px; }
+      .l_wrapper .l_footer .l_weeding-tutorials a .l_weeding-tutorials-link {
+        color: #c5c5c5;
+        font-size: 24px; }
+  .l_wrapper .l_wiki {
+    padding: 50px 0 25px; }
+    .l_wrapper .l_wiki .l_title {
+      font-size: 30px;
+      color: #2f2f2f; }
+    .l_wrapper .l_wiki .l_wiki-des {
+      padding-top: 15px;
+      font-size: 14px;
+      line-height: 2;
+      color: #666; }
+    .l_wrapper .l_wiki .l_wiki-info {
+      padding: 30px 0 0; }
+      .l_wrapper .l_wiki .l_wiki-info div {
+        width: 48%;
+        padding-left: 20px;
+        border-left: 2px solid #ccc; }
+        .l_wrapper .l_wiki .l_wiki-info div h3 {
+          font-size: 18px;
+          line-height: 1.67;
+          color: #999; }
+        .l_wrapper .l_wiki .l_wiki-info div ul {
+          padding-top: 10px; }
+        .l_wrapper .l_wiki .l_wiki-info div .l_category li {
+          margin-right: 15px;
+          font-size: 16px;
+          line-height: 2.31; }
+          .l_wrapper .l_wiki .l_wiki-info div .l_category li a {
+            color: #2f2f2f; }
+        .l_wrapper .l_wiki .l_wiki-info div .l_other-look li {
+          width: 100px;
+          height: 34px;
+          margin-right: 11px;
+          border-radius: 4px;
+          border: 1px solid #e3e3e3;
+          font-size: 16px;
+          line-height: 34px;
+          text-align: center;
+          color: #757575;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden; }
+          .l_wrapper .l_wiki .l_wiki-info div .l_other-look li a {
+            color: #757575; }
+          .l_wrapper .l_wiki .l_wiki-info div .l_other-look li a:hover {
+            color: red; }
+  .l_wrapper .l_news {
+    padding: 25px 0 50px; }
+    .l_wrapper .l_news p {
+      font-size: 20px;
+      color: #999; }
+    .l_wrapper .l_news .l_news-list {
+      overflow: hidden; }
+      .l_wrapper .l_news .l_news-list li {
+        width: 275px;
+        height: 280px;
+        margin: 20px 20px 0 0;
+        transition: all 0.3s ease-in-out; }
+        .l_wrapper .l_news .l_news-list li a {
+          width: 100%;
+          display: block;
+          line-height: 0;
+          color: #999; }
+          .l_wrapper .l_news .l_news-list li a img {
+            width: 100%;
+            height: 160px; }
+        .l_wrapper .l_news .l_news-list li .l_item-info {
+          height: 120px;
+          padding: 14px 20px 20px;
+          border: 1px solid #e3e3e3;
+          border-top: none;
+          overflow: hidden;
+          box-sizing: border-box; }
+          .l_wrapper .l_news .l_news-list li .l_item-info .l_news-title {
+            font-size: 18px;
+            line-height: 1.11;
+            color: #2f2f2f;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden; }
+          .l_wrapper .l_news .l_news-list li .l_item-info .l_news-summary {
+            padding-top: 6px;
+            line-height: 1.67;
+            font-size: 12px;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 3;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden; }
+  .l_wrapper .l_footer-bottom-info {
+    font-size: 12px;
+    color: #4f4f4f;
+    text-align: center;
+    padding-bottom: 10px; }
+    .l_wrapper .l_footer-bottom-info a {
+      color: inherit; }
