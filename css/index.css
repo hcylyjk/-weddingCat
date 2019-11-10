@@ -1,5 +1,5 @@
 .h_bo {
-  background-color: #ccc; }
+  background-color: #f6f6f6; }
 
 .h_search {
   position: relative;
@@ -241,7 +241,7 @@
   .h_carousel .h_slides .h_one {
     background: url(../img/index_img/ia_200000158.jpg) no-repeat;
     background-position: center;
-    z-index: 302; }
+    z-index: 301; }
   .h_carousel .h_slides .h_two {
     background: url(../img/index_img/ia_200000159.jpg) no-repeat;
     z-index: 301;
@@ -258,6 +258,8 @@
     background: url(../img/index_img/ia_200000162.jpg) no-repeat;
     z-index: 301;
     background-position: center; }
+  .h_carousel .h_slides .h_index {
+    z-index: 302; }
   .h_carousel ol {
     position: absolute;
     bottom: 10px;
@@ -275,8 +277,71 @@
     .h_carousel ol .h_active {
       background-color: rgba(255, 115, 113, 0.4); }
 
+.h_op {
+  opacity: 1 !important;
+  transition: opacity 10s; }
+
 h4:hover {
   color: #ff7385; }
 
 span:hover {
   color: #ff7385; }
+
+.h_question {
+  margin-top: 28px;
+  text-align: center; }
+  .h_question .h_liu {
+    width: 210px;
+    height: 110px;
+    background-color: #fff;
+    position: relative;
+    margin-right: 18px;
+    border-radius: 4px; }
+    .h_question .h_liu p {
+      font-size: 28px;
+      color: #4d4b4b;
+      padding: 15px 2px 2px 2px;
+      margin-bottom: 7px; }
+    .h_question .h_liu a {
+      display: inline-block;
+      width: 110px;
+      height: 25px;
+      border: 1px solid #ff7385;
+      border-radius: 4px;
+      line-height: 25px;
+      color: #ff7385; }
+    .h_question .h_liu .h_btn:hover {
+      background-color: #ff7385;
+      color: #fff; }
+    .h_question .h_liu span {
+      display: block;
+      position: absolute;
+      top: 43px;
+      left: 210px;
+      border: 9px solid transparent;
+      border-left: 9px solid #fff; }
+  .h_question li {
+    position: relative;
+    float: left;
+    margin-left: 9px;
+    height: 110px;
+    width: 110px;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding-top: 20px;
+    border-radius: 4px; }
+    .h_question li a img {
+      width: 44px;
+      height: 44px; }
+    .h_question li a p {
+      font-size: 16px;
+      margin-top: 10px; }
+  .h_question li:hover {
+    background-color: #ff7385; }
+  .h_question li:hover p {
+    color: #fff; }
+  .h_question li:hover .h_btn_hi {
+    display: none; }
+
+.h_img {
+  display: none; }
