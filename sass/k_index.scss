@@ -198,18 +198,333 @@ body{
 			padding-left: 50px;
 		}
 	}
-	.k_show{
+	.k_show_list{
 		width: 1180px;
-		height: 900px;
+		// height: 900px;
 		margin: 15px auto;
 		.top_box{
 			width: 1180px;
 			height: 280px;
 			.left_box{
+				width: 580px;
+				float: left;
+				position: relative;
+				&:hover img{
+					opacity: 0.7;
+				}
+				a{
+					width: 580px;
+					height: 280px;
+					display: block;
+					position: absolute;
+					left: 0;
+					top: 0;
+				}
 				img{
 					width: 430px;
 					height: 280px;
+					float: left;
+					opacity: 1;
+					transition: all 0.3s linear ;
+					
 				}
+				.detailed{
+					h4{
+						margin: 70px auto 0;
+						width: 126px;
+						height: 20px;
+						color: #4d4b4b;
+						text-align: center;
+					}
+					p{
+						margin:20px auto  ;
+						color: #808080;
+						font-size: 12px;
+						text-align: center;
+					}
+					span{
+						font-size: 18px;
+						margin: 20px auto ;
+						text-align: center;
+						width: 60px;
+						display: block;
+						color: #ff5d52;
+					}
+					float: right;
+					background: #ffffff;
+					width: 150px;
+					height: 280px;
+				}
+
+				
+			}
+			.mid_box{
+				float: left;
+				width: 280px;
+				height: 280px;
+				margin: 0 20px;
+				position: relative;
+				transition: all 0.3s linear;
+						box-shadow: 0px 0px 0px 0px #ffffff;
+				&:hover{
+					box-shadow: 1px 1px 3px 2px #b6b6b6;
+				}
+				&:hover img{
+					opacity: 0.7;
+				}
+				a{
+				width: 280px;
+				height: 280px;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				}
+				img{
+					width: 280px;
+					opacity: 1;
+					transition: all 0.3s linear ;
+				}
+				.mid_bottom{
+					width: 280px;
+					height: 90px;
+					background: #ffffff;
+					padding-left: 15px;
+					box-sizing: border-box;
+					p{
+						line-height: 55px;
+					}
+					& span{
+						font-size: 12px;
+						color: #808080;
+					}
+					& span+span{
+						font-size: 18px;
+						color: #ff5d52;
+						padding-left: 35px;
+					}
+				}
+			}
+			.right_box{
+				float: right;
+				position: relative;
+				width: 280px;
+				height: 280px;
+				a{
+				width: 280px;
+				height: 280px;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				}
+				.shop{
+					width: 88px;
+					height: 32px;
+					background: #ff7362;
+					position: absolute;
+					left: 0;
+					top: 0;
+					z-index: 2;
+					color: #ffffff;
+					text-align: center;
+					line-height: 32px;
+				}
+				span{
+					width: 280px;
+				height: 280px;
+				position: absolute;
+				left: 0;
+				top: 0;
+				background: rgba(0,0,0,0.5);
+				}
+				&>img{
+					width: 280px;
+					height: 280px;
+				
+				}
+				.cirle{
+					width: 64px;
+					height: 64px;
+					position: absolute;
+					top:25%;
+					left:40% ;
+					border-radius: 50%;
+					border: 1px solid #ffffff;
+					img{
+						width: 100%;
+						border-radius: 50%;
+					}
+				}
+				.text{
+					position: absolute;
+					top: 150px;
+					left: 0;
+					text-align: center;
+					color: #ffffff;
+					p{
+						margin: 5px auto;
+						font-size: 18px;
+						line-height: 25px;
+					}
+					i{
+						font-size: 13px;
+					}
+				}
+			}
+		}
+
+		//  图片下部分区域 
+		.bottom_box{
+			width: 1180px;
+			height: 280px;
+			&>ul{
+				display: flex;
+				&>li{
+					&:first-of-type{
+						margin-left: 0;
+					}
+					width: 280px;
+					height: 280px;
+					background: #ffffff;
+					margin:20px 0 0 20px;
+					img{
+						width: 280px;
+						height: 190px;
+						opacity: 1;
+					transition: all 0.3s linear ;
+					}
+				}
+				// 绑定a链接
+				&>li:first-child{
+					position: relative;
+				}
+				&>li:first-child>a{
+				width: 280px;
+				height: 280px;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				}
+
+				&>li:nth-child(2){
+					position: relative;
+				}
+				&>li:nth-child(2) a{
+				width: 280px;
+				height: 280px;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				}
+
+				&>li:nth-child(3){
+					position: relative;
+				}
+				&>li:nth-child(3) a{
+				width: 280px;
+				height: 280px;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				}
+				.picter{
+					transition: all 0.3s linear;
+						box-shadow: 0px 0px 0px 0px #ffffff;
+					&:hover img{
+						opacity: 0.7;
+						transition: all 5s linear;
+						box-shadow: 1px 1px 1px 1px #ffffff;
+					}
+					&:hover{
+						box-shadow: 1px 1px 3px 2px #b6b6b6;
+					}
+					p{
+						
+						color: #3d3d3d;
+						font-size: 14px;
+						padding:15px 25px;
+					}
+					.price{
+						font-size: 12px;
+						color: #808080;
+						padding-left: 25px;
+						& span+span{
+							color: #ff5d52;
+							font-size:18px ;
+							padding-left: 20px;
+						}
+					}
+				}
+
+			
+				& .g_many{
+					width: 280px;
+					height: 280px;
+					float: right;
+					margin: 20px 0 0 20px;
+					.small_top_box{
+						width: 280px;
+						height: 210px;
+						background: #ffffff;
+						p{
+							font-size: 16px;
+							color: #666666;
+							padding-left: 15px;
+							padding-top: 15px;
+						}
+						.list{
+							ul{
+								display: flex;
+								flex-wrap: wrap;
+								padding: 20px 0 0 15px;
+								li{
+									font-size: 12px;
+									margin:5px;
+									width: 70px;
+									height: 27px;
+									border-radius:13.5px;
+									line-height: 27px;
+									text-align: center;
+									border: 1px solid #CCCCCC;
+									&:hover{
+										background: #FF7385;
+										
+									}
+									&:hover a{
+										color: #ffffff;
+										
+									}
+								}
+							}
+						}
+					}
+					.marry_price{
+						width: 280px;
+						height: 50px;
+						
+						background: #FF7385;
+						margin-top: 20px;
+						a{
+							width: 280px;
+						height: 50px;
+						display: block;
+						color: #ffffff;
+						font-size: 16px;
+						span{
+							line-height: 50px;
+							padding-left: 15px;
+						}
+						i{
+							padding-left: 125px;
+						}
+						}
+					}
+				}
+				
 			}
 		}
 	}
