@@ -182,7 +182,6 @@ body{
 
 //  商品展示矩阵
 .k_plan{
-	height: 654px;
 	width: 1180px;
 	margin: 0 auto;
 	margin-top: 50px;
@@ -197,6 +196,21 @@ body{
 		}
 		span{
 			padding-left: 50px;
+		}
+	}
+	.k_show{
+		width: 1180px;
+		height: 900px;
+		margin: 15px auto;
+		.top_box{
+			width: 1180px;
+			height: 280px;
+			.left_box{
+				img{
+					width: 430px;
+					height: 280px;
+				}
+			}
 		}
 	}
 }

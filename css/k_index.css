@@ -136,7 +136,6 @@ body {
     .k_content .advantage img:nth-child(3) {
       margin-left: 16px; }
   .k_content .k_plan {
-    height: 654px;
     width: 1180px;
     margin: 0 auto;
     margin-top: 50px; }
@@ -150,3 +149,13 @@ body {
         display: inline; }
       .k_content .k_plan .title span {
         padding-left: 50px; }
+    .k_content .k_plan .k_show {
+      width: 1180px;
+      height: 900px;
+      margin: 15px auto; }
+      .k_content .k_plan .k_show .top_box {
+        width: 1180px;
+        height: 280px; }
+        .k_content .k_plan .k_show .top_box .left_box img {
+          width: 430px;
+          height: 280px; }
