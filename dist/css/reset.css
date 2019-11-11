@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @charset "utf-8";
 /* CSS Document */
 body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select,figure,figcaption{
@@ -43,60 +42,12 @@ img{
 	visibility: hidden;
 	/*opacity: 0.5;*/
 }/*万能清除浮动工具*/
-=======
-@charset "utf-8";
-/* CSS Document */
-body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select,figure,figcaption{
-	margin:0;	/* 外边距清零 */
-	padding:0;	/* 内边距清零 */
-	font-size:14px;
-}
-h1,h2,h3,h4,h5,h6,b,strong{
-	font-weight:normal;			/* 清除文字加粗 */
-	font-size:100%;
-}
-i,em{
-	font-style:normal;			/* 清除倾斜 */
-}
-a{
-	color: #6c6c6c;
-	text-decoration:none;		/* 清除文字样式 */
-}
-li{
-	list-style:none;			/* 清除列表项目符号 */
-}
-input{
-	outline: none;
-}
-img{
-	vertical-align: top;
-}
-.fl{
-	float:left;
-}
-.fr{
-	float:right;
-}
-.clearfix{
-	*zoom:1;					/*万能清除浮动工具*/
-}
-.clearfix:after{
-	content: "123";
-	display: block;
-	height: 0;
-	clear: both;
-	visibility: hidden;
-	/*opacity: 0.5;*/
-}
+
 .container{
 	width:1180px;
 	margin:0 auto;
-	position:relative;
 }
-
 .containers{
 	width:1200px;
 	margin:0 auto;
 }
-
->>>>>>> e39e96b8591b85d749666806745602d7bac4c765

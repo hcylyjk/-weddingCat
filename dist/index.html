@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/iconfont.css">
     <link rel="stylesheet" href="css/mod_head.css">
+    <link rel="stylesheet" href="css/mod_rightFix.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/jquery-1.8.3.min.js"></script>
 </head>
@@ -82,8 +83,8 @@
             <!-- S= 搜索  -->
             <div style="background-color:#fff">
                 <div class="h_search">
-                    <div class="fl h_img_bg">
-                        <h1>
+                    <div class="fl h_img_bg clearfix">
+                      <h1>
                             <a href="index.html">
                                 <img src="img/index_img/ia_200000156.png" class="h_img">
                             </a>
@@ -124,7 +125,7 @@
             <!-- S= 导航栏  -->
             <div style="background-color:#fff">
                 <div class="container h_nav clearfix">
-                    <ul>
+                    <ul class="clearfix">
                         <li class="h_platform">
                             <i class="iconfont icon-zhuye-"></i>
                             <span>结婚服务平台</span>
@@ -195,31 +196,31 @@
     </div>
     <!-- s="carousel" -->
     <div class="h_carousel">
-            <ul class="h_slides">
-                <li class="h_one h_index">
-                    <a href="javascript:"></a>
-                </li>
-                <li class="h_two">
-                    <a href="javascript:"></a>
-                </li>
-                <li class="h_three">
-                    <a href="javascript:"></a>
-                </li>
-                <li class="h_four">
-                    <a href="javascript:"></a>
-                </li>
-                <li class="h_five">
-                    <a href="javascript:"></a>
-                </li>
-            </ul>
-            <ol class="h_ols">
-                <li class="h_active">1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-            </ol>
-        </div>
+        <ul class="h_slides">
+            <li class="h_one h_index">
+                <a href="javascript:"></a>
+            </li>
+            <li class="h_two">
+                <a href="javascript:"></a>
+            </li>
+            <li class="h_three">
+                <a href="javascript:"></a>
+            </li>
+            <li class="h_four">
+                <a href="javascript:"></a>
+            </li>
+            <li class="h_five">
+                <a href="javascript:"></a>
+            </li>
+        </ul>
+        <ol class="h_ols">
+            <li class="h_active">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ol>
+    </div>
     <!-- E="carousel" -->
 
     <!-- s="结婚流程" -->
@@ -291,7 +292,25 @@
 
     <!-- E="结婚流程" -->
 
+
+    <!-- S="婚纱摄影" -->
+    
+    <!-- E="婚纱摄影" -->
+
+    <!-- S="右边固定 -->
+    <div class="mod_right">
+        <script>
+            $('.mod_right').load('./html/mod_rightFix.html', function () {
+                $(".mod_kl").click(function () {
+                    //alert(123)
+                    $('html,body').animate({ scrollTop: '0' }, 'slow');
+                });
+            });
+        </script>
+    </div>
+    <!-- E="右边固定 -->
     <script src="js/swiper.min.js"></script>
+    <script src="js/mod_rightFix.js"></script>
     <script src="js/index.js"></script>
     <script>
 
