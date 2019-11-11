@@ -1,0 +1,114 @@
+.footer {
+  background-color: #323232; }
+  .footer .mod_first {
+    padding: 23px 0; }
+    .footer .mod_first ul {
+      border-bottom: 2px solid #444;
+      padding-bottom: 23px;
+      margin-bottom: 26px; }
+      .footer .mod_first ul li {
+        float: left;
+        padding: 0px 45px 0px 45px;
+        color: #EEEEEE;
+        border-right: 1px solid #444;
+        line-height: 44px;
+        font-size: 18px; }
+      .footer .mod_first ul .mod_line {
+        border: 0; }
+
+.mod_dl {
+  margin-top: 20px;
+  position: relative;
+  padding-bottom: 32px;
+  border-bottom: 2px solid #444; }
+  .mod_dl dl {
+    margin-right: 127px; }
+    .mod_dl dl dt {
+      color: #E3E3E3;
+      font-size: 16px;
+      padding-left: 30px;
+      margin-bottom: 14px; }
+    .mod_dl dl dd {
+      position: relative;
+      padding-left: 30px;
+      font-size: 14px;
+      margin-top: 7px; }
+      .mod_dl dl dd a {
+        color: #868686; }
+    .mod_dl dl .mod_color {
+      font-size: 21px;
+      color: #E3E3E3;
+      font-weight: 500; }
+  .mod_dl dl::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    width: 4px;
+    height: 19px;
+    background-color: #ff7385; }
+
+.mod_ewm {
+  display: none;
+  position: absolute;
+  top: -47px;
+  left: 99px;
+  width: 140px;
+  height: 140px;
+  background-color: #fff;
+  z-index: 666;
+  border-radius: 8px;
+  padding: 10px;
+  box-sizing: border-box; }
+  .mod_ewm a {
+    display: block;
+    width: 41px;
+    height: 41px; }
+  .mod_ewm img {
+    width: 120px;
+    height: 120px;
+    display: block; }
+  .mod_ewm span {
+    position: absolute;
+    left: -20px;
+    top: 56px;
+    width: 0;
+    border: 10px solid transparent;
+    border-right: 10px solid #fff; }
+
+.mod_move:hover .mod_ewm {
+  display: block; }
+
+.mod_dd:hover a {
+  color: #666; }
+
+.mod_two .mod_place .mod_hot {
+  color: #eee;
+  font-size: 15px; }
+
+.mod_two .mod_place a {
+  margin-right: 10px; }
+
+.mod_two .mod_lis {
+  margin: 10px 0 20px 0; }
+  .mod_two .mod_lis a {
+    margin-right: 4px;
+    font-size: 12px; }
+
+.mod_three {
+  padding-bottom: 12px; }
+  .mod_three h3 {
+    font-size: 37px;
+    color: #ff7385;
+    margin-right: 18px; }
+
+.mod_un {
+  margin: 6px 0 6px 0; }
+  .mod_un a {
+    padding: 0 8px; }
+  .mod_un span {
+    color: #444; }
+
+.mod_bot {
+  color: #4f4f4f;
+  font-size: 12px;
+  margin-left: 5px; }

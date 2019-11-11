@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/* 中式婚礼*/
+body{
+	overflow-x: hidden;
+}
+
+.r_content_top{
+	background: #f6f6f6;
+	overflow: hidden;
+	.show_img{
+		width: 1180px;
+		height: 100px;
+		margin: 25px auto 0;
+		img{
+			width: 1180px;
+			height: 100px;
+		}
+	}
+	.show_box{
+		width: 1180px;
+		height: 290px;
+		margin: 0 auto;
+		p{
+			line-height: 50px;
+			color: #808080;
+		}
+		.tab{
+			width: 1180px;
+			height: 240px;
+			border: 1px solid #E3E3E3;
+			.tab_nav{
+				height: 44px;
+				background: #f0f0f0;
+				ul{
+					display: flex;
+					li{
+						width: 236px;
+						line-height: 44px;
+						text-align: center;
+						position: relative;
+						.l{
+							position: absolute;
+							left: 0;
+							top: 0px;
+							width: 236px;
+							height: 5px;
+							background: #FF7385;
+							display: none;
+						}
+						&:after{
+							content: ' ';
+							position: absolute;
+							right: 0;
+							top: 5px;
+							width: 1px;
+							height: 35px;
+							background: #E3E3E3;
+						}
+						i{
+							margin-right: 10px;
+						}
+						a{
+							font-size: 16px;
+							color: #4d4b4b;
+						}
+					}
+				}
+			}
+			.tab_show{
+				width: 1180px;
+				height: 192px;
+			}
+		}
+	}
+}
