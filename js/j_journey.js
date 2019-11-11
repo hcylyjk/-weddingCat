@@ -1,3 +1,4 @@
 
 
-//轮播图
+ //城市客照
+console.log($('.j_cityBlist ul li'))

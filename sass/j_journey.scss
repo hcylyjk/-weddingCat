@@ -1,16 +1,25 @@
 @charset "UTF-8";
-//头部
-body{
-    background: #f5f5f5;
-}
-.j_header{
+//轮播图
+body,html{
     width: 100%;
-    height: 125px;
+    // overflow-: hidden;
 }
+
+
+
+
 // 轮播图
-.j_banner{
+.swiper-container{
     width: 100%;
     height: 420px;
+    position: relative;
+}
+.swiper-wrapper{
+    width: 100%;
+    img{
+        width: 100%;
+        height: 420px;
+    }
 }
 //为什么选择旅拍
 .j_container{
@@ -134,15 +143,15 @@ body{
     }
 
 // 吸顶
-.j_fixed_nav{
-width: 100%;
-height: 60px;  
-background: #2f2f2f;  
-position: fixed;
-top: 0;
-left: 0;
-  
-}
+// .j_fixed_nav{
+// width: 100%;
+// height: 60px;  
+// background: #2f2f2f;  
+// position: fixed;
+// top: 0;
+// left: 0;
+// display: none;
+// }
 .j_fixed_inner{
     width: 1180px;
     margin: 0 auto;
@@ -206,39 +215,41 @@ left: 0;
     height: 100%;
 }
 .j_cityBlist ul li a .j_info{
-    position: absolute;
-    top: 0;
+    background: -webkit-linear-gradient(rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.5) 100%);
     width: 100%;
     height: 100%;
-    background: -webkit-linear-gradient(rgba(0,0,0,0) 50%,rgba(0,0,0,0.5) 100%);
-    // text-align: center;
+    position: absolute;
     left: 0;
+    top: 0;
+    display: block;
+    text-align: center;
 }
+
 .j_cityBlist ul li a .j_info .j_name{
     color: #fff;
     font-size: 20px;
-    position: absolute;
     top: 80px;
-    left: 152px;
-    z-index: 1000;
-
-}
+    display: block;
+}   
 .j_info .j_before{
-    background: #999;
-    width: 182px;
-    height: 5px;
     position: absolute;
-    top: 110px;
-    left: 110px;
+    top: 6px;
+    left: 50%;
+    margin-left: -60px;
+    content: '';
+    display: inline-block;
+    width: 120px;
+    height: 2px;
+    border-top: solid 2px #999;
  
 }
 .j_info .j_num{
     padding-top: 14px;
     font-size: 14px;
-    position: absolute;
-    top: 110px;
-    left: 164px;
+    top: 112px;
     color: #fff;
+    transform: translate(0,122px);
+    display: block;    
 }
 
 
@@ -285,6 +296,11 @@ left: 0;
     height: 310px;
     margin-right: 20px;
     float: left;
+    -webkit-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+.j_month_list ul li:hover{
+    transform:translateY(-10px);
 }
 .j_month_list ul li a {
     display: block;
@@ -434,6 +450,11 @@ left: 0;
     width: 130px;
     height: 150px;
     margin: 0 7px;
+    -webkit-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+.j_city_items:hover{
+    transform:translateY(-20px);
 }
 .j_city_items a {
     width: 100%;
@@ -449,6 +470,15 @@ left: 0;
     line-height: 44px;
     color: #c5c5c5; 
     font-size: 20px;
+    position: relative;
+    text-align: center;
+}
+.j_city_items .j_c i{
+    position: absolute;
+    top: 4px;
+    left: -14px;
+    font-size: 32px;
+    // padding-top: 10px;
 }
 .j_city_items a h3{
     width: 100%;
@@ -464,6 +494,7 @@ left: 0;
     height: 100%;
     margin-left: 156px;
 }
+
 // 品牌中心
 .j_brand_center{
     width: 100%;
@@ -493,11 +524,14 @@ left: 0;
         margin-left: 20px;
         img{
             width: 100%;
-
+            -webkit-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
         }
     }
 }
-
+.j_brandcol img:hover{
+    transform: scale(1.05);
+}
 //客户评价
 .j_Testimonials{
     width: 100%;
