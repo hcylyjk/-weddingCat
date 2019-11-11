@@ -1,5 +1,6 @@
 .mod_right {
   position: fixed;
+  z-index: 9999;
   bottom: 87px;
   right: 10px; }
   .mod_right .mod_online {
