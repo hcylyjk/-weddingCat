@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/mod_head.css">
+    <link rel="stylesheet" href="../css/mod_rightFix.css">
+    <link rel="stylesheet" href="../css/mod_footer.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/c_happyevent.css">
+    <link rel="icon" href="../img/c_image/index/favicon.ico" type="image/x-icon">
+    <script src="../js/jquery-1.8.3.min.js"></script>
+
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header class="header">
+        <script>
+            $('.header').load('mod_head.html')
+        </script>
+    </header>
+
+    <div id="bigbg">
+        <div class="bigbg_inner">
+            <div class="smallnav">
+                <a href="javascript:">首页</a><span>></span>
+                <a href="javascript:">广州婚纱摄影</a><span>></span>
+                <a href="javascript:">主题 </a><span>></span>
+                <a href="javascript:">时尚中式</a>
+            </div>
+            <h2>时尚中式</h2>
+            <h3>中国风</h3>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 右边固定部分 -->
+    <div class="mod_right">
+        <script>
+            $('.mod_right').load('mod_rightFix.html');
+        </script>
+    </div>
+
+    <!-- 底部引用的-->
+    <div class="footer">
+        <script>
+            $('.footer').load('mod_footer.html');
+        </script>
+        <!-- $('.footer').load('mod_footer.html') -->
+    </div>
+    <script>
+
+        window.onload = function () {
+            $('.mod_hun p').text('婚礼服务')
+            $('.mod_hun span').text('WEDDING SERVICE')
+            $('.mod_bottom_right ul li:nth-of-type(2) a').addClass('mod_active');
+            $('.mod_bottom_right ul li:nth-of-type(2) i').addClass('mod_first');
+        }
+
+    </script>
+
+    <script src="../js/c_happyevent.js"></script>
+
+</body>
+
+</html>
