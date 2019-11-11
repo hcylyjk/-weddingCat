@@ -41,21 +41,23 @@ var l_download = document.querySelector('.l_banner-btn-download')
 var l_close = document.querySelector('.l_background-download-close');
 var l_btn = document.querySelector('#l_btn');
 
-var oL_btn = l_btn.getAttribute('id')
-console.log(oL_btn)
-// l_download.onclick = function (e) {
-//     var ev = e || window.event;
-//     l_qrWin.style.display = 'block';
-// };
-// l_close.onclick = function () {
-//     l_qrWin.style.display = 'none';
-// };
-// clearTimeout(item);
-// var item = setTimeout(function () {
-//         document.onclick = function () {
-//             l_qrWin.style.display = 'none';
-//         }
-// }, 2000);
+// var oL_btn = l_btn.getAttribute('class')
+// console.log(oL_btn)
+l_download.onclick = function (e) {
+    var ev = e || window.event;
+    l_qrWin.style.display = 'block';
+};
+l_close.onclick = function () {
+    l_qrWin.style.display = 'none';
+};
+
+var item = setTimeout(function () {
+        document.onclick = function () {
+            l_qrWin.style.display = 'none';
+            clearTimeout(item);
+        }
+}, 2000);
+
 
 
 
