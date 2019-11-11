@@ -23,7 +23,7 @@
                     line-height: 16px;
                     float: left;
                     position: relative;
-                    top: -2px;
+                    top: 2px;
                     .l_header-city{
                         float: left;
                         position: relative;
@@ -74,6 +74,7 @@
                 // header top-right
                 .l_header-top-right{
                     float: right;
+                    line-height: 30px;
                     .l_user-login{
                         display: inline-block;
                         .l_hlm-color{
@@ -174,7 +175,40 @@
                     }
                     .phone{
                         margin-right: 0;
+                        .l_xt-icon{
+                            position: relative;
+                            top: 2px;
+                            font-size: 14px;
+                            font-family: "Microsoft Yahei";
+                        }
+                        .l_header-tri-tel{
+                            color: #888;
+                            font-size: 14px;
+                            font-family: "Microsoft Yahei";
+                        }
                     }
+                }
+                .l_header-select-warn{
+                    position: absolute;
+                    top: 30px;
+                    right: 0;
+                    height: 36px;
+                    padding: 0 16px;
+                    line-height: 34px;
+                    background-color: #f3ffe6;
+                    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+                    border: solid 1px #eef5e6;
+                    color: #4d4b4b;
+                    font-size: 12px;
+                    display: none;
+                }
+                a, span, div {
+                    text-decoration: none;
+                    margin: 0;
+                    padding: 0;
+                    font-family: "Microsoft Yahei";
+                    font-size: 14px;
+                    color: #666666;
                 }
             }
         }

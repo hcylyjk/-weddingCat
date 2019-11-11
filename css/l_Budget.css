@@ -20,7 +20,7 @@
           line-height: 16px;
           float: left;
           position: relative;
-          top: -2px; }
+          top: 2px; }
           .l_header .l_header-wrapper .l_header-top .l_header-top-inner .l_header-top-left .l_header-city {
             float: left;
             position: relative;
@@ -60,7 +60,8 @@
               font-size: 9px;
               color: #F84B60; }
         .l_header .l_header-wrapper .l_header-top .l_header-top-inner .l_header-top-right {
-          float: right; }
+          float: right;
+          line-height: 30px; }
           .l_header .l_header-wrapper .l_header-top .l_header-top-inner .l_header-top-right .l_user-login {
             display: inline-block; }
             .l_header .l_header-wrapper .l_header-top .l_header-top-inner .l_header-top-right .l_user-login .l_hlm-color {
@@ -144,3 +145,32 @@
             display: inline-block; }
           .l_header .l_header-wrapper .l_header-top .l_header-top-inner .l_header-top-right .phone {
             margin-right: 0; }
+            .l_header .l_header-wrapper .l_header-top .l_header-top-inner .l_header-top-right .phone .l_xt-icon {
+              position: relative;
+              top: 2px;
+              font-size: 14px;
+              font-family: "Microsoft Yahei"; }
+            .l_header .l_header-wrapper .l_header-top .l_header-top-inner .l_header-top-right .phone .l_header-tri-tel {
+              color: #888;
+              font-size: 14px;
+              font-family: "Microsoft Yahei"; }
+        .l_header .l_header-wrapper .l_header-top .l_header-top-inner .l_header-select-warn {
+          position: absolute;
+          top: 30px;
+          right: 0;
+          height: 36px;
+          padding: 0 16px;
+          line-height: 34px;
+          background-color: #f3ffe6;
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+          border: solid 1px #eef5e6;
+          color: #4d4b4b;
+          font-size: 12px;
+          display: none; }
+        .l_header .l_header-wrapper .l_header-top .l_header-top-inner a, .l_header .l_header-wrapper .l_header-top .l_header-top-inner span, .l_header .l_header-wrapper .l_header-top .l_header-top-inner div {
+          text-decoration: none;
+          margin: 0;
+          padding: 0;
+          font-family: "Microsoft Yahei";
+          font-size: 14px;
+          color: #666666; }
