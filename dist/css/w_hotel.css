@@ -1,5 +1,8 @@
 body,html{
     width: 100%;
+    
+}
+body{
     overflow-x: hidden;
 }
 .banner{
@@ -31,7 +34,36 @@ body,html{
 .swiper_banner img{
     width: 100%;
 }
-
+.banner_frame{
+    height: 420px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.banner_frame_box{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 50;
+}
+.bfb_inner{
+    bottom: 0;
+    position: absolute;
+    height: 400px;
+    width: 360px;
+    background: black;
+    opacity: 0.8;
+    -webkit-opacity: 0.8;
+}
+.bfb_inner .cute_icon{
+    position: absolute;
+    left: 0;
+    top: -15px;
+    width: 95px;
+    height: 66px;
+    background: url('../img/w_image/index/ia_300000084.png') no-repeat;
+    z-index: 100;
+}
 
 #main{
     width: 100%;
@@ -77,6 +109,54 @@ body,html{
     height: 80px;
     background-color: #ff7385;
     border-radius: 3px;
+}
+.query_date .calendar_icon{
+    position: absolute;
+    top: 11px;
+    left: 11px;
+    width: 58px;
+    height: 58px;
+    background-image: url('../img/w_image/index/ia_300000096.png');
+    z-index: 10;
+}
+.query_date .date_title{
+    position: absolute;
+    bottom: 42px;
+    left: 75px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    z-index: 10;
+}
+.query_date .date_dec{
+    position: absolute;
+    bottom: 42px;
+    left: 138px;
+    color: #fff;
+    font-size: 10px;
+    z-index: 10;
+}
+.query_date .date_input_class{
+    position: absolute;
+    bottom: 11px;
+    left: 75px;
+    width: 144px;
+    height: 24px;
+    line-height: 24px;
+    font-family: "microsoft yahei", 微软雅黑;
+    font-size: 12px;
+    cursor: pointer;
+}
+#date_input {
+    cursor: pointer;
+    width: 137px;
+    border-radius: 3px;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    color: #A6A6A6;
+    text-indent: 7px;
+    background-position: 138px 4px;
 }
 .show_slide_pic{
     position: relative;
@@ -366,6 +446,80 @@ body,html{
     width: 870px;
     float: right;
 }
+
+.fnrc_title{
+    border-bottom: 1px solid #d3d3d3;
+    height: 40px;
+    position: relative;
+}
+.fnrc_title li{
+    color: #666;
+    float: left;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+.fnrc_title .nav_tab_on{
+    color: #ffffff;
+    background: #ff7385;
+}
+.hot_hotel_cotent{
+    margin-top: 25px;
+    border: 1px solid #d3d3d3;
+    position: relative;
+}
+.hot_hotel_cotent a:hover img{		
+    transform: scale(1.2,1.2);
+}
+.hot_hotel_cotent a img{
+    transition: all 0.5s;
+}
+.hot_hotel{
+    display: none;
+}
+.fast_nav_right_content .first_tab{
+    display: block;
+}
+.hot_hotel .first{
+    display: block;
+    width: 276px;
+    height: 183px;
+    overflow: hidden;
+}
+.hot_hotel .second{
+    display: block;
+    width: 571px;
+    height: 183px;
+    overflow: hidden;
+}
+.hot_hotel .hot_hotel_info{
+    height: 70px;
+    background: #ffffff;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+.hot_hotel_info .hot_hotel_info_content{
+    margin-left: 16px;
+    padding-top: 12px;
+    margin-right: 40px;
+    line-height: 22px;
+}
+.hot_hotel_info_content p{
+    height: 22px;
+    color: #666;
+}
+.hot_hotel_info_content .hotel_name{
+    color: #ff7385;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline-block;
+    width: 110px;
+}
 /* 流程图 */
 .advert_bg {
     height: 80px;
@@ -527,4 +681,146 @@ body,html{
     -webkit-line-clamp: 2;
     display: -webkit-box;
     -webkit-box-orient: vertical;
+}
+/* 酒店指南 */
+.hotel_guide{
+    margin-top: 15px;
+    color: #ff7385;
+    z-index: 100;
+    font-size: 16px;
+}
+.guide_list{
+    overflow: hidden;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.guide_list li{
+    width: 49%;
+    margin: 8px 0;
+    line-height: 1.57;
+    color: #2f2f2f;
+    word-wrap: break-word;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+.guide_list li a{
+    color: #2f2f2f;
+    font-size: 14px;
+    display: block;
+}
+.guide_list li .icon-gengduo{
+    vertical-align: middle;
+    font-size: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ff7385;
+    margin-right: 8px;
+}
+.guide_list li a:hover span{
+    text-decoration: underline;
+}
+/* 底部提交框 */
+.footer_frame{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background: #faf8f5;
+}
+.footer_frame_box{
+    height: 150px;
+    display: none;
+    z-index: 100;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+.ffb_inner{
+    height: 100%;
+    color: #fff;
+}
+.ffb_step{
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    padding: 18px 15px;
+    height: 100%;
+}
+.ffb_step .active{
+    background: #fff;
+    color: rgba(0, 0, 0, 0.7);
+}
+.ffb_step:after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 5%;
+    width: 1px;
+    height: 90%;
+    background: linear-gradient(to bottom, rgba(219,219,219,0) 0%, rgba(255,255,255,0.5) 33%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0.5) 69%, rgba(226,226,226,0) 100%);
+}
+.ffb_inner .ffb_step:nth-last-of-type(2):after{
+    width: 0;
+}
+.ffb_step1{
+    width: 32%;
+}
+.ffb_step2{
+    width: 17%;
+}
+.ffb_step4{
+    width: 18%;
+}
+.ffb_step h1{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.ffb_step ul li{
+    border: 1px solid #fff;
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+.ffb_step ul li:hover{
+    cursor: pointer;
+    background: #fff;
+    color: rgba(0, 0, 0, 0.7);
+}
+.ffb_sub_btn{
+    padding: 10px 20px;
+    background-color: #ff7385;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.ffb_step4 p{
+    font-size: 12px;
+    color: #fff;
+    margin-left: 25px;
+}
+.close_ffb_box{
+    float: left;
+    padding: 18px 0;
+}
+.close_ffb_box span{
+    display: block;
+    width: 44px;
+    height: 44px;
+    background: url('../img/w_image/index/ia_300000172.png') no-repeat;
+}
+/* 底部导航 */
+.footer .mod_lis ul li{
+    display: inline-block;
 }
