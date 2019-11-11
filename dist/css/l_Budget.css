@@ -91,7 +91,8 @@
               left: 50%;
               width: 122px;
               margin-left: -58px;
-              padding: 10px 10px 4px 4px; }
+              padding: 10px 10px 4px 4px;
+              display: none; }
               .l_header .l_header-wrapper .l_header-top .l_header-top-inner .l_header-top-right .l_header-btn .l_customer-center-wrap .l_customer-center-list {
                 position: relative;
                 width: 108px;
