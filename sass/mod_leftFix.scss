@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+.h_pic{
+    border-bottom:1px solid #e3e3e3;
+    h2{
+        color:#333;
+        font-size:24px;
+    }
+    .h_pic1{
+        margin-left:20px;
+        span{
+            display:inline-block;
+            color:#4d4b4b;
+            cursor:pointer;
+            text-align:center;
+            font-size:16px;
+        }
+        i{
+            display:inline-block;
+            margin:0 16px;
+            color:#c5c5c5;
+        }
+        .h_active1{
+            color:#ff7385;
+        }
+    }
+}
+.h_t1{
+    color:#666;
+    font-size:14px;
+}
+.h_t{
+    color:#ff7385;
+}
