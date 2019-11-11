@@ -1,3 +1,10 @@
+body {
+  background: #faf8f5;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: auto !important; }
+
 .l_header {
   position: relative;
   z-index: 5; }
@@ -216,7 +223,9 @@
             line-height: 20px;
             color: #2f2f2f;
             text-align: justify;
-            letter-spacing: 16px; }
+            letter-spacing: 16px;
+            margin: 0;
+            padding: 0; }
           .l_header .l_header-wrapper .l_header-page-title .l_header-logo .l_header-title-wrap .l_header-title-en {
             display: block;
             font-size: 14px;
@@ -282,14 +291,13 @@
               display: inline-block;
               vertical-align: middle; }
       .l_header .l_header-wrapper .l_header-page-title .l_header-nav-list {
-        margin-left: 20px;
         display: inline-block;
         height: 50px;
-        line-height: 46px;
+        line-height: 20px;
         color: #666; }
         .l_header .l_header-wrapper .l_header-page-title .l_header-nav-list .l_header-nav-item {
           float: left;
-          width: 110px;
+          width: 106px;
           height: 100%;
           color: #2F2F2F;
           font-size: 16px;
@@ -316,7 +324,6 @@ a, span, div {
 
 .l_nav-title {
   position: relative;
-  height: 50px;
   line-height: 50px;
   color: #808080;
   font-size: 14px;
@@ -325,7 +332,7 @@ a, span, div {
 .l_nav-title-center {
   position: relative;
   width: 1180px;
-  margin: auto;
+  margin: 50px auto 0;
   text-align: left; }
   .l_nav-title-center a, .l_nav-title-center h2, .l_nav-title-center h1 {
     display: inline;
@@ -333,7 +340,7 @@ a, span, div {
 
 .l_wedding_center_content {
   width: 1200px;
-  margin: 50px auto 0;
+  margin: 0 auto;
   border: 1px solid #fff;
   background: #ffffff;
   position: relative;
@@ -341,11 +348,16 @@ a, span, div {
   border-radius: 6px; }
   .l_wedding_center_content .l_first_pic_content {
     width: 127px;
-    height: 87px;
     margin: -74px auto 0;
     text-align: center; }
     .l_wedding_center_content .l_first_pic_content img {
-      margin: 20px auto 5px; }
+      margin: 20px auto 5px;
+      height: 65px;
+      width: 65px; }
+    .l_wedding_center_content .l_first_pic_content div {
+      display: block;
+      width: 127px;
+      height: 19px; }
   .l_wedding_center_content .l_tool_dec_content_title {
     width: 100%;
     height: 60px;
@@ -355,4 +367,163 @@ a, span, div {
     font-weight: bold;
     color: #5a5a5a; }
     .l_wedding_center_content .l_tool_dec_content_title .l_tool_dec_strong {
-      color: #ffcd4c; }
+      color: #ffcd4c;
+      font-size: 24px; }
+  .l_wedding_center_content .l_content_border {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    .l_wedding_center_content .l_content_border .l_budget_content {
+      height: 370px; }
+    .l_wedding_center_content .l_content_border .l_each_enregister_content {
+      width: 1095px;
+      padding-bottom: 35px;
+      margin: 0 auto; }
+      .l_wedding_center_content .l_content_border .l_each_enregister_content .l_input_area {
+        position: relative;
+        width: 100%;
+        height: 80px;
+        text-align: center;
+        margin-top: 30px; }
+        .l_wedding_center_content .l_content_border .l_each_enregister_content .l_input_area .l_input_group {
+          position: relative;
+          width: 220px;
+          height: 30px;
+          display: inline-block;
+          margin: 0 10px;
+          border-radius: 4px;
+          border: 1px solid #e5e5e5; }
+          .l_wedding_center_content .l_content_border .l_each_enregister_content .l_input_area .l_input_group label {
+            position: absolute;
+            left: 0;
+            width: 80px;
+            height: 100%;
+            border-right: 1px solid #e5e5e5;
+            text-align: center;
+            font-size: 14px;
+            line-height: 30px;
+            color: #ff6699; }
+          .l_wedding_center_content .l_content_border .l_each_enregister_content .l_input_area .l_input_group input {
+            position: absolute;
+            left: 90px;
+            top: 3px;
+            width: 100px;
+            height: 24px;
+            border: none;
+            text-align: left;
+            font-size: 16px;
+            line-height: 24px;
+            color: #ff6699; }
+          .l_wedding_center_content .l_content_border .l_each_enregister_content .l_input_area .l_input_group span {
+            position: absolute;
+            right: 0;
+            width: 30px;
+            height: 100%;
+            text-align: center;
+            font-size: 14px;
+            line-height: 30px;
+            color: #ff6699; }
+        .l_wedding_center_content .l_content_border .l_each_enregister_content .l_input_area .l_check_group {
+          position: relative;
+          top: 10px;
+          left: 309px;
+          width: 300px;
+          text-align: left; }
+          .l_wedding_center_content .l_content_border .l_each_enregister_content .l_input_area .l_check_group input {
+            width: 0;
+            height: 0; }
+          .l_wedding_center_content .l_content_border .l_each_enregister_content .l_input_area .l_check_group label {
+            position: absolute;
+            font-size: 12px;
+            top: 1px;
+            color: #a3a3a3; }
+        .l_wedding_center_content .l_content_border .l_each_enregister_content .l_input_area .l_budget_submit {
+          position: absolute;
+          top: 45px;
+          left: 700px;
+          width: 80px;
+          height: 20px;
+          background-color: #ff6699;
+          border-radius: 3px;
+          color: white;
+          border: none; }
+      .l_wedding_center_content .l_content_border .l_each_enregister_content .l_result_title {
+        position: relative;
+        height: 35px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 10px; }
+      .l_wedding_center_content .l_content_border .l_each_enregister_content .l_result_table {
+        width: 100%;
+        border-top: 1px dashed #e3e3e3;
+        border-left: 1px dashed #e3e3e3; }
+        .l_wedding_center_content .l_content_border .l_each_enregister_content .l_result_table tbody {
+          display: table-row-group;
+          vertical-align: middle;
+          border-color: inherit; }
+          .l_wedding_center_content .l_content_border .l_each_enregister_content .l_result_table tbody tr {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit; }
+            .l_wedding_center_content .l_content_border .l_each_enregister_content .l_result_table tbody tr td {
+              height: 40px;
+              text-align: right;
+              padding-right: 10px;
+              border-right: 1px dashed #e3e3e3;
+              border-bottom: 1px dashed #e3e3e3; }
+            .l_wedding_center_content .l_content_border .l_each_enregister_content .l_result_table tbody tr .l_result_tit {
+              width: 150px;
+              text-align: center;
+              padding: 0; }
+      .l_wedding_center_content .l_content_border .l_each_enregister_content .l_tip {
+        position: relative;
+        top: 10px; }
+        .l_wedding_center_content .l_content_border .l_each_enregister_content .l_tip .l_tip_tit {
+          position: absolute;
+          top: -3px;
+          font-size: 40px;
+          font-weight: bold;
+          color: #ff6699; }
+        .l_wedding_center_content .l_content_border .l_each_enregister_content .l_tip .l_tip_budget {
+          position: relative;
+          left: 110px;
+          color: #999; }
+        .l_wedding_center_content .l_content_border .l_each_enregister_content .l_tip .l_tip_groupbuy {
+          position: relative;
+          left: 110px;
+          color: #999; }
+        .l_wedding_center_content .l_content_border .l_each_enregister_content .l_tip .l_tip_groupbuy {
+          position: relative;
+          left: 110px;
+          color: #999; }
+
+.l_other_tool_tit {
+  height: 30px;
+  width: 1200px;
+  margin: 10px auto;
+  line-height: 30px;
+  text-align: left;
+  position: relative; }
+  .l_other_tool_tit .l_other_tool_de {
+    position: absolute;
+    left: 0; }
+
+.l_tool_pic_content {
+  height: 180px;
+  width: 1200px;
+  margin: 0 auto 30px;
+  padding: 32px;
+  background: white;
+  text-align: center;
+  box-sizing: border-box; }
+  .l_tool_pic_content .l_each_tool_pic {
+    float: left;
+    width: 128px;
+    height: 125px;
+    margin-left: 75px; }
+    .l_tool_pic_content .l_each_tool_pic img {
+      margin: 10px auto; }
+    .l_tool_pic_content .l_each_tool_pic .l_each_tool_pic_tit {
+      width: 100%;
+      text-align: center;
+      font-size: 16px; }
