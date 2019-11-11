@@ -3,7 +3,9 @@
 //@desc '公用头部样式'
 //@autor  'hcy'
 //@date  '2019-11-8'
-
+.h_bo{
+    background-color:#f6f6f6;
+}
 .h_search{
     position: relative;
     width:1180px;
@@ -211,8 +213,8 @@
     height: 193px;
 }
 .h_nav{
+    position: relative;
     .h_li{
-        position: relative;
         z-index:300;
         li{
             float:left;
@@ -233,24 +235,197 @@
     position: absolute;
     top:40px;
     left:0;
-    padding:15px 15px;
-    background-color:#15100d;
+    background-color:rgba(21,16,13,0.8);
     width:220px;
     height:420px;
     color:#fff;
     z-index:666;
     box-sizing: border-box;
+    dl{
+        position: relative;
+        z-index:666;
+       
+        dt{
+            padding:15px 15px;
+            width: 191px;
+            height: 54px;
+            a{
+                display:block;
+                color:#fff;
+                text-align:left;
+                margin:0 5px;
+                padding:0;
+                border-bottom:1px solid #ccc;
+                padding: 0 0 16px 0;
+                h4{
+                    margin-bottom: 12px;
+                    margin-left: 4px;
+                }
+                span{
+                    padding:0 20px 0 4px;
+                    font-size:12px;
+                    margin-bottom:2px;
+                    display:inline-block;
+                }
+                .h_native{
+                    padding:0;
+                }
+            }
+        }
+    }
 }
 .h_move:hover .h_erw{
-    display:block !important;
+    display:block;
 }
 .h_carousel{
     position: relative;
     z-index:300;
+    height:420px;
+    overflow:hidden;
     .h_slides{
         li{
-            position:relative;
+            position:absolute;
+            // background:url(../img/index_img/ia_200000285.gif) no-repeat;
+            height: 420px;
+            width:100%;
+        }
+       
+        .h_one{
+            background:url(../img/index_img/ia_200000158.jpg) no-repeat;
+            background-position: center;
+            z-index:301;
+        }
+        .h_two{
+            background:url(../img/index_img/ia_200000159.jpg) no-repeat;
+            z-index:301;
+            background-position: center;
+        }
+        .h_three{
+            background:url(../img/index_img/ia_200000160.jpg) no-repeat;
+            z-index:301;
+            background-position: center;
+        }
+        .h_four{
+            background:url(../img/index_img/ia_200000161.jpg) no-repeat;
+            z-index:301;
+            background-position: center;
+        }
+        .h_five{
+            background:url(../img/index_img/ia_200000162.jpg) no-repeat;
+            z-index:301;
+            background-position: center;
+        }
+        .h_index{
+            z-index:302;
+        }
+    }
+    ol{
+        position:absolute;
+        bottom:10px;
+        right:69px;
+        z-index:302;
+        li{
+            float:left;
+            margin:0 10px;
+            width:45px;
+            height:31px;
+            color:#fff;
+            background:rgba(0,0,0,0.4);
+            text-align:center;
+            line-height:31px;
+        }
+        .h_active{
+            background-color:rgba(255,115,113,0.4);
         }
     }
 }
+.h_op{
+    opacity:1 !important;
+    transition:opacity 10s;
+}
 
+h4:hover{
+    color:#ff7385;
+}
+span:hover{
+    color:#ff7385;
+}
+
+
+.h_question{
+    margin-top:28px;
+    text-align:center;
+    .h_liu{
+        width:210px;
+        height:110px;
+        background-color:#fff;
+        position:relative;
+        margin-right:18px;
+        border-radius:4px;
+        p{
+            font-size:28px;
+            color:#4d4b4b;
+            padding: 15px 2px 2px 2px;
+            margin-bottom: 7px;
+        }
+        a{
+            display:inline-block;
+            width:110px;
+            height:25px;
+            border:1px solid #ff7385;
+            border-radius:4px;
+            line-height:25px;
+            color:#ff7385;
+        }
+        .h_btn:hover{
+            background-color:#ff7385;
+            color:#fff;
+        }
+        span{
+            display:block;
+            position: absolute;
+            top:43px;
+            left:210px;
+            border: 9px solid transparent;
+            border-left: 9px solid #fff;
+        }
+    }
+    li{
+        position:relative;
+        float:left;
+        margin-left:9px;
+        height:110px;
+        width:110px;
+        background-color:#fff;
+        box-sizing:border-box;
+        padding-top:20px;
+        border-radius:4px;
+        a{
+            img{
+            width:44px;
+            height:44px;
+          
+           
+            }
+            p{
+                
+                font-size:16px;
+                margin-top:10px;
+            }
+        }
+    }
+
+    li:hover{
+        background-color:#ff7385;
+    }
+    li:hover p{
+        color:#fff;
+    }
+    li:hover .h_btn_hi{
+        display:none;
+    }
+}
+
+.h_img{
+    display:none;
+}
