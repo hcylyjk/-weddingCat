@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-#headnav {width:100%;background:#fff;border-top:1px solid #eee;border-bottom:1px solid #666;}
+#headnav {width:100%;background:#fff;border-top:1px solid #eee;border-bottom:1px solid #666;height:80px;}
 #headnav .headnav_inner{width:1180px;height:80px;background:#fff;margin:0 auto;}
 #headnav .headnav_inner .headnavleft{float:left;}
 #headnav .headnav_inner .headnavleft ul li{float:left;line-height:80px;}
