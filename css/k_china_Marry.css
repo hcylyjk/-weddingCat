@@ -32,7 +32,29 @@ body {
           .r_content_top .show_box .tab .tab_nav ul li {
             width: 236px;
             line-height: 44px;
-            text-align: center; }
+            text-align: center;
+            position: relative; }
+            .r_content_top .show_box .tab .tab_nav ul li .l {
+              position: absolute;
+              left: 0;
+              top: 0px;
+              width: 236px;
+              height: 5px;
+              background: #FF7385;
+              display: none; }
+            .r_content_top .show_box .tab .tab_nav ul li:after {
+              content: ' ';
+              position: absolute;
+              right: 0;
+              top: 5px;
+              width: 1px;
+              height: 35px;
+              background: #E3E3E3; }
+            .r_content_top .show_box .tab .tab_nav ul li i {
+              margin-right: 10px; }
             .r_content_top .show_box .tab .tab_nav ul li a {
               font-size: 16px;
               color: #4d4b4b; }
+      .r_content_top .show_box .tab .tab_show {
+        width: 1180px;
+        height: 192px; }
