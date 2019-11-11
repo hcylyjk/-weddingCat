@@ -37,14 +37,54 @@
 #main .main_inner .sidenav .topside {width:100%;height:84px;background:#545350;}
 #main .main_inner .sidenav .topside img{width:50px;height:50px;margin-top:15px;margin-left:10px;}
 #main .main_inner .sidenav .topside span{color:#fff;font-size:22px;line-height:84px;margin-left:10px;}
+#main .main_inner .sidenav .list {width:100%;height:252px;color:#fff; position: relative;background:rgba(0,0,0,.6);}
+#main .main_inner .sidenav .list>li {width:100%;height:84px;border-bottom:1px solid rgb(182, 181, 181);padding:0 15px;box-sizing: border-box;padding-top:15PX;box-sizing: border-box;position: relative;}
+#main .main_inner .sidenav .list>li>span{display:block;font-size:14px;}
+#main .main_inner .sidenav .list>li>div{display:block;font-size:18px;margin-top:5px;font-weight: bold;}
+#main .main_inner .sidenav .list>li>.iconfont{position: absolute;left:220px;top:30PX;font-size:16px;color:#fff;}
 
+#main .main_inner .sidenav .list .listbox {width:0;height:410px;background:#fff;position: absolute;left:280px;top:-84px;z-index: 99999;overflow: hidden;}
+#main .main_inner .sidenav .list .listbox .listbox_inner{width:660px;height:410px;position: relative;}
+#main .main_inner .sidenav .list .listbox  .listboxcon .close{margin-left:590px;width:20px;height:20px;cursor: pointer;}
+#main .main_inner .sidenav .list .listbox  .listboxcon .close img{width:100%;height:100%;}
 
-#main .main_inner .sidenav .list {width:100%;height:252px;color:#fff;}
-#main .main_inner .sidenav .list li {width:100%;height:84px;border-bottom:1px solid rgb(182, 181, 181);padding:0 15px;box-sizing: border-box;padding-top:15PX;box-sizing: border-box;position: relative;border-left:4px solid transparent;}
-#main .main_inner .sidenav .list li:hover {border-left:4px solid #FF7385;background:#fff;color:#000;}
-#main .main_inner .sidenav .list li span{display:block;font-size:14px;}
-#main .main_inner .sidenav .list li div{display:block;font-size:18px;margin-top:5px;font-weight: bold;}
-#main .main_inner .sidenav .list li .iconfont{position: absolute;left:220px;top:30PX;font-size:16px;color:#fff;}
+#main .main_inner .sidenav .list .listbox  .listboxcon h3 {font-size:26px;color:#4D4B4B;display:block;margin:12px 0 35px 45px;}
+#main .main_inner .sidenav .list .listbox  .listboxcon h3 span{color:#FF7385;}
+#main .main_inner .sidenav .list .listbox  .listboxcon .hobbychoose {width:100%;height:200px; display:flex;justify-content: space-between;margin-left:25px;}
+#main .main_inner .sidenav .list .listbox  .listboxcon .hobbychoose .hobbychoosefirst{width:180px;height:200px;box-sizing: border-box;border:1px solid #E6E6E6;text-align: center;color:#666;background:#FAFAFA;margin-left:20px;font-size:16px;position: relative;}
+#main .main_inner .sidenav .list .listbox  .listboxcon .hobbychoose .hobbychoosefirst>span:nth-of-type(1){display:block;font-size:20px;color:#4D4B4B;margin:10px 0;}
+#main .main_inner .sidenav .list .listbox  .listboxcon .hobbychoose .hobbychoosefirst>span:nth-of-type(2){display:block;font-size:26px;color:#2F2F2F;margin:25px 0;font-weight: bold;}
+#main .main_inner .sidenav .list .listbox  .listboxcon .hobbychoose .hobbychoosefirst .prev{position: absolute;left:10px;top:70px;cursor: pointer;}
+#main .main_inner .sidenav .list .listbox  .listboxcon .hobbychoose .hobbychoosefirst .next{position: absolute;left:148px;top:68px;cursor: pointer;}
+#main .main_inner .sidenav .list .listbox  .listboxcon .hobbychoose .hobbychoosefirst .prev1{position: absolute;left:10px;top:70px;cursor: pointer;}
+#main .main_inner .sidenav .list .listbox  .listboxcon .hobbychoose .hobbychoosefirst .next1{position: absolute;left:148px;top:68px;cursor: pointer;}
+#main .main_inner .sidenav .list .listbox  .listboxcon .hobbychoose .hobbychoosefirst .time_inner{width:100%;height:90px;margin-top:25px;line-height:30px;position: relative;left:8px;}
+#main .main_inner .sidenav .list .listbox  .listboxcon .hobbychoose .hobbychoosefirst .time_inner .timetop{width:100%;height:30px;display:flex;color:#000;font-weight: bold;justify-content: space-around;margin-bottom:15px;}
+#main .main_inner .sidenav .list .listbox  .listboxcon .hobbychoose .hobbychoosefirst .time_inner .timetop .timetopbox{width:90px;height:35px;display:flex;border:1px solid #E6E6E6;justify-content: space-around;}
+#main .main_inner .sidenav .list .listbox  .listboxcon .hobbychoose .hobbychoosefirst .time_inner .timetop .timetopbox>span:nth-of-type(1){width:15px;height:35px;display:block;font-size:12px;line-height: 35px;border-right:1px solid #E6E6E6;cursor: pointer;}
+#main .main_inner .sidenav .list .listbox  .listboxcon .hobbychoose .hobbychoosefirst .time_inner .timetop .timetopbox>span:nth-of-type(2){width:35px;height:35px;display:block;font-size:10px;line-height: 35px;}
+#main .main_inner .sidenav .list .listbox  .listboxcon .hobbychoose .hobbychoosefirst .time_inner .timetop .timetopbox>span:nth-of-type(3){width:15px;height:35px;display:block;font-size:12px;line-height: 35px;border-left:1px solid #E6E6E6;cursor: pointer;}
+#main .main_inner .sidenav .list .listbox  .listboxcon .hobbychoose .hobbychoosefirst .time_inner .timebottom{width:100%;height:30px;display:flex;color:#000;font-weight: bold;justify-content: space-around;}
+#main .main_inner .sidenav .list .listbox  .listboxcon .hobbychoose .hobbychoosefirst .time_inner .timebottom .timebottombox{width:90px;height:35px;display:flex;border:1px solid #E6E6E6;justify-content: space-around;}
+#main .main_inner .sidenav .list .listbox  .listboxcon .hobbychoose .hobbychoosefirst .time_inner .timebottom .timebottombox>span:nth-of-type(1){width:15px;height:35px;display:block;font-size:12px;line-height: 35px;border-right:1px solid #E6E6E6;cursor: pointer;}
+#main .main_inner .sidenav .list .listbox  .listboxcon .hobbychoose .hobbychoosefirst .time_inner .timebottom .timebottombox>span:nth-of-type(2){width:35px;height:35px;display:block;font-size:10px;line-height: 35px;}
+#main .main_inner .sidenav .list .listbox  .listboxcon .hobbychoose .hobbychoosefirst .time_inner .timebottom .timebottombox>span:nth-of-type(3){width:20px;height:35px;display:block;font-size:12px;line-height: 35px;border-left:1px solid #E6E6E6;cursor: pointer;}
+#main .main_inner .sidenav .list .listbox  .listboxcon {position: relative;position: absolute;left:0;top:0;}
+#main .main_inner .sidenav .list .listbox  .listboxcon>p {position: absolute;left:25px;top:335px;color:#666;font-size:14ppx;cursor: pointer;}
+#main .main_inner .sidenav .list .listbox  .listboxcon>p:hover {color:#FF7385}
+#main .main_inner .sidenav .list .listbox  .listboxcon .nextstep{position: absolute;left:485px;top:325px;width:120px;height:40px;background:#FF7385;color:#fff;font-size:16px;text-align: center;line-height:40px;border-radius: 6px;cursor: pointer;}
+#main .main_inner .sidenav .list .listbox  .listboxcon .nextstep:hover {background:#FC5066;}
+#main .main_inner .sidenav .list .listbox  .listboxcon .liststepstyle {width:590px;height:260px;margin-top:-15px;}
+#main .main_inner .sidenav .list .listbox  .listboxcon .liststepstyle>ol {width:80px;height:260px;float: left;margin-left:20px;}
+#main .main_inner .sidenav .list .listbox  .listboxcon .liststepstyle>ol>li{width:80px;height:30px;color:#000;font-size:18px;background:#fff;}
+#main .main_inner .sidenav .list .listbox  .listboxcon .liststepstyle>ol>li:nth-of-type(2){margin-top:20px;}
+#main .main_inner .sidenav .list .listbox  .listboxcon .liststepstyle>ol>li:nth-of-type(3){margin-top:50px;}
+#main .main_inner .sidenav .list .listbox  .listboxcon .liststepstyle>ul {width:490px;height:260px;float: right;}
+#main .main_inner .sidenav .list .listbox  .listboxcon .liststepstyle>ul>li {width:490px;font-size:16px;}
+#main .main_inner .sidenav .list .listbox  .listboxcon .liststepstyle>ul>li a{display:inline-block;padding:0 10px;border:1px solid #666;margin-right:8px;border-radius: 4px;cursor: pointer;margin-bottom:8px;}
+#main .main_inner .sidenav .list .listbox  .listboxcon .liststepstyle>ul>li a:hover{color:#FF7385;border:1px solid #FF7385;}
+#main .main_inner .sidenav .list .listbox  .listboxcon .liststepstyle>ul>li:nth-of-type(2) {width:490px;margin-top:20px;}
+#main .main_inner .sidenav .list .listbox  .listboxcon .liststepstyle>ul>li:nth-of-type(3) {width:490px;margin-top:15px;}
 
 #main .main_inner .sidenav .bomside {width:100%;height:84px;}
 #main .main_inner .sidenav .bomside .have{width:240px;height:40px;background:#FF7385;margin:5px auto 0;border-radius: 4px;line-height:40px;text-align: center;font-size:18px;color:#fff;cursor: pointer;font-weight: bold;}
@@ -127,7 +167,8 @@
 #main .photography .photography_inner .information .informationcon .informationconleft h2{font-size:30px;color:#fff;}
 #main .photography .photography_inner .information .informationcon .informationconleft strong{font-size:18px;color:#fff;}
 #main .photography .photography_inner .information .informationcon .informationconleft p{font-size:14px;color:#fff;display:block;width:200px;margin-top:25px;line-height:25px;}
-#main .photography .photography_inner .information .informationcon .informationconleft span{font-size:14px;color:#fff;display:block;width:200px;margin-top:25px;}
+#main .photography .photography_inner .information .informationcon .informationconleft span{font-size:14px;color:#fff;display:block;width:200px;margin-top:25px;cursor: pointer;}
+#main .photography .photography_inner .information .informationcon .informationconleft span:hover{color:#FF7385;}
 
 #main .photography .photography_inner .information .informationcon .list{float: left;width:960px;height:260px;}
 #main .photography .photography_inner .information .informationcon .list li{float: left;width:300px;height:220px;}
@@ -186,33 +227,64 @@
 #main .evaluate .evaluate_inner .prev {position: absolute;left:-45px;top:230px;display:none;cursor: pointer;}
 #main .evaluate .evaluate_inner .next {position: absolute;left:1180px;top:230px;cursor: pointer;}
 
-
- 
-
- 
+#main .experience{width:100%;background:#fff;}
+#main .experience .experience_inner{width:1180px;height:520px;background:#fff;margin:0 auto;}
+#main .experience .experience_inner .entertop strong{font-size:30px;;line-height:70px;color:#666;}
+#main .experience .experience_inner .entertop .direct{display:inline-block;font-size:8px;color:#666;position: relative;top:3px;}
+#main .experience .experience_inner .entertop {position: relative;margin-top:10px;}
+#main .experience .experience_inner .somanymassage {position: absolute;left:750px;top:30px;color:#666;font-size:22px;}
+#main .experience .experience_inner .somanymassage span{margin:0 10px;}
+#main .experience .experience_inner .somanymassage span:hover{color:#FF7385;cursor: pointer;}
                                                     
-                                                
- 
-
+#main .experience .experience_inner .experiencemassage {width:100%;margin-top:20px;height:380px;}                                         
+#main .experience .experience_inner .experiencemassage .experiencemassageleft {float: left;width:660px;height:380px;margin-right:20px;}                                         
+#main .experience .experience_inner .experiencemassage .experiencemassageleft img{width:660px;height:380px;}                                         
+#main .experience .experience_inner .experiencemassage .experiencemassageright {float: right;width:500px;height:380px;}                                         
+#main .experience .experience_inner .experiencemassage .experiencemassageright h2{display: block;margin-top:20px;font-size:28px;color:#2F2F2F;font-weight: bold;}                                         
+#main .experience .experience_inner .experiencemassage .experiencemassageright>span{display: block;margin-top:5px;color:#666;}                                         
+#main .experience .experience_inner .experiencemassage .experiencemassageright>p{display: block;margin:25px 0;color:#000;font-weight: bold;}                                         
+#main .experience .experience_inner .experiencemassage .experiencemassageright .masstime{color:#666;font-weight: bold;}                                         
+#main .experience .experience_inner .experiencemassage .experiencemassageright .masstime>span{color:#000;font-weight: bold;}                                         
                                                     
-                                                
-
+#main .szwedding{width:100%;background:#F2F2F2}     
+#main .szwedding .szwedding_inner{width:1180px;height:560px;margin:0 auto;background:#F2F2F2}     
+#main .szwedding .szwedding_inner .entertop strong{font-size:30px;;line-height:70px;color:#666;}
+#main .szwedding .szwedding_inner .entertop .direct{display:inline-block;font-size:8px;color:#666;position: relative;top:3px;}
+#main .szwedding .szwedding_inner .entertop {position: relative;margin-top:10px;}
+#main .szwedding .szwedding_inner .somanymassage {position: absolute;left:1080px;top:30px;color:#666;font-size:16px;}
+#main .szwedding .szwedding_inner .somanymassage:hover {color:#FF7385;cursor: pointer;}
                                                     
+#main .szwedding .szwedding_inner .szweddingmassage {width:100%;height:440px;display:flex;justify-content: space-between;}                                      
+#main .szwedding .szwedding_inner .szweddingmassage .szweddingmassagechoose{width:580px;height:440px;}
+#main .szwedding .szwedding_inner .szweddingmassage .szweddingmassagechoose .showimg{width:580px;height:180px; position: relative;overflow: hidden;cursor: pointer;}
+#main .szwedding .szwedding_inner .szweddingmassage .szweddingmassagechoose .showimg:hover img{transform: scale(1.05);transition: .5s;}
+#main .szwedding .szwedding_inner .szweddingmassage .szweddingmassagechoose .showimg img{width:580px;height:180px;}
+#main .szwedding .szwedding_inner .szweddingmassage .szweddingmassagechoose .showimg .contentinline{position: absolute;left:20px;top:120px;z-index: 666;}
+#main .szwedding .szwedding_inner .szweddingmassage .szweddingmassagechoose .showimg .contentinline p{font-size:16px;color:#fff;font-weight: bold;}
+#main .szwedding .szwedding_inner .szweddingmassage .szweddingmassagechoose .showimg .contentinline span{font-size:14px;color:#fff;}
+
+#main .szwedding .szwedding_inner .szweddingmassage .szweddingmassagechoose ul{width:580px;height:260px;margin-top:10px;}
+#main .szwedding .szwedding_inner .szweddingmassage .szweddingmassagechoose ul li{width:580px;height:50px;text-indent: 2em;position: relative;}
+#main .szwedding .szwedding_inner .szweddingmassage .szweddingmassagechoose ul li a {font-size:18px;color:#666;line-height:52px;}
+#main .szwedding .szwedding_inner .szweddingmassage .szweddingmassagechoose ul li a:hover {color:#FF7385}
+
+#main .szwedding .szwedding_inner .szweddingmassage .szweddingmassagechoose ul li:after{content:' ';width:10px;height:12px;background:url('../img/c_image/index/list.jpg');position: absolute;left:0;top:21px;}
                                                 
+#main .weedingask {width:100%;background:#fff;}
+#main .weedingask .weedingask_inner{width:1180px;background:#fff;height:470px;margin:0 auto;}
+#main .weedingask .weedingask_inner .entertop strong{font-size:30px;;line-height:70px;color:#666;}
+#main .weedingask .weedingask_inner .entertop .direct{display:inline-block;font-size:8px;color:#666;position: relative;top:3px;}
+#main .weedingask .weedingask_inner .entertop {position: relative;margin-top:10px;}
+#main .weedingask .weedingask_inner .somanymassage {position: absolute;left:1080px;top:30px;color:#666;font-size:16px;}
+#main .weedingask .weedingask_inner .somanymassage:hover {color:#FF7385;cursor: pointer;}
 
+#main .weedingask .weedingask_inner .massageweedingspan {width:100%;height:270px;margin-top:30px;display: flex;justify-content: space-between;}
+#main .weedingask .weedingask_inner .massageweedingspan ul{width:580px;height:270px;}
+#main .weedingask .weedingask_inner .massageweedingspan ul li{width:580px;height:50px;text-indent: 2em;position: relative;}
+#main .weedingask .weedingask_inner .massageweedingspan ul li a {font-size:18px;color:#666;line-height:52px;}
+#main .weedingask .weedingask_inner .massageweedingspan ul li a:hover {color:#FF7385}
 
- 
-                                                    
-                                                
-
- 
-
-                                                    
-                                                
-
-
-
-
+#main .weedingask .weedingask_inner .massageweedingspan ul li:after{content:' ';width:10px;height:12px;background:url('../img/c_image/index/list.jpg');position: absolute;left:0;top:21px;}
                                                     
                                                 
 
