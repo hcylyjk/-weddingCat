@@ -21,7 +21,8 @@ body {
       color: #808080; }
     .r_content_top .show_box .tab {
       width: 1180px;
-      border: 1px solid #E3E3E3; }
+      border: 1px solid #E3E3E3;
+      margin-bottom: 35px; }
       .r_content_top .show_box .tab .tab_nav {
         height: 44px;
         background: #f0f0f0; }
@@ -57,7 +58,8 @@ body {
         width: 1180px;
         background: #ffffff; }
         .r_content_top .show_box .tab .tab_show .new {
-          width: 1180px; }
+          width: 1180px;
+          display: none; }
           .r_content_top .show_box .tab .tab_show .new .news {
             width: 1180px;
             height: 64px;
@@ -71,10 +73,9 @@ body {
               .r_content_top .show_box .tab .tab_show .new .news .left_nav span {
                 width: 70px;
                 height: 28px;
-                background: #FF7385;
                 padding: 5px 20px;
                 text-align: center;
-                color: #ffffff;
+                color: #666464;
                 border-radius: 5px; }
             .r_content_top .show_box .tab .tab_show .new .news ul {
               float: left;
@@ -115,3 +116,28 @@ body {
 .rr_color {
   background: #FF7385;
   border-radius: 5px; }
+
+.r_show {
+  width: 1180px;
+  margin: 15px auto; }
+  .r_show .r_item {
+    float: left; }
+    .r_show .r_item ul {
+      height: 34px; }
+      .r_show .r_item ul li {
+        float: left;
+        height: 34px;
+        width: 84px;
+        border: 1px solid #808080;
+        border-radius: 2px;
+        margin-right: 10px;
+        text-align: center; }
+        .r_show .r_item ul li a {
+          font-size: 16px; }
+          .r_show .r_item ul li a i {
+            line-height: 34px;
+            margin-right: 5px; }
+  .r_show .r_right_text {
+    float: right; }
+    .r_show .r_right_text span {
+      margin-right: 20px; }
