@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+
+#bigbg {width:100%;height:320px;background:url('../img/c_image/happyevent/bigbg.jpg')}
+#bigbg .bigbg_inner{width:1180px;height:320px;margin:0 auto;}
+#bigbg .bigbg_inner .smallnav span{color:#666;}
+#bigbg .bigbg_inner .smallnav a:hover{color:orangered;}
+#bigbg .bigbg_inner .smallnav {line-height: 50px;;}
+#bigbg .bigbg_inner h2{display:block;font-size:64px;font-weight: bold;color:#fff;text-align: center;margin-top:80px;}
+#bigbg .bigbg_inner h3{display:block;font-size:30px;color:#fff;text-align: center;margin-top:20px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
