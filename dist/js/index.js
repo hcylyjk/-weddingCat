@@ -117,69 +117,71 @@ $('.h_pic1 span').on('mouseenter', function () {
 });
 
 //婚纱摄影轮播
-let h_second = 0;
-
-let obj2 = {
-    do1: document.querySelectorAll('.h_slides2 li'),
-    do2: document.querySelectorAll('.h_ols2 li'),
-    do3: document.querySelector('.h_leftBtn'),
-    do4: document.querySelector('.h_rightBtn'),
-    do5: document.querySelectorAll('.h_pte'),
-}
-let stl2 = {
-    dom1: 'h_bgz',//z-index
-    dom2: 'h_op2',//透明度
-    dom3: 'h_active4',
-    dom4: 'h_hidden1',//隐藏
-    dom5: 'h_show1'
-}
-let h_timer2;
-function activebl1(delay, ins, dom, stl) {
-
-    carousel(delay, ins, dom, stl);
-    dclick(delay, dom, stl);
-    moveText(delay, ins, dom, stl);
-}
-activebl1(4000, h_second, obj2, stl2);
-
-function moveText(delay, index, dom, stl) {
-    clearInterval(h_timer2);
-    console.log(delay,index,dom,stl);
+// function h_lbAll(){
     
-    h_timer2 = setInterval(function(){
-        console.log(delay,index,dom,stl);
-        for(var i =0,len = dom.do5.length; i< len;i++){
-            dom.do5[i].classList.remove(stl.dom5);
-        }
-        dom.do5[index].classList.add(stl.dom5);
-        index++
-        if(index > dom.do5.length-1){
-            index = 0;
-        }
-    },delay)
-}
+// }
+// let h_second = 0;
+// let obj2 = {
+//     do1: document.querySelectorAll('.h_slides2 li'),
+//     do2: document.querySelectorAll('.h_ols2 li'),
+//     do3: document.querySelector('.h_leftBtn'),
+//     do4: document.querySelector('.h_rightBtn'),
+//     do5: document.querySelectorAll('.h_pte'),
+// }
+// let stl2 = {
+//     dom1: 'h_bgz',//z-index
+//     dom2: 'h_op2',//透明度
+//     dom3: 'h_active4',
+//     dom4: 'h_hidden1',//隐藏
+//     dom5: 'h_show1'
+// }
+// let h_timer2;
+// function activebl1(delay, ins, dom, stl) {
 
-obj2.do3.onclick = function () {
-    var index = document.querySelector('.h_active4').getAttribute('data-index');
-    index--;
-    if (index < 0) {
-        index = 3;
-    }
-    getLr(index)
-}
-obj2.do4.onclick = function () {
-    var index = document.querySelector('.h_active4').getAttribute('data-index');
-    index++;
-    if (index > 3) {
-        index = 0;
-    }
-    getLr(index);
-}
-function getLr(index) {
-    removeAll(obj2, stl2);
-    addAll(obj2, index, stl2);
-    activebl1(4000, index, obj2, stl2);
-}
+//     carousel(delay, ins, dom, stl);
+//     dclick(delay, dom, stl);
+//     moveText(delay, ins, dom, stl);
+// }
+// activebl1(4000, h_second, obj2, stl2);
+
+// function moveText(delay, index, dom, stl) {
+//     clearInterval(h_timer2);
+//     console.log(delay,index,dom,stl);
+    
+//     h_timer2 = setInterval(function(){
+//         console.log(delay,index,dom,stl);
+//         for(var i =0,len = dom.do5.length; i< len;i++){
+//             dom.do5[i].classList.remove(stl.dom5);
+//         }
+//         dom.do5[index].classList.add(stl.dom5);
+//         index++
+//         if(index > dom.do5.length-1){
+//             index = 0;
+//         }
+//     },delay)
+// }
+
+// obj2.do3.onclick = function () {
+//     var index = document.querySelector('.h_active4').getAttribute('data-index');
+//     index--;
+//     if (index < 0) {
+//         index = 3;
+//     }
+//     getLr(index)
+// }
+// obj2.do4.onclick = function () {
+//     var index = document.querySelector('.h_active4').getAttribute('data-index');
+//     index++;
+//     if (index > 3) {
+//         index = 0;
+//     }
+//     getLr(index);
+// }
+// function getLr(index) {
+//     removeAll(obj2, stl2);
+//     addAll(obj2, index, stl2);
+//     activebl1(4000, index, obj2, stl2);
+// }
 
 
 
