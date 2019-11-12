@@ -118,6 +118,20 @@ $('.h_pic1 span').on('mouseenter', function () {
     $(this).addClass('h_active1');
 });
 
+
+// 免费结婚工具
+$('.h_lisss li').on('mouseenter',function(){
+    var index = $(this).attr('data-index');
+    var sel = $('.h_bgjg')[index];
+    $('.h_lisss li').removeClass('h_activebg');
+    $('.h_bgjg').removeClass('h_b');
+    $('.h').removeClass('h_b');
+    $(this).addClass('h_activebg');
+    $('.h_activebg .h').addClass('h_b');
+    sel.classList.add('h_b');
+})
+
+
 //婚纱摄影轮播
 function h_lbAll(){
     let h_timer3;
