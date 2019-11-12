@@ -34,6 +34,8 @@
         padding-bottom: 1px; }
       .l_wrapper .l_nav-list .l_layer .xhx:hover {
         border-bottom: 1px solid #fff; }
+      .l_wrapper .l_nav-list .l_layer .icon-sort_desc-copy {
+        transition: transform 3s ease-in; }
       .l_wrapper .l_nav-list .l_layer .l_nav-tool-menu {
         width: 120px;
         height: 195px;
@@ -74,6 +76,9 @@
         height: 190px;
         background: #fff;
         opacity: 0.5; }
+    .l_wrapper .l_nav-list .l_layer:hover .icon-sort_desc-copy {
+      display: inline-block;
+      transform: scaleY(180deg); }
     .l_wrapper .l_nav-list .active {
       border-bottom: 1px solid #fff; }
   .l_wrapper .l_banner-title {

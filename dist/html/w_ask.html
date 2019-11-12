@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>问答</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/iconfont.css">
     <link rel="stylesheet" href="../css/mod_head.css">
     <link rel="stylesheet" href="../css/mod_rightFix.css">
     <link rel="stylesheet" href="../css/mod_footer.css">
+    <link rel="stylesheet" href="../css/w_ask.css">
+    <link rel="icon" href="../img/c_image/index/favicon.ico" type="image/x-icon">
     <script src="../js/jquery-1.8.3.min.js"></script>
 </head>
 
@@ -20,11 +22,133 @@
             $('.header').load('mod_head.html');
         </script>
     </div>
+    <div id="main">
+        <div id="main_content" class="container">
+            <!-- 面包屑 -->
+            <div class="crumbs">
+                <a href="javascript:">首页</a>
+                <span><i class="iconfont icon-gengduo"></i></span>
+                <a href="javascript:">婚庆筹备</a>
+                <span><i class="iconfont icon-gengduo"></i></span>
+                <a href="javascript:">婚宴酒店</a>
+                <span><i class="iconfont icon-gengduo"></i></span>
+                <a class="q_title"></a>
+            </div>
+            <!-- 主体内容 -->
+            <div class="main_content_box clearfix">
+                <!-- 左评论模块 -->
+                <div class="content_left">
+                    <div class="wrapper question_header" questionId="1234">
+                        <div class="question_header_content">
+                            <h1 class="title"></h1>
+                            <div class="detailed_box">
+                                <p class="detailed"></p>
+                            </div>
+                            <div class="content_info">
+                                <div class="content_info_left">
+                                    <a href="javascript:">婚庆筹备</a>
+                                    <a href="javascript:">婚宴酒店</a>
+                                </div>
+                                <div class="content_info_right">
+                                    <span class="questioner"></span>
+                                    <span class="time"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper write_answer">
+                        <div class="write_answer_content">
+                            <button class="answer_btn" id="answer_btn">我来回答</button>
+                            <div class="answer_text">分享你的备婚经验，给更多有需要的人</div>
+                            <div class="answer_frame_mask">
+                                <div class="answer_frame">
+                                    <h2 class="answer_frame_title">回答:<span>婚宴上的酒类搭配？</span></h2>
+                                    <textarea id="answer_textarea"></textarea>
+                                    <div class="answer_frame_footer clearfix">
+                                        <div class="aff_user">
+                                            <span>输入昵称</span>
+                                            <input type="text" id="aff_name">
+                                        </div>
+                                        <div class="aff_sub">
+                                            <a id="aff_cancel">取消</a>
+                                            <a id="aff_submit">提交</a>
+                                        </div>
+                                    </div>
+                                    <span class="close_frame"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper answer_list_box">
+                        <h1 class="answer_list_title">
+                            已有<span class="answer_count"></span>条回答
+                        </h1>
+                        <ul class="answer_list">
+                            <li class="answer_item">
+                                <div class="answer_info">
+                                    <span class="answer_username">回答者：</span>
+                                    <span class="answer_time">发布于：</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 右广告模块 -->
+                <div class="content_right">
+                    <div class="wrapper">
+                        <div class="ask_search">
+                            <input type="text" class="ask_input" id="ask_input" placeholder="搜索你想了解的问题" maxlength="100">
+                            <span class="ask_icon">
+                                <i class="iconfont icon-sousuo"></i>
+                            </span>
+                        </div>
+                        <a class="ask_btn">我要提问</a>
+                    </div>
+                    <div class="advert">
+                        <a href="javascript:">
+                            <img src="../img/w_image/ask/invitation_pc1.jpg" alt="">
+                        </a>
+                        <a href="javascript:">
+                            <img src="../img/w_image/ask/schedual_pc1.jpg" alt="">
+                        </a>
+                        <a href="javascript:">
+                            <img src="../img/w_image/ask/app_dl_pc_ask1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="recmd">
+                        <div class="recmd_title">
+                            <h2 class="recmd_title_item active">热门回答</h2>
+                            <h2 class="recmd_title_item">最新回答</h2>
+                        </div>
+                        <div class="recmd_info">
+                            <div class="recmd_info_item active">
+                                <a href="javascript:" class="rii_text">婚纱摄影，为什么选择旅拍，哪家比较好？大家给给意见</a>
+                                <a href="javascript:" class="rii_text">拍婚纱照要提前准备些什么？有没有什么需要注意的。</a>
+                                <a href="javascript:" class="rii_text">婚礼都有哪些花费？预算怎么做？</a>
+                                <a href="javascript:" class="rii_text">回门宴可以穿秀禾服吗？</a>
+                                <a href="javascript:" class="rii_text">婚鞋需要准备几双？怎么选？</a>
+                                <a href="javascript:" class="rii_text">婚礼上出场的背景音乐有没有好的推荐？</a>
+                            </div>
+                            <div class="recmd_info_item">
+                                <a href="javascript:" class="rii_text">要给伴娘都包多少红包才不显小气？</a>
+                                <a href="javascript:" class="rii_text">中式婚礼应该怎么布置呢？</a>
+                                <a href="javascript:" class="rii_text">浪漫唯美的婚礼出场方式有哪些？</a>
+                                <a href="javascript:" class="rii_text">婚房怎么布置才不会显得太low？</a>
+                                <a href="javascript:" class="rii_text">亲们，目前怀孕两个月，举行婚礼有什么需要注意的么</a>
+                                <a href="javascript:" class="rii_text">姓名组成的婚礼主题太生硬，还有什么好创意？</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="footer">
         <script>
             $('.footer').load('mod_footer.html');
         </script>
     </div>
 </body>
+<script src="../js/w_ask.js"></script>
 
 </html>
