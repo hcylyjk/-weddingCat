@@ -34,36 +34,6 @@ body{
 .swiper_banner img{
     width: 100%;
 }
-.banner_frame{
-    height: 420px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-.banner_frame_box{
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    z-index: 50;
-}
-.bfb_inner{
-    bottom: 0;
-    position: absolute;
-    height: 400px;
-    width: 360px;
-    background: black;
-    opacity: 0.8;
-    -webkit-opacity: 0.8;
-}
-.bfb_inner .cute_icon{
-    position: absolute;
-    left: 0;
-    top: -15px;
-    width: 95px;
-    height: 66px;
-    background: url('../img/w_image/index/ia_300000084.png') no-repeat;
-    z-index: 100;
-}
 
 #main{
     width: 100%;
