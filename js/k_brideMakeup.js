@@ -12,7 +12,7 @@ function show_l(index){//出现长红条
 	$('.tab_nav .nav li').eq(index).css('background','#ffffff')
 }
 
-show_l(0)
+show_l(2)
 
 $('.cirle_color li').mouseenter(function(){//圆球的颜色
 	var index=$(this).index()
@@ -98,7 +98,7 @@ start()
 		$('.new').css('display','none');
 		$('.new').eq(index).css('display','block');
 	}
-	showTab(0)
+	showTab(2)
 
 
 	// 图片划过变长框
@@ -129,6 +129,13 @@ function tap_img(index){
 	$('.r_item li').css('border','1px solid #808080')
 	$('.r_item li').eq(index).find('a').css('color','#ff7385')
 	$('.r_item li').eq(index).css('border','1px solid #ff7385')
+	$('.img_show_list').eq(index).removeClass('tabb')
+	$('.img_show_list').eq(index).siblings().addClass('tabb')
+	if(index==2){
+		index=0;
+		$('.img_show_list').eq(index).removeClass('tabb')
+		$('.img_show_list').eq(index).siblings().addClass('tabb')
+	}
 }
 tap_img(0)
 

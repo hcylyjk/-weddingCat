@@ -124,11 +124,20 @@ start()
 		var index=$(this).index()
 		tap_img(index)
 	})
+
+// tab套餐商家作品切换
 function tap_img(index){
 	$('.r_item li').find('a').css('color','#808080')
 	$('.r_item li').css('border','1px solid #808080')
 	$('.r_item li').eq(index).find('a').css('color','#ff7385')
 	$('.r_item li').eq(index).css('border','1px solid #ff7385')
+	$('.img_show_list').eq(index).removeClass('tabShow')
+	$('.img_show_list').eq(index).siblings().addClass('tabShow')
+	if(index==2){
+		index=0;
+		$('.img_show_list').eq(index).removeClass('tabShow')
+		$('.img_show_list').eq(index).siblings().addClass('tabShow')
+	}
 }
 tap_img(0)
 
