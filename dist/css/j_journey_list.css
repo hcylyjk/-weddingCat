@@ -1,8 +1,4 @@
 @charset "UTF-8";
-.j_header {
-  width: 100%;
-  height: 125px; }
-
 .j_container {
   width: 100%;
   height: 100%; }
@@ -704,7 +700,8 @@
         line-height: 30px;
         color: #2f2f2f; }
     .j_tipCity .j_tipCity_center .j_tipCity_row {
-      margin-left: -20px; }
+      margin-left: -20px;
+      height: 280px; }
       .j_tipCity .j_tipCity_center .j_tipCity_row .j_tipCity_city {
         position: relative;
         width: 280px;

@@ -44,6 +44,9 @@
             .xhx:hover{
                 border-bottom: 1px solid #fff;
             }
+            .icon-sort_desc-copy{
+                transition: transform 3s ease-in;
+            }
             .l_nav-tool-menu{
                 width: 120px;
                 height: 195px;
@@ -90,6 +93,10 @@
                 background: #fff;
                 opacity: 0.5;
             }
+        }
+        .l_layer:hover .icon-sort_desc-copy{
+            display: inline-block;
+            transform: scaleY(180deg);
         }
         .active{
             border-bottom: 1px solid #fff;

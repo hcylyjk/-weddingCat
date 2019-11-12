@@ -45,6 +45,8 @@ $(function () {
                                                 class="iconfont icon-pingjia1"></i><i class="iconfont icon-pingjia1"></i><i
                                                 class="iconfont icon-pingjia1"></i></p>
                                     </div>
+                                    <div class="aaa"></div>
+                                    <div class="bbb"></div>
                                 </div>
                                 <div class="clearcontent clearfix">
                                     <div class="spantext">作品<span>${data[i].spannum}</span></div>
