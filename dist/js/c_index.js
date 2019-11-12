@@ -30,11 +30,11 @@ $(function () {
         $(this).css('color', '#fff').siblings().css('color', '#ccc');
         $('.informationcon').eq(index).removeClass('active').siblings().addClass('active')
     })
-  
+
     // 二级菜单Tab切换
     $('.sidenav .list').on('mouseenter', '.kongzhi', function () {
         if ($('.listbox').width() != 660) {
-        $(this).siblings('.listbox').css('display','block')
+            $(this).siblings('.listbox').css('display', 'block')
             $(this).parent().find('.listbox').animate({
                 width: 660
             }, 500)
@@ -48,7 +48,7 @@ $(function () {
             $('.list .listbox .listboxcon').eq(index).removeClass('active').siblings().addClass('active')
 
         } else {
-            $(this).siblings('.listbox').css('display','block')
+            $(this).siblings('.listbox').css('display', 'block')
 
             $(this).css('background', '#fff').siblings().css('background', 'rgba(0,0,0,.6)')
             $(this).css('color', '#000').siblings().css('color', '#fff')
@@ -65,9 +65,9 @@ $(function () {
         $(this).find('.listbox').animate({
             width: 0
         }, 200)
-        $(this).children('.kongzhi').css('background','rgba(0,0,0,.6)')
-        $(this).children('.kongzhi').css('border-left','none')
-        $(this).children('.kongzhi').css('color','#fff')
+        $(this).children('.kongzhi').css('background', 'rgba(0,0,0,.6)')
+        $(this).children('.kongzhi').css('border-left', 'none')
+        $(this).children('.kongzhi').css('color', '#fff')
     })
 
     // 每月客照 右移
@@ -208,25 +208,21 @@ $(function () {
         $(this).closest('.listbox').css('display', 'none')
     })
 
+    // 底部固定条
+    $('#fixednav').on('click', 'span', function () {
+        $('#fixednav').css("display", 'none')
+    })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    // 固定条显示隐藏
+    $(window).scroll(function () {
+        if ($(this).scrollTop() < 700) {
+            $('#fixednav').css('height', '0')
+        }
+        if ($(this).scrollTop() > 700) {
+            $('#fixednav').css('height', '150px')
+            $('#fixednav').css('transition', '.5s')
+        }
+    })
 })
 
 
