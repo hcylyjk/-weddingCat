@@ -1,4 +1,6 @@
 
 
  //城市客照
-console.log($('.j_cityBlist ul li'))
+$('.j_cityBlist ul ').mouseover=function(e){
+	
+}

@@ -112,10 +112,36 @@ start()
 
 	//分页
 	
-
-
 	function page(index){
 		$('.pag span').eq(index).css('background','#4d4b4b')
 		$('.pag span').eq(index).find('a').css('color','#ffffff')
 	}
 	page(0)
+
+
+	//图片展示选项卡
+	$('.r_item li').click(function(){
+		var index=$(this).index()
+		tap_img(index)
+	})
+function tap_img(index){
+	$('.r_item li').find('a').css('color','#808080')
+	$('.r_item li').css('border','1px solid #808080')
+	$('.r_item li').eq(index).find('a').css('color','#ff7385')
+	$('.r_item li').eq(index).css('border','1px solid #ff7385')
+}
+tap_img(0)
+
+
+
+$('.r_right_text span').click(function(){
+	var index=$(this).index()
+	tap_price(index)
+})
+function tap_price(index){
+	$('.r_right_text span').find('a').css('color','#808080')
+	$('.r_right_text span').eq(index).find('a').css('color','#ff7385')
+}
+tap_price(0)
+
+
