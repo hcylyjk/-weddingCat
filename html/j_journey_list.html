@@ -15,15 +15,18 @@
     <link rel="stylesheet" href="../css/swiper.min.css">
     <link rel="stylesheet" href="../js/j_journey_list.js">
     <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/mod_head.css">
+    <link rel="stylesheet" href="../css/mod_footer.css">
+    <link rel="stylesheet" href="../css/mod_rightFix.css">
+    <script src="../js/jquery-1.8.3.min.js"></script>
 
 </head>
 
 <body>
-    <div class="j_header">
-        <!-- 头部 -->
-        <!-- <div class="j_header"></div> -->
-        <!-- 头部导航 -->
-        <div class="j_header_nav"></div>
+    <div class="header">
+        <script>
+            $('.header').load('mod_head.html')
+        </script>
     </div>
     <!-- 内容区 -->
     <div class="j_container">
@@ -865,6 +868,20 @@
                 </div>
             </div>
         </div>
+    </div>
+    <!-- 右边固定部分 -->
+    <div class="mod_right">
+        <script>
+            $('.mod_right').load('mod_rightFix.html');
+        </script>
+    </div>
+
+    <!-- 页面尾部 -->
+    <div class="footer">
+        <script>
+            $('.footer').load('mod_footer.html');
+        </script>
+        <!-- $('.footer').load('mod_footer.html') -->
     </div>
 </body>
 

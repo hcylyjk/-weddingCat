@@ -1,3 +1,6 @@
 
 
-//轮播图
+ //城市客照
+$('.j_cityBlist ul ').mouseover=function(e){
+	
+}
