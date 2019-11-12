@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/iconfont.css">
     <link rel="stylesheet" href="../css/l_Budget.css">
+    <link rel="stylesheet" href="../html/demo.html">
+
+    <link rel="stylesheet" href="../css/mod_footer.css">
+    <script src="../js/jquery-1.8.3.min.js"></script>
 
 </head>
 
@@ -86,9 +90,6 @@
                                     <li class="l_header-logout-link">
                                         <span class="l_customer-center-link l_cus-link"
                                             linkto="/l_customer?tab=info">账号设置</span>
-                                    </li>
-                                    <li class="l_customer-center-logout ">
-                                        <span class="l_customer-center-link logout">退出账号</span>
                                     </li>
                                 </ul>
                             </div>
@@ -310,6 +311,20 @@
             </a>
         </div>
     </div>
+    <!-- 页面底部 -->
+    <div class="footer">
+            <script>
+                    $('.footer').load('mod_footer.html');
+            </script>
+        <!-- $('.footer').load('mod_footer.html') -->
+    </div>
 </body>
+<script src="../js/l_Budget.js"></script>
+<script>
+    window.onload = function () {
+        $('.mod_bottom_right ul li:nth-of-type(3) a').addClass('mod_active');
+        $('.mod_bottom_right ul li:nth-of-type(3) i').addClass('mod_first');
+    }
+</script>
 
 </html>
