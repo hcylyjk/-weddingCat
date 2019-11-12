@@ -2,6 +2,7 @@ $('.tab_nav .nav li').click(function(){
 	var index=$(this).index()
 	console.log(index)
 	show_l(index)
+	showTab(index)
 })
 
 function show_l(index){//出现长红条
@@ -38,6 +39,9 @@ $('.tab_show .new .news li').click(function(){//婚礼策划主题类型
 	if($(this).parent().parent().attr('data')==222){
 		$(this).siblings().removeClass('rr_color')
 	}else{
+		$(this).parent().prev().find('span').css('background','transparent')
+		$(this).parent().prev().find('a').css('color','#666464')
+		console.log($(this).parent().prev().find('span').html())
 		$(this).addClass('rr_color')
 		$(this).siblings().find('a').css('color','#666464')
 		$(this).find('a').css('color','#ffffff')
@@ -68,3 +72,50 @@ marry_type(1)
 			$('.rr_color').find('a').css('color','#ffffff')
 		
 	})
+
+	$('.left_nav span').click(function(){
+		$(this).parent().next().children().removeClass('rr_color')
+		$(this).parent().next().children().find('a').css('color','#666464')
+		$(this).css('background','#ff7385')
+		$(this).find('a').css('color','#ffffff')
+	})
+
+	// 初始化选项卡1
+	$('.left_nav span').eq(2).css('background','#ff7385')
+	$('.left_nav span').eq(2).find('a').css('color','#ffffff')
+function start(){
+		for(var i=1;i<5;i++){
+			$('.new').eq(i).find('span').css('background','#ff7385')
+			$('.new').eq(i).find('span').find('a').css('color','#ffffff')
+		}
+}
+start()
+
+
+	// 选项卡切换
+
+	function showTab(index){
+		$('.new').css('display','none');
+		$('.new').eq(index).css('display','block');
+	}
+	showTab(0)
+
+
+	// 图片划过变长框
+	$('.imgs').hover(function(){
+		
+		$(this).find('.bottom_text').css('height','120')
+	},function(){
+		$('.bottom_text').css('height','80')
+	})
+
+
+	//分页
+	
+
+
+	function page(index){
+		$('.pag span').eq(index).css('background','#4d4b4b')
+		$('.pag span').eq(index).find('a').css('color','#ffffff')
+	}
+	page(0)

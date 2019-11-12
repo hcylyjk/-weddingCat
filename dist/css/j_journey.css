@@ -1,13 +1,16 @@
-body {
-  background: #f5f5f5; }
+body, html {
+  width: 100%; }
 
-.j_header {
+.swiper-container {
   width: 100%;
-  height: 125px; }
+  height: 420px;
+  position: relative; }
 
-.j_banner {
-  width: 100%;
-  height: 420px; }
+.swiper-wrapper {
+  width: 100%; }
+  .swiper-wrapper img {
+    width: 100%;
+    height: 420px; }
 
 .j_container {
   width: 1180px;
@@ -118,14 +121,6 @@ body {
   font-size: 24px;
   font-weight: bold; }
 
-.j_fixed_nav {
-  width: 100%;
-  height: 60px;
-  background: #2f2f2f;
-  position: fixed;
-  top: 0;
-  left: 0; }
-
 .j_fixed_inner {
   width: 1180px;
   margin: 0 auto;
@@ -187,36 +182,39 @@ body {
   height: 100%; }
 
 .j_cityBlist ul li a .j_info {
-  position: absolute;
-  top: 0;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 100%);
   width: 100%;
   height: 100%;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
-  left: 0; }
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  text-align: center; }
 
 .j_cityBlist ul li a .j_info .j_name {
   color: #fff;
   font-size: 20px;
-  position: absolute;
   top: 80px;
-  left: 152px;
-  z-index: 1000; }
+  display: block; }
 
 .j_info .j_before {
-  background: #999;
-  width: 182px;
-  height: 5px;
   position: absolute;
-  top: 110px;
-  left: 110px; }
+  top: 6px;
+  left: 50%;
+  margin-left: -60px;
+  content: '';
+  display: inline-block;
+  width: 120px;
+  height: 2px;
+  border-top: solid 2px #999; }
 
 .j_info .j_num {
   padding-top: 14px;
   font-size: 14px;
-  position: absolute;
-  top: 110px;
-  left: 164px;
-  color: #fff; }
+  top: 112px;
+  color: #fff;
+  transform: translate(0, 122px);
+  display: block; }
 
 .j_month_juest {
   width: 100%;
@@ -255,7 +253,12 @@ body {
   width: 380px;
   height: 310px;
   margin-right: 20px;
-  float: left; }
+  float: left;
+  -webkit-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out; }
+
+.j_month_list ul li:hover {
+  transform: translateY(-10px); }
 
 .j_month_list ul li a {
   display: block;
@@ -394,7 +397,12 @@ body {
   position: relative;
   width: 130px;
   height: 150px;
-  margin: 0 7px; }
+  margin: 0 7px;
+  -webkit-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out; }
+
+.j_city_items:hover {
+  transform: translateY(-20px); }
 
 .j_city_items a {
   width: 100%;
@@ -408,7 +416,15 @@ body {
   height: 87px;
   line-height: 44px;
   color: #c5c5c5;
-  font-size: 20px; }
+  font-size: 20px;
+  position: relative;
+  text-align: center; }
+
+.j_city_items .j_c i {
+  position: absolute;
+  top: 4px;
+  left: -14px;
+  font-size: 32px; }
 
 .j_city_items a h3 {
   width: 100%;
@@ -450,7 +466,12 @@ body {
     height: 240px;
     margin-left: 20px; }
     .brandcol_list .j_brandcol img {
-      width: 100%; }
+      width: 100%;
+      -webkit-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out; }
+
+.j_brandcol img:hover {
+  transform: scale(1.05); }
 
 .j_Testimonials {
   width: 100%;
