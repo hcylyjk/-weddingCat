@@ -1,6 +1,12 @@
 body, html {
   width: 100%; }
 
+.banner {
+  width: 100%;
+  height: 420px;
+  position: relative;
+  overflow: hidden; }
+
 .swiper-container {
   width: 100%;
   height: 420px;
@@ -161,8 +167,7 @@ body, html {
 .j_cityBlist {
   padding: 20px;
   width: 1220px;
-  margin-left: -20px;
-  overflow: hidden; }
+  margin-left: -20px; }
 
 .j_cityBlist ul {
   width: 10000px;
@@ -175,7 +180,8 @@ body, html {
   height: 240px;
   margin-right: 20px;
   overflow: hidden;
-  float: left; }
+  float: left;
+  bottom: 0; }
 
 .j_cityBlist ul li img {
   width: 100%; }
@@ -225,11 +231,26 @@ body, html {
   height: 2px;
   border-top: solid 2px #999; }
 
+.nave_left {
+  position: absolute;
+  left: 0px;
+  top: 1026px;
+  z-index: 9999;
+  cursor: pointer; }
+
+.nave_right {
+  position: absolute;
+  left: 1230px;
+  top: 1026px;
+  z-index: 9999;
+  cursor: pointer; }
+
 .j_month_juest {
   width: 100%;
   padding: 40px 0 20px;
   height: 450px;
-  background: rgba(241, 241, 241, 0.7); }
+  background: rgba(241, 241, 241, 0.7);
+  position: relative; }
 
 .j_monthcenter {
   width: 1180px;
@@ -254,32 +275,27 @@ body, html {
 
 .j_warp_box {
   width: 100%;
-  height: 500px;
-  overflow: hidden; }
+  height: 500px; }
 
 .j_month_list {
   padding: 20px;
   width: 1180px;
   height: 270px;
-  margin-left: -20px;
-  position: relative; }
+  margin-left: -20px; }
 
 .j_month_list ul {
   position: relative;
-  width: 10000px;
-  height: 100%; }
+  width: 10000px; }
 
-.j_lists {
+.j_month_list .j_lists {
   position: relative;
+  top: 0;
   width: 380px;
   height: 310px;
   margin-right: 20px;
   float: left;
   -webkit-transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out; }
-
-.j_lists :hover {
-  transform: translateY(-10px); }
 
 .j_itme_link {
   position: relative;
@@ -292,7 +308,7 @@ body, html {
   width: 380px;
   height: 240px; }
 
-.j_month_list_names {
+.j_itme_link_name {
   position: relative;
   display: block;
   width: 340px;
@@ -304,10 +320,25 @@ body, html {
   line-height: 30px;
   background-color: #fff;
   z-index: 1; }
+  .j_itme_link_name span {
+    color: #c5c5c5; }
 
-.j_month_list_names span {
-  color: #c5c5c5;
-  margin-left: 10px; }
+.j_month_list .j_lists:hover {
+  transform: translateY(-10px); }
+
+.nave_left1 {
+  position: absolute;
+  left: 0px;
+  top: 190px;
+  z-index: 9999;
+  cursor: pointer; }
+
+.nave_right1 {
+  position: absolute;
+  right: 0px;
+  top: 190px;
+  z-index: 9999;
+  cursor: pointer; }
 
 .j_cameraman {
   width: 100%;
@@ -348,8 +379,7 @@ body, html {
   width: 140px;
   height: 100%; }
 
-.j_teamr a::before {
-  content: '';
+.j_active {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -360,14 +390,14 @@ body, html {
 
 .j_teamr a span {
   position: absolute;
-  top: 50%;
+  top: 140px;
   left: 0;
   width: 100%;
   height: 40px;
   text-align: center;
   font-size: 16px;
-  color: #fff;
-  z-index: 1000; }
+  margin-top: -20px;
+  color: #fff; }
 
 .j_take_city {
   width: 100%;
@@ -448,6 +478,9 @@ body, html {
   font-size: 20px;
   position: relative;
   text-align: center; }
+
+.j_city_items .j_c:hover {
+  color: #ff7385; }
 
 .j_city_items .j_c i {
   position: absolute;
