@@ -15,8 +15,11 @@
 
 ****************************************************
 */
-
+$qId = $_GET['qId'];
+$qId = 'question' .$qId;
+// $qId = 'question1234';
 // 设置响应头，防止乱码
+// die($qId);
 header("Content-type:text/html;charset=utf8");
 
 error_reporting(0);//关闭错误报告
@@ -35,56 +38,31 @@ mysqli_query($link, 'use questionList');//选择数据库
 
 // sql语句，创建user表，添加字段
 $sql= <<< END
-CREATE TABLE `.$qId.` (
-`ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+CREATE TABLE `$qId` (
+`ID` INT NOT NULL PRIMARY KEY ,
 `username` VARCHAR( 30 ) NOT NULL ,
-`answer` VARCHAR( 255 ) NOT NULL
+`userid` VARCHAR( 30 ) NOT NULL,
+`answer` VARCHAR( 500 ) NOT NULL,
+`time` VARCHAR( 30 ) NOT NULL
 ) ENGINE = INNODB CHARACTER SET utf8 COLLATE utf8_general_ci
 END;
 
+
 mysqli_query($link, $sql);//执行sql语句，创建表并添加字段
+// die($sql);
 
-
-header('Content-type:bk/json');//设置头
-
-$act = $_GET['act'];//登录或注册字段
-
-$user = strtolower($_GET['user']);//获取输入的账号,转成小写
-
-$pass = $_GET['pass'];//获取输入的密码
-
-switch($act){
-	case 'add'://注册
-		$sql = "SELECT COUNT(*) FROM user WHERE username='{$user}'";
+$sql = "select * from {$qId}";
+// die($sql);
+$res = mysqli_query($link,$sql);
 		
-		$res = mysqli_query($link,$sql);
-		
-		$row = mysqli_fetch_array($res);
-		
-		if((int)$row[0]>0){
-			echo '{"err":"1","msg":"此用户名已被占用"}';
-			exit();
-		}
-		
-		$sql = "INSERT INTO user (ID,username,password) VALUES(0,'{$user}','{$pass}')";
-		mysqli_query($link, $sql);
-		
-		echo '{"err":"0","msg":"注册成功"}';
-		break;
-		
-	case 'login'://登录
-		$sql = "SELECT COUNT(*) FROM user WHERE username='{$user}' AND password='{$pass}'";
-		$res = mysqli_query($link, $sql);
-		
-		$row = mysqli_fetch_array($res);
-		
-		if((int)$row[0]>0){
-			echo '{"err":"0","msg":"登陆成功"}';
-			exit();
-		}else{
-			echo '{"err":"1","msg":"用户名或密码有误"}';
-			exit();
-		}
-		break;
+$row = [];
+while($arr = mysqli_fetch_assoc($res)){
+    $rows[] = $arr;
+}
+$arrLen = count($rows);
+if($arrLen > 0){//有数据
+    echo json_encode($rows,JSON_UNESCAPED_UNICODE);//把数组转成json字符串，返回
+} else {// 没有数据
+    echo '你查询的数据没有!';
 }
 ?>
