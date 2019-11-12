@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/l_Budget.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <div class="l_header">
+        <div class="l_header-wrapper">
+            <!-- header top -->
+            <div class="l_header-top">
+                <div class="l_header-top-inner">
+                    <!-- header top left -->
+                    <div class="l_header-top-left">
+                        <div class="l_header-city">
+                            <div class="l_header-city-current">
+                                <a href="javascript:" class="l_header-back">
+                                    <i class="iconfont icon-zhuye-"></i>
+                                    <span>婚礼猫首页</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="l_header-tl-section l_header-tl-section-meeting">
+                            <a href="javascript:">
+                                <span class="l_header-top-text">「2020·年会预订」</span>
+                                <sup class="l_header-top-text-sup">hot</sup>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- header top right -->
+                    <div class="l_header-top-right">
+                        <span class="l_user-login">
+                            <span class="l_header-tr-item l_hlm-color">
+                                <a href="javascript:" class="l_header-tr-link">注册</a>
+                            </span>
+                            <span class="l_header-tr-item l_hlm-color">
+                                <span class="l_header-tr-link l_loginBtn">
+                                    登录
+                                </span>
+                            </span>
+                        </span>
+                        <span class="l_user-logout ">
+                            <span class="l_header-tr-item l_mobile"><span id="l_headerMobile" target="l_blank"
+                                    class="l_header-tr-link">
+                                </span></span>
+                        </span>
+                        <div class="l_header-tr-item l_header-btn">
+                            <span class="l_xt-icon">
+                                <i class="iconfont icon-wode1"></i>
+                            </span>
+                            <span class="l_header-tr-link">个人中心</span>
+                            <span class="l_xt-icon">
+                                <i class="iconfont icon-sort_desc-copy"></i>
+                            </span>
+                            <div class="l_customer-center-wrap">
+                                <ul class="l_customer-center-list">
+                                    <span class="l_customer-center-arrow"></span>
+                                    <span class="l_customer-center-arrow2"></span>
+                                    <div class="l_customer-center-login ">
+                                        <span class="l_customer-center-link l_loginBtn">请先登录</span>
+                                    </div>
+                                    <li class="l_header-logout-link">
+                                        <span class="l_customer-center-link cus-link"
+                                            linkto="/customer/photoFollowOrder">我的订单</span>
+                                    </li>
+                                    <li class="l_header-logout-link">
+                                        <span class="l_customer-center-link l_cus-selector-link">在线选片</span>
+                                    </li>
+                                    <li class="l_header-logout-link">
+                                        <span class="l_customer-center-link l_cus-link"
+                                            linkto="/l_customer/follow?tab=photo">我的关注</span>
+                                    </li>
+                                    <li class="l_header-logout-link">
+                                        <span class="l_customer-center-link l_cus-link"
+                                            linkto="/l_customer/follow/work?category=WeddingFollowShot">我的收藏</span>
+                                    </li>
+                                    <li class="l_header-logout-link">
+                                        <span class="l_customer-center-link l_cus-link"
+                                            linkto="/l_customer?tab=info">账号设置</span>
+                                    </li>
+                                    <li class="l_customer-center-logout ">
+                                        <span class="l_customer-center-link logout">退出账号</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="l_header-tr-item userpay">
+                            <a href="javascript:" class="l_header-tr-link">支付方式</a>
+                        </div>
+                        <span class="l_header-tr-item">
+                            <a href="javascript:" class="l_header-tr-link">CEO信箱</a>
+                        </span>
+                        <span class="l_header-tr-item l_header-merchant-item l_notLogined">
+                            <a href="javascript:" class="l_header-tr-link">商家中心</a>
+                        </span>
+                        <span class="l_header-tr-item phone">
+                            <span class="l_xt-icon">
+                                <i class="iconfont icon-dianhua1"></i>
+                            </span>
+                            <span class="l_header-tri-tel"> <strong>4006-808-333</strong> </span>
+                        </span>
+                    </div>
+                    <div class="l_header-select-warn">
+                        <div class="l_header-select-wrap">
+                            摄影订单状态已更新，现在支付余款后即可选片，<span class="l_header-select-btn l_header--order-link">前往支付</span>
+                            <span class="l_header-select-close"><i class="iconfont">&#xe61a;</i></span>
+                        </div>
+                        <div class="l_header-select-wrap">
+                            你的订单已经可以选片，<span class="l_header-select-btn l_header-select-link">立即查看</span>
+                            <span class="l_header-select-close"><i class="iconfont">&#xe61a;</i></span>
+                        </div>
+                        <div class="l_header-select-wrap">
+                            您还有订单未完成选片，<span class="l_header-select-btn l_header-select-link">前往选片</span>
+                            <span class="l_header-select-close"><i class="iconfont">&#xe61a;</i></span>
+                        </div>
+                        <div class="l_header-select-wrap">
+                            选片系统可在[个人中心]-[选片入口]处进入，<span class="l_header-select-btn l_select-no-warn">不再提醒</span>
+                            <span class="l_header-select-close"><i class="iconfont">&#xe61a;</i></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- l_header nav -->
+            <div class="l_header-nav l_header-page-title ">
+                <a class="l_header-logo" href="javascript:">
+                    <span class="l_xt-icon"><img src="../img/l_image/l_Budget/hlm_03.jpg" alt=""></span>
+                    <span class="l_header-title-wrap">
+                        <h1 class="l_header-title-zh tool l_budget">结婚预算</h1>
+                        <span class="l_header-title-en tool l_budget">WEDDING BUDGET</span>
+                    </span>
+                </a>
+                <div class="l_header-nav-select">
+                    <span class="l_header-select-title">
+                        <span class="l_xt-icon l_icon0"><i class="iconfont icon-RectangleCopy2"></i></span>
+                        <span class="l_header-nav-titletext">全部服务分类</span>
+                        <span class="l_xt-icon l_icon1"><i class="iconfont icon-sort_desc-copy"></i></span>
+                        <span class="l_title-list-bridge"></span>
+                    </span>
+                    <div class="l_header-select-list">
+                        <a class="l_header-select-item" href="javascript:" target="_blank">
+                            <i class="iconfont">&#xe79a;</i><span>婚纱摄影</span></a>
+                        <a class="l_header-select-item" href="javascript:" target="_blank">
+                            <i class="iconfont">&#xe67e;</i>婚宴酒店</a>
+                        <a class="l_header-select-item" href="javascript:" target="_blank">
+                            <i class="iconfont">&#xe606;</i>全球旅拍</a>
+                        <a class="l_header-select-item" href="javascript:" target="_blank">
+                            <i class="iconfont">&#xe798;</i>婚礼服务</a>
+                    </div>
+                </div>
+                <ul class="l_header-nav-list fr">
+                    <li class="l_header-nav-item l_header-tag l_header-tool">
+                        <a href="javascript:" target="_blank" class="l_header-nav-link">
+                            <span class="l_header-nav-innertext">微信喜帖</span>
+                        </a>
+                    </li>
+                    <li class="l_header-nav-item l_header-tag l_header-tool">
+                        <a href="javascript:" class="l_header-nav-link">
+                            <span class="l_header-nav-innertext">最美微相册</span>
+                        </a>
+                    </li>
+                    <li class="l_header-nav-item l_header-tag l_header-tool">
+                        <a href="javascript:" class="l_header-nav-link">
+                            <span class="l_header-nav-innertext">结婚管家</span>
+                        </a>
+                    </li>
+                    <li class="l_header-nav-item l_header-tag l_header-tool">
+                        <a href="javascript:" class="l_header-nav-link">
+                            <span class="l_header-nav-innertext">婚姻登记处</span>
+                        </a>
+                    </li>
+                    <li class="l_header-nav-item l_header-tag l_header-tool">
+                        <a href="javascript:" class="l_header-nav-link">
+                            <span class="l_header-nav-innertext">黄道吉日</span>
+                        </a>
+                    </li>
+                    <li class="l_header-nav-item l_header-tag l_header-tool">
+                        <a href="javascript:" class="l_header-nav-link">
+                            <span class="l_header-nav-innertext">结婚预算</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- center content-->
+    <!-- 页面位置 -->
+    <div class="l_nav-title l_nav-title-center">
+        <a href="javascript:" target="l_blank">首页</a> &gt; <h2>结婚工具</h2> &gt;
+        <h1>结婚预算</h1>
+    </div>
+    <div class="l_wedding_center_content">
+        <div class="l_first_pic_content">
+            <img src="../img/l_image/l_Budget/ia_500000005.png" alt="">
+            <div class="l_first_pic_content_tit">结婚预算</div>
+        </div>
+        <div class="l_tool_dec_content_title">本服务由超过&nbsp;<span
+                class="l_tool_dec_strong">10万</span>&nbsp;对新人结婚消费数据总结所得，仅供参考，完全免费。</div>
+        <div class="l_content_border">
+            <div class="l_each_enregister_content l_budget_content">
+                <div class="l_input_area">
+                    <div class="l_input_group">
+                        <label>总预算</label>
+                        <input name="l_total_budget" id="l_total_budget" type="text" autocomplete="off" />
+                        <span class="l_unit">元</span>
+                    </div>
+                    <div class="l_input_group">
+                        <label>预计桌数</label>
+                        <input name="l_table_count" id="l_table_count" type="text" autocomplete="off" />
+                        <span class="l_unit">桌</span>
+                    </div>
+                    <div class="l_check_group">
+                        <input id="l_reference_check" type="checkbox" />
+                        <label>参考深圳区域平均婚礼消费￥120000元</label>
+                    </div>
+                    <button id="l_budget_submit" class="l_budget_submit">计算</button>
+                </div>
+                <div class="l_result_title">建议预算分配</div>
+                <table class="l_result_table">
+                    <tr>
+                        <td class="l_result_tit">婚宴总预算</td>
+                        <td id="l_totalParty">0￥</td>
+                        <td class="l_result_tit">每桌预算</td>
+                        <td id="l_price">0￥</td>
+                        <td class="l_result_tit">婚礼蛋糕</td>
+                        <td id="l_pie">0￥</td>
+                    </tr>
+                    <tr>
+                        <td class="l_result_tit">婚纱&amp;礼服</td>
+                        <td id="l_dress">0￥</td>
+                        <td class="l_result_tit">婚戒</td>
+                        <td id="l_ring">0￥</td>
+                        <td class="l_result_tit">喜糖/回礼</td>
+                        <td id="l_sweet">0￥</td>
+                    </tr>
+                    <tr>
+                        <td class="l_result_tit">新人饰品</td>
+                        <td id="l_dressup">0￥</td>
+                        <td class="l_result_tit">摄影&amp;摄像</td>
+                        <td id="l_camera">0￥</td>
+                        <td class="l_result_tit">请帖/婚礼卡片</td>
+                        <td id="l_card">0￥</td>
+                    </tr>
+                    <tr>
+                        <td class="l_result_tit">乐队/司仪</td>
+                        <td id="l_music">0￥</td>
+                        <td class="l_result_tit">捧花&amp;花艺</td>
+                        <td id="l_flower">0￥</td>
+                        <td class="l_result_tit">其他</td>
+                        <td id="l_other">0￥</td>
+                    </tr>
+                </table>
+                <div class="l_tip">
+                    <div class="l_tip_tit">Tips:</div>
+                    <div class="l_tip_budget">您的总预算为：<span id="l_myBudget" class="l_tip_strong_content"></span></div>
+                    <div class="l_tip_groupbuy">
+                        现在通过婚礼猫预订酒店坐享最优惠价格，能够获得超值大礼包赠送，快来抢订吧！
+                    </div>
+                    <div class="l_tip_groupbuy" style="margin-top:5px;">
+                        预算还没确定？试试婚礼猫<a href="javascript:"
+                            style="color:#ff6699;margin:0 3px">婚礼管家</a>吧！
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 三步走-->
+    <!-- 其他工具 -->
+
+</body>
+
+</html>

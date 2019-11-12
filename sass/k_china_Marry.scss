@@ -18,7 +18,7 @@ body{
 	}
 	.show_box{
 		width: 1180px;
-		height: 290px;
+		// height: 290px;
 		margin: 0 auto;
 		p{
 			line-height: 50px;
@@ -26,8 +26,9 @@ body{
 		}
 		.tab{
 			width: 1180px;
-			height: 240px;
+			// height: 240px;
 			border: 1px solid #E3E3E3;
+			margin-bottom: 35px;
 			.tab_nav{
 				height: 44px;
 				background: #f0f0f0;
@@ -68,8 +69,136 @@ body{
 			}
 			.tab_show{
 				width: 1180px;
-				height: 192px;
+				background: #ffffff;
+				.new{
+					width: 1180px;
+					display: none;
+					.news{
+						width: 1180px;
+						height: 64px;
+						border-bottom: 1px solid #F2F2F2;
+						.left_nav{
+							float: left;
+							height: 28px;
+							margin-left: 20px;
+							margin-top: 15px;
+							line-height: 28px;
+							span{
+								width: 70px;
+								height: 28px;
+								// background: #FF7385;
+								padding:5px 20px;
+								text-align: center;
+								color: #666464;
+								border-radius: 5px;
+							}
+						}
+						
+						ul{
+							float: left;
+							display: flex;
+							li{
+								width: 98px;
+								height: 28px;
+								text-align: center;
+								line-height: 28px;
+								margin: 15px;
+								// &:hover a{
+								// 	color: #FF7385;
+								// }
+							}
+						}
+						.cirle_color{
+							li{
+								width: 28px;
+								height: 28px;
+								margin: 15px 8px;
+								position: relative;
+								&:first-of-type{
+									margin-left: 30px;
+								}
+								a{
+									.color_title{
+										position: absolute;
+										left: -13px;
+										top: 5;
+										width: 54px;
+										height: 26px;
+										img{
+											width: 100%;
+										}
+										span{
+											position: absolute;
+											top: 2px;
+											left: 2px;
+											text-align: center;
+											line-height: 26px;
+											width: 54px;
+											height: 26px;
+											display: block;
+											color: #4d4b4b;
+											font-size: 12px;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
 			}
+		}
+	}
+}
+
+
+
+
+
+.rr_color{//公共点击变色模块
+	background: #FF7385;
+	border-radius: 5px;
+	// a{
+	// 	color: #ffffff;
+	// }
+}
+
+
+
+
+
+// 图片展示区版芯1180
+
+.r_show{
+	width: 1180px;
+	margin: 15px auto;
+	// background: #FF7385;
+	.r_item{
+		float: left;
+		ul{
+			height: 34px;
+			li{
+				float: left;
+				height: 34px;
+				width: 84px;
+				border: 1px solid #808080;
+				border-radius: 2px;
+				margin-right: 10px;
+				text-align: center;
+				a{
+					i{
+
+						line-height: 34px;
+						margin-right: 5px;
+					}
+					font-size: 16px;
+				}
+			}
+		}
+	}
+	.r_right_text{
+		float: right;
+		span{
+			margin-right: 20px;
 		}
 	}
 }
