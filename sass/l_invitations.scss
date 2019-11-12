@@ -45,11 +45,7 @@
                 border-bottom: 1px solid #fff;
             }
             .icon-sort_desc-copy{
-                display: inline-block;
-                -moz-transform:scaleY(-1);
-                -webkit-transform:scaleY(-1);
-                -o-transform:scaleY(-1);
-                transform:scaleY(-1)
+                transition: transform 3s ease-in;
             }
             .l_nav-tool-menu{
                 width: 120px;
@@ -97,6 +93,10 @@
                 background: #fff;
                 opacity: 0.5;
             }
+        }
+        .l_layer:hover .icon-sort_desc-copy{
+            display: inline-block;
+            transform: scaleY(180deg);
         }
         .active{
             border-bottom: 1px solid #fff;
