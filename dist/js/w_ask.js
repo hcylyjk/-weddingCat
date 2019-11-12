@@ -65,3 +65,45 @@ function getAnswerList(qId){
         },
     });
 }
+
+// 回答框
+$('#answer_btn').click(function(){
+    $('.answer_frame_mask').css('display','block')
+})
+$('.close_frame').on('click',function(){
+    $('.answer_frame_mask').css('display','none')
+})
+$('#aff_cancel').on('click',function(){
+    $('.answer_frame_mask').css('display','none')
+})
+$('#aff_submit').on('click',function(){
+    var nowTime = new Date();
+    var qId = $('.question_header').attr('questionId')
+    var text = $('#answer_textarea').val().split("\n").join("$$");
+    var affName = $('#aff_name').val();
+    var date = nowTime.getFullYear()+'-'+(nowTime.getMonth()+1)+'-'+nowTime.getDate();
+    console.log(affName);
+    console.log(text);
+    console.log(date);
+    setAnswerList(qId,affName,'00001',text,date)
+})
+function setAnswerList(qId,username,userid,answer,time){
+    $.ajax({
+        url: '../php/w_subAsk.php',
+        type: 'get',
+        data: 'qId='+qId+'&username='+username+'&userid='+userid+'&answer='+answer+'&time='+time,
+        dataType: 'json',
+        cache: false,//不使用缓存
+        success: function myCallback(json) {
+            alert('发布成功');
+            $('.answer_frame_mask').css('display','none');
+            $('#answer_textarea').val('');
+            $('#aff_name').val('');
+            getAnswerList(qId);
+        },
+        error: function (err) {
+            alert('请求失败');
+            console.log(err.status);            
+        },
+    });
+}
