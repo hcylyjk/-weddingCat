@@ -70,6 +70,23 @@ $(function () {
         $(this).children('.kongzhi').css('color','#fff')
     })
 
+    // 每月客照 右移
+    $('.entertop').on('click', '.next3', function () {
+        $('.ma_enterpicture').css('transform', 'translateX(-1180px)')
+        $('.ma_enterpicture').css('transition', '.5s')
+        $(".next3").css('display', 'none')
+        $(".prev3").css('display', 'block')
+
+    })
+
+    // 每月客照 左移
+    $('.entertop').on('click', '.prev3', function () {
+        $('.ma_enterpicture').css('transform', 'translateX(0)')
+        $('.ma_enterpicture').css('transition', '.5s')
+        $(".prev3").css('display', 'none')
+        $(".next3").css('display', 'block')
+    })
+
     // 客户评价 右移
     $('.evaluate').on('click', '.next', function () {
         $('.evaluatemassagecon').css('transform', 'translateX(-1180px)')

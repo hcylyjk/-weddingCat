@@ -99,3 +99,23 @@ start()
 		$('.new').eq(index).css('display','block');
 	}
 	showTab(0)
+
+
+	// 图片划过变长框
+	$('.imgs').hover(function(){
+		
+		$(this).find('.bottom_text').css('height','120')
+	},function(){
+		$('.bottom_text').css('height','80')
+	})
+
+
+	//分页
+	
+
+
+	function page(index){
+		$('.pag span').eq(index).css('background','#4d4b4b')
+		$('.pag span').eq(index).find('a').css('color','#ffffff')
+	}
+	page(0)
