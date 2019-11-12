@@ -3,6 +3,7 @@
 body,html{
     width: 100%;
     // overflow-: hidden;
+    // background: #2f2f2f;
 }
 
 
@@ -13,6 +14,7 @@ body,html{
     width: 100%;
     height: 420px;
     position: relative;
+    
 }
 .swiper-wrapper{
     width: 100%;
@@ -22,6 +24,10 @@ body,html{
     }
 }
 //为什么选择旅拍
+.j_consd{
+    width: 100%;
+    background-color:rgba(241, 241, 241, 0.7);
+}
 .j_container{
     width: 1180px;
     margin: 0 auto;
@@ -152,6 +158,7 @@ body,html{
 // left: 0;
 // display: none;
 // }
+
 .j_fixed_inner{
     width: 1180px;
     margin: 0 auto;
@@ -171,13 +178,14 @@ body,html{
 .j_city_juest{
     width: 100%;
     height: 320px;
-    background: #fff;
+    background-color: #fff;
     padding: 40px 0 20px;
     }
 .j_citywarp{
     width: 1180px;
     height: 320px;
     margin: 0 auto;
+    overflow: hidden;
     }
 .j_cityT{
     height: 40px;
@@ -190,6 +198,7 @@ body,html{
     padding: 20px;
     width: 1220px;
     margin-left: -20px;
+    overflow: hidden;
 }
 .j_cityBlist ul{
     width: 10000px;
@@ -220,18 +229,32 @@ body,html{
     height: 100%;
     position: absolute;
     left: 0;
-    top: 0;
+    top:0;
     display: block;
     text-align: center;
+    // -webkit-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    
+}
+.j_cityBlist ul li a .j_info:hover{
+    transform:translateY(-240px);
 }
 
 .j_cityBlist ul li a .j_info .j_name{
     color: #fff;
     font-size: 20px;
-    top: 80px;
     display: block;
+    transform: translate(0,80px);
 }   
-.j_info .j_before{
+
+.j_info .j_num{
+    padding-top: 14px;
+    font-size: 14px;
+    color: #fff;
+    transform: translate(0,122px);
+    display: block;    
+}
+.j_info .j_num::before{
     position: absolute;
     top: 6px;
     left: 50%;
@@ -241,17 +264,7 @@ body,html{
     width: 120px;
     height: 2px;
     border-top: solid 2px #999;
- 
 }
-.j_info .j_num{
-    padding-top: 14px;
-    font-size: 14px;
-    top: 112px;
-    color: #fff;
-    transform: translate(0,122px);
-    display: block;    
-}
-
 
 
 // 每月客照
@@ -259,10 +272,12 @@ body,html{
     width: 100%;
     padding:40px 0 20px;
     height: 450px;
+    background: rgba(241, 241, 241, 0.7);
 }
 .j_monthcenter{
     width: 1180px;
     margin: 0 auto;
+    overflow: hidden;
 }
 .j_monthtitle {
     width: 1180px;
@@ -273,50 +288,70 @@ body,html{
     color: #333;
 }
 .j_monthtitle a{
+    position: relative;
     float: right;
+    top: 0;
     margin-top: 18px;
     font-size: 16px;
     color: #333;
 
 }
-
+.j_warp_box{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
 .j_month_list{
     padding: 20px;
-    position: relative;
-    width: 1200px;
-    height: 310px;
+    width: 1180px;
+    height: 270px;
     margin-left: -20px;
-    // overflow: hidden;
+    position: relative;
 }
 .j_month_list ul{
+    position: relative;
     width: 10000px;
+    height: 100%;
+    // overflow: hidden;
+    // top: -200px;
 }
-.j_month_list ul li{
-    width: 380px;   
+
+.j_lists{
+    position: relative;
+    width: 380px;
     height: 310px;
     margin-right: 20px;
     float: left;
     -webkit-transition: transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out;
+    
 }
-.j_month_list ul li:hover{
+.j_lists :hover{
     transform:translateY(-10px);
 }
-.j_month_list ul li a {
+.j_itme_link {
+    position: relative;
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 380px;
+    height: 240px;  
+    z-index: 1;
 }
-.j_month_list ul li a img{
-    width: 100%;
-    height: 100%;
+.j_itme_link img{
+    width: 380px;
+    height: 240px;  
 }
 .j_month_list_names{
-    width: 100%;
-    height: 70px;
+    position: relative;
+    display: block;
+    width: 340px;
+    height: 30px;
+    padding: 20px;
     font-size: 20px;
-    line-height: 70px;
-    background: #fff;
+    font-weight: 600;
+    color: #2f2f2f;
+    line-height: 30px;
+    background-color: #fff;
+    z-index: 1;
     
 }
 .j_month_list_names span{
@@ -329,7 +364,7 @@ body,html{
     width: 100%;
     height: 280px;
     padding: 47px 0 63px;
-    background: #fff;
+    background: rgba(241, 241, 241, 0.7);
 }
 .j_cameraman_center{
     width: 1180px;
@@ -498,7 +533,7 @@ body,html{
 // 品牌中心
 .j_brand_center{
     width: 100%;
-    background: #fff;
+    background: rgba(241, 241, 241, 0.7);
     height: 300px;
     padding: 40px 0;
 }
@@ -537,6 +572,7 @@ body,html{
     width: 100%;
     height: 450px;
     padding: 40px 0;
+    background-color: rgba(241, 241, 241, 0.7);
 }
 .j_Testimonials_center{
     width: 1180px;
@@ -626,7 +662,7 @@ body,html{
     width: 100%;
     height: 390px;
     padding: 40px 0;
-    background: #fff;
+    background:rgba(241, 241, 241, 0.7);
 }
 .j_answer_center{
     width: 1180px;
