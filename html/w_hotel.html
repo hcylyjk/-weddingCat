@@ -70,7 +70,8 @@
                         <div class="date_title">档期查询</div>
                         <div class="date_dec">热门档期疯抢中</div>
                         <div class="date_input_class">
-                            <input id="date_input" class="inline laydate-icon" size="16" type="text" value="选择日期" readonly="">
+                            <input id="date_input" class="inline laydate-icon" size="16" type="text" value="选择日期"
+                                readonly="">
                         </div>
                     </div>
                 </div>
@@ -998,8 +999,17 @@
 </body>
 <script src="../js/swiper.min.js"></script>
 <script src="../js/w_hotel.js"></script>
+<script src="../laydate/laydate.js"></script>
 <script>
-
+    laydate.render({
+        elem: '#date_input' //指定元素
+        , done: function (value, date, endDate) {
+            // console.log(value); //得到日期生成的值，如：2017-08-18
+            alert(value+'的档期已经排满!')
+            // console.log(date); //得到日期时间对象：{year: 2017, month: 8, date: 18, hours: 0, minutes: 0, seconds: 0}
+            // console.log(endDate); //得结束的日期时间对象，开启范围选择（range: true）才会返回。对象成员同上。
+        }
+    });
 </script>
 
 </html>
