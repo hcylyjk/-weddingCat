@@ -34,6 +34,12 @@
         padding-bottom: 1px; }
       .l_wrapper .l_nav-list .l_layer .xhx:hover {
         border-bottom: 1px solid #fff; }
+      .l_wrapper .l_nav-list .l_layer .icon-sort_desc-copy {
+        display: inline-block;
+        -moz-transform: scaleY(-1);
+        -webkit-transform: scaleY(-1);
+        -o-transform: scaleY(-1);
+        transform: scaleY(-1); }
       .l_wrapper .l_nav-list .l_layer .l_nav-tool-menu {
         width: 120px;
         height: 195px;
