@@ -40,5 +40,24 @@ oL3.onclick = function () {
 //     }
 //   }
 
-// 
+//
+//返回顶部
+
+$('.mod_kl').click(function(){
+    
+    var rest = document.documentElement.scrollTop;
+    var tiem = setInterval(function(){
+    rest-=50;
+      if(rest<=0){
+        clearInterval(tiem);
+        rest = 0
+        
+      }
+      document.documentElement.scrollTop = rest;
+
+    },3)
+   
+
+    
+}) 
 
