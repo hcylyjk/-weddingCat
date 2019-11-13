@@ -338,47 +338,28 @@
                     <div class="j_Store_right fl">
                         <div class="j_list_box">
                             <div class="j_list_warps">
-                                <ul style="width: 10000px;left: 0;">
-                                    <li>
-                                        <img src="../img/j_image/j_list_img/ia_200000090.jpg" alt="">
-                                    </li>
-                                    <li>
-                                        <img src="../img/j_image/j_list_img/ia_200000091.jpg" alt="">
-                                    </li>
-                                    <li>
-                                            <img src="../img/j_image/j_list_img/ia_200000092.jpg" alt="">
-                                    </li>
-                                    <li>
-                                            <img src="../img/j_image/j_list_img/ia_200000093.jpg" alt="">
-                                    </li>
-                                    <li>
-                                            <img src="../img/j_image/j_list_img/ia_200000094.jpg" alt="">
-                                    </li>
-                                    <li>
-                                            <img src="../img/j_image/j_list_img/ia_200000095.jpg" alt="">
-                                    </li>
-                                    <li>
-                                            <img src="../img/j_image/j_list_img/ia_200000096.jpg" alt="">
-                                    </li>
-                                    <li>
-                                            <img src="../img/j_image/j_list_img/ia_200000097.jpg" alt="">
-                                    </li>
-                                    <li>
-                                            <img src="../img/j_image/j_list_img/ia_200000098.jpg" alt="">
-                                    </li>
-                                    <li>
-                                            <img src="../img/j_image/j_list_img/ia_200000099.jpg" alt="">
-                                    </li>
-                                    <li>
-                                            <img src="../img/j_image/j_list_img/ia_200000100.jpg" alt="">
-                                    </li>
-                                </ul>
+                                    <div class="banner2">
+                                            <div class="swiper-container">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide"> <img src="../img/j_image/j_list_img/ia_200000090.jpg" alt=""></div>
+                                                    <div class="swiper-slide"> <img src="../img/j_image/j_list_img/ia_200000091.jpg" alt=""></div>
+                                                    <div class="swiper-slide"> <img src="../img/j_image/j_list_img/ia_200000092.jpg" alt=""></div>
+                                                    <div class="swiper-slide"> <img src="../img/j_image/j_list_img/ia_200000093.jpg" alt=""></div>
+                                                    <div class="swiper-slide"> <img src="../img/j_image/j_list_img/ia_200000094.jpg" alt=""></div>
+                                                    <div class="swiper-slide"> <img src="../img/j_image/j_list_img/ia_200000095.jpg" alt=""></div>
+                                                    <div class="swiper-slide"> <img src="../img/j_image/j_list_img/ia_200000096.jpg" alt=""></div>
+                                                    <div class="swiper-slide"> <img src="../img/j_image/j_list_img/ia_200000097.jpg" alt=""></div>
+                                                    <div class="swiper-slide"> <img src="../img/j_image/j_list_img/ia_200000098.jpg" alt=""></div>
+                                                    <div class="swiper-slide"> <img src="../img/j_image/j_list_img/ia_200000099.jpg" alt=""></div>
+                                                    <div class="swiper-slide"> <img src="../img/j_image/j_list_img/ia_200000100.jpg" alt=""></div>
+                                                    <div class="swiper-pagination"></div>
+                                                    <div class="swiper-button-next"></div>
+                                                    <div class="swiper-button-prev"></div>                                    
+                                                </div>
+                                            </div>
+                                        </div>
                             </div>
                         </div>
-                        <div class="nave_left4" style="display: block;"><img src="../img/c_image/index/zuojiaotou.png"
-                                alt="">
-                        </div>
-                        <div class="nave_right4"><img src="../img/c_image/index/youjiantou.png" alt=""></div>
                     </div>
                 </div>
             </div>
@@ -971,6 +952,21 @@
         <!-- $('.footer').load('mod_footer.html') -->
     </div>
     <script src="../js/j_journey_list.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/j_journey.js"></script>
+    <script>
+     var mySwiper = new Swiper('.swiper-container', {
+                loop: true, // 循环模式选项
+                // 如果需要前进后退按钮
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                autoplay: true,//等同于以下设置
+                effect: 'fade',
+            })
+    </script>
+  
 </body>
 
 </html>
