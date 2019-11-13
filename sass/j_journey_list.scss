@@ -202,15 +202,6 @@
             line-height: 0;
             cursor: pointer;
         }
-        // .j_work_item_head{
-        //     position: relative;
-        //     width: 720px;
-        //     display: inline-block;
-        //     margin-bottom: 20px;
-        //     line-height: 0;
-        //     cursor: pointer;
-        //     // display: none;
-        // }
         .j_load{
             width: 290px;
             height: 50px;
@@ -266,10 +257,8 @@
                     position: relative;
                     overflow: hidden;
                     ul{
+                      
                         position: relative;
-                        // width: 10000px;
-                        // height: 100%;
-                        
                         li{
                             position: relative;
                             width: 380px;
@@ -290,7 +279,6 @@
                                     border: none;
                                     width: 100%;
                                     height: 100%;
-                                
                                 }
                             }
                             .j_ar{
@@ -332,10 +320,7 @@
                     cursor: pointer;
                 }
             }
-            
         }
-
-
         .j_team_blocl{
             padding-bottom: 20px;
             .j_team_blocl_conter{
@@ -404,7 +389,7 @@
                                     width: 100%;
                                     height: 100%;
                                     display: block;
-                                   span{
+                                   .j_herds{
                                         position: absolute;
                                         left: 25px;
                                         bottom: 20px;
@@ -412,7 +397,6 @@
                                         height: 40px;
                                         display: block;
                                         z-index: 1;
-                                        
                                         img{
                                             width: 40px;
                                             height: 40px;
@@ -426,10 +410,10 @@
                                         left: 0;
                                         width: 100%;
                                         height: 100%;
-                                        // overflow: hidden;
+                                        overflow: hidden;
                                         opacity: 0;
                                         transition: all 0.3s;
-                                        P{
+                                        p{
                                             position: absolute;
                                             top: 100%;
                                             left: 0;
@@ -453,7 +437,7 @@
                                             transition: all 2.3s;
                                         }
                                     }
-                                   
+
                                 }
                                 a:hover img{
                                     transform: translate(147px,-100px)
@@ -477,10 +461,6 @@
         }
        
     }
-}
-
-.blok{
-    display: block !important;
 }
      //体验店
      .j_store{
@@ -573,33 +553,26 @@
                     width: 880px;
                     height: 100%;
                     background-color: #ccc;
-                    position: relative;
                     .j_list_box{
                         width: 100%;
                         height: 100%;
-                        position: relative;
-                        .j_list_warps{
+                        .j_list_warp{
                             width: 100%;
                             overflow: hidden;
-                            position: relative;
-                            .banner{
-                                width: 880px;
-                                height: 480px;
+                            ul{
                                 position: relative;
-                                .swiper-container{
+                                height: 100%;
+                                overflow: hidden;
+                                li{
                                     width: 880px;
                                     height: 480px;
-                                    position: relative;
-                                    
-                                }
-                                .swiper-wrapper{
-                                    width: 100%;
+                                    float: left;
+                                    // overflow: hidden;
                                     img{
-                                        width: 100%;
-                                        height: 480px;
+                                        width:100%;
                                     }
+                                }
                             }
-                          
                         }
                     }
                 }
@@ -607,366 +580,366 @@
         }
     }
     // 了解三亚
-    // .j_guidanc{
-    //     width: 100%;
-    //     background-color: #fff;
-    //     padding-bottom: 40px;
-    //     .j_guidan_center{
-    //         width: 1180px;
-    //         height: 100%;
-    //         margin: auto;
-    //        .j_title{
-    //         width: 100%;
-    //         height: 82px;
-    //         padding:36px 0 3px;
-    //         line-height: 46px;
-    //         text-align: center;
-    //         span{
-    //             display: inline-block;
-    //             width: 430px;
-    //             height: 2px;
-    //             vertical-align: middle;
-    //             // opacity: 0.15;
-    //             background: #ccc;
-    //         }
-    //         h2{
-    //             display: inline-block;
-    //             width: 300px;
-    //             color: #000;
-    //             font-size: 30px;
-    //             vertical-align: middle;
-    //             text-align: center;
-    //             i{
-    //                 display: block;
-    //                 font-family: Arial, sans-serif;
-    //                 font-weight:normal;
-    //                 font-style:normal;
-    //                 font-size:14px;
-    //                 line-height: 20px;
-    //                 color: #666666;
-    //             }
-    //         }
-    //     }
-    //     .j_gui{
-    //         h3{
-    //             font-size: 14px;
-    //             line-height: 28px;
-    //             color: #666666;
-    //         }
-    //         .j_gui_point{
-    //             padding-top: 34px;
-    //             .j_gui_item_a{
-    //                 width: 470px;
-    //                 display: inline-block;
-    //                 .j_gui_item_title{
-    //                     font-size: 18px;
-    //                     line-height: 30px;
-    //                     color: #999999;
-    //                 }
-    //                 .j_gui_conter{
-    //                     padding-top: 12px;
-    //                     font-size: 16px;
-    //                     line-height: 28px;
-    //                     color: #2f2f2f;
-    //                     .j_gui_conter_left{
-    //                         display: inline-block;
-    //                         margin-right: 10px;
-    //                         padding: 9px 20px;
-    //                         line-height: 17px;
-    //                         font-size: 14px;
-    //                         text-align: left;
-    //                         color: #666666;
-    //                         border-radius: 4px;
-    //                         border: 1px solid #c7c5c5;
-    //                     }
-    //                     .j_gui_conter_right{
-    //                         display: inline-block;
-    //                         margin-right: 10px;
-    //                         padding: 9px 20px;
-    //                         line-height: 17px;
-    //                         font-size: 14px;
-    //                         text-align: left;
-    //                         color: #666666;
-    //                         border-radius: 4px;
-    //                         border: 1px solid #c7c5c5;
-    //                     }
-    //                 }
-    //             }
-    //             .j_gui_item_b{
-    //                 display: inline-block;
-    //                 width: 238px;
-    //                 padding-left: 18px;
-    //                 border-left:1px solid #ccc;
-    //                 .j_gui_item_title{
-    //                     font-size: 18px;
-    //                     line-height: 31px;
-    //                     color: #999999;
-    //                 }
-    //                 .j_gui_item_b_t{
-    //                     padding-top: 12px;
-    //                     font-size: 16px;
-    //                     line-height: 27px;
-    //                     color: #2f2f2f;
-    //                 }
-    //             }
-    //             .j_gui_item_c{
-    //                 display: inline-block;
-    //                 width: 238px;
-    //                 padding-left: 18px;
-    //                 border-left: 1px solid #ccc;
-    //                 .j_gui_item_title{
-    //                     font-size: 18px;
-    //                     line-height: 31px;
-    //                     color: #999999;
-    //                 }
-    //                 .j_gui_item_b_t{
-    //                     padding-top: 12px;
-    //                     font-size: 16px;
-    //                     line-height: 27px;
-    //                     color: #2f2f2f;
-    //                 }
-    //             }
-    //             .j_gui_item_d{
-    //                 width: 100%;
-    //                 padding-top: 30px;
-    //                 display: inline-block;
-    //                 .j_gui_item_title{
-    //                     padding-bottom: 10px;
-    //                     font-size: 18px;
-    //                     line-height: 30px;
-    //                     color: #999999;
+    .j_guidanc{
+        width: 100%;
+        background-color: #fff;
+        padding-bottom: 40px;
+        .j_guidan_centers{
+            width: 1180px;
+            height: 100%;
+            margin: auto;
+           .j_titles{
+            width: 100%;
+            height: 82px;
+            padding:30px 0 3px;
+            line-height: 46px;
+            text-align: center;
+            .span_x{
+                display: inline-block;
+                width: 430px;
+                height: 2px;
+                vertical-align: middle;
+                // opacity: 0.15;
+                background: #ccc;
+            }
+            h2{
+                display: inline-block;
+                width: 300px;
+                color: #000;
+                font-size: 30px;
+                vertical-align: middle;
+                text-align: center;
+                i{
+                    display: block;
+                        font-family: Arial, sans-serif;
+                        font-weight:normal;
+                        font-style:normal;
+                        font-size:14px;
+                        line-height: 20px;
+                        color: #666666;
+                }
+            }
+        }
+        .j_gui{
+            h3{
+                font-size: 14px;
+                line-height: 28px;
+                color: #666666;
+            }
+            .j_gui_point{
+                padding-top: 34px;
+                .j_gui_item_a{
+                    width: 470px;
+                    display: inline-block;
+                    .j_gui_item_title{
+                        font-size: 18px;
+                        line-height: 30px;
+                        color: #999999;
+                    }
+                    .j_gui_conter{
+                        padding-top: 12px;
+                        font-size: 16px;
+                        line-height: 28px;
+                        color: #2f2f2f;
+                        .j_gui_conter_left{
+                            display: inline-block;
+                            margin-right: 10px;
+                            padding: 9px 20px;
+                            line-height: 17px;
+                            font-size: 14px;
+                            text-align: left;
+                            color: #666666;
+                            border-radius: 4px;
+                            border: 1px solid #c7c5c5;
+                        }
+                        .j_gui_conter_right{
+                            display: inline-block;
+                            margin-right: 10px;
+                            padding: 9px 20px;
+                            line-height: 17px;
+                            font-size: 14px;
+                            text-align: left;
+                            color: #666666;
+                            border-radius: 4px;
+                            border: 1px solid #c7c5c5;
+                        }
+                    }
+                }
+                .j_gui_item_b{
+                    display: inline-block;
+                    width: 238px;
+                    padding-left: 18px;
+                    border-left:1px solid #ccc;
+                    .j_gui_item_title{
+                        font-size: 18px;
+                        line-height: 31px;
+                        color: #999999;
+                    }
+                    .j_gui_item_b_t{
+                        padding-top: 12px;
+                        font-size: 16px;
+                        line-height: 27px;
+                        color: #2f2f2f;
+                    }
+                }
+                .j_gui_item_c{
+                    display: inline-block;
+                    width: 238px;
+                    padding-left: 18px;
+                    border-left: 1px solid #ccc;
+                    .j_gui_item_title{
+                        font-size: 18px;
+                        line-height: 31px;
+                        color: #999999;
+                    }
+                    .j_gui_item_b_t{
+                        padding-top: 12px;
+                        font-size: 16px;
+                        line-height: 27px;
+                        color: #2f2f2f;
+                    }
+                }
+                .j_gui_item_d{
+                    width: 100%;
+                    padding-top: 30px;
+                    display: inline-block;
+                    .j_gui_item_title{
+                        padding-bottom: 10px;
+                        font-size: 18px;
+                        line-height: 30px;
+                        color: #999999;
                         
-    //                 }
-    //                 .j_gui_item_d_row{
-    //                     margin-left: -20px;
-    //                     a{
-    //                         display: block;
-    //                         width: 276px;
-    //                         height: 106px;
-    //                         margin-bottom: 10px;
-    //                         background-color: #f6f6f6;
-    //                         border: solid 1px #ebebeb;
-    //                         margin-left: 20px;
-    //                         padding: 0 0 px;
-    //                         float: left;
-    //                         .j_gui_info{
-    //                             width: 235px;
-    //                             height: 78px;
-    //                             padding: 20px;
-    //                             .j_item_title{
-    //                                 font-size:16px;
-    //                                 line-height: 20px;
-    //                                 text-overflow: ellipsis;
-    //                                 white-space: nowrap;
-    //                                 span{
-    //                                     display: inline-block;
-    //                                     width: 18px;
-    //                                     height: 18px;
-    //                                     margin-right: 8px;
-    //                                     font-size: 12px;
-    //                                     color: #ffffff;
-    //                                     text-align: center;
-    //                                     border-radius: 4px;
-    //                                     background-color: #ff7385;
-    //                                 }
-    //                                 p{
-    //                                     width: 100%;
-    //                                     height: 40px;
-    //                                     margin-top: 10px;
-    //                                     font-size: 13px;
-    //                                     line-height: 20px;
-    //                                     color: #999999;
-    //                                     overflow: hidden;
-    //                                     -webkit-line-clamp: 2;
-    //                                     text-overflow: ellipsis;
-    //                                     display: -webkit-box;
-    //                                     -webkit-box-orient: vertical;
+                    }
+                    .j_gui_item_d_row{
+                        margin-left: -20px;
+                        a{
+                            display: block;
+                            width: 276px;
+                            height: 106px;
+                            margin-bottom: 10px;
+                            background-color: #f6f6f6;
+                            border: solid 1px #ebebeb;
+                            margin-left: 20px;
+                            padding: 0 0 px;
+                            float: left;
+                            .j_gui_info{
+                                width: 235px;
+                                height: 78px;
+                                padding: 20px;
+                                .j_item_title{
+                                    font-size:16px;
+                                    line-height: 20px;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                    span{
+                                        display: inline-block;
+                                        width: 18px;
+                                        height: 18px;
+                                        margin-right: 8px;
+                                        font-size: 12px;
+                                        color: #ffffff;
+                                        text-align: center;
+                                        border-radius: 4px;
+                                        background-color: #ff7385;
+                                    }
+                                    p{
+                                        width: 100%;
+                                        height: 40px;
+                                        margin-top: 10px;
+                                        font-size: 13px;
+                                        line-height: 20px;
+                                        color: #999999;
+                                        overflow: hidden;
+                                        -webkit-line-clamp: 2;
+                                        text-overflow: ellipsis;
+                                        display: -webkit-box;
+                                        -webkit-box-orient: vertical;
 
-    //                                 }
-    //                             }
-    //                         }
-    //                     }
-    //                 }
-    //             }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
 
-    //         }
-    //     }
-    //     }
-    // }
+            }
+        }
+        }
+    }
 
     //旅拍评价
-//     .j_evaluate{
-//         padding: 6px 0 40px;
-//         background-color: #2f2f2f;
-//         .j_evaluate_conter{
-//             width: 1180px;
-//             margin: 0 auto;
-//             .j_evaluate_title{
-//                 will-change: 100%;
-//                 padding: 30px 0 3px;
-//                 height: 30px;
-//                 padding-bottom: 20px;
-//                 line-height: normal;
-//                 text-align: center;
-//                 .title_left{
-//                     // width: 100%;
-//                     .title_txt{
-//                         font-size: 24px;
-//                         text-align: left;
-//                         color: #fff;
-//                     }
-//                 }
-//                 .title_tab{
-//                     height: 100%;
-//                     padding-top: 8px;
-//                     display: inline-block;
-//                     text-align: right;
-//                     .tab_item{
-//                         margin-left: 15px;
-//                         display: inline-block;
-//                         cursor: pointer;
-//                         font-size: 16px;
-//                         color: #fff;
-//                         span{
-//                             color: #ff7385;
-//                         }
-//                     }
-//                 }
-//             }
-//             .j_comment_Warp{
-//                 width: 100%;
-//                 height: 1300px;
-//                 .j_load_list{
-//                     position: relative;
-//                     // overflow: hidden;
-//                     .j_load_more{
-//                         position: absolute;
-//                         width: 240px;
-//                         padding: 20px;
-//                         margin-bottom: 20px;
-//                         background-color: #ffffff;
-//                         .j-comment_head{
-//                             width: 36px;
-//                             height: 36px;
-//                             img{
-//                                 width: 36px;
-//                                 height: 36px;
-//                                 border-radius: 50%;
-//                             }
-//                         }
-//                         .j-comment_info{
-//                             position: relative;
-//                             width: 190px;
-//                             .j_ci_name{
-//                                 line-height: 24px;
-//                                 color: #666666;
-//                                 font-size: 18px;
-//                             }
-//                             .j_ci_spot{
-//                                 line-height: 24px;
-//                                 color: #666666;
-//                                 font-size: 14px;
-//                             }
-//                             .j_ci_wrapper{
-//                                position: relative;
-//                                width: 100px;
-//                                height: 13px;
-//                                 .ci_start_bg{
-//                                     position: absolute;
-//                                     width: 100%;
-//                                     height: 100%;
-//                                     left: 0;
-//                                     z-index: 1;
-//                                     i{
-//                                         color: #ff7385;
-//                                     }
-//                                 }
+    .j_evaluate{
+        padding: 6px 0 40px;
+        background-color: #2f2f2f;
+        .j_evaluate_conter{
+            width: 1180px;
+            margin: 0 auto;
+            .j_evaluate_title{
+                will-change: 100%;
+                padding: 30px 0 3px;
+                height: 30px;
+                padding-bottom: 20px;
+                line-height: normal;
+                text-align: center;
+                .title_left{
+                    // width: 100%;
+                    .title_txt{
+                        font-size: 24px;
+                        text-align: left;
+                        color: #fff;
+                    }
+                }
+                .title_tab{
+                    height: 100%;
+                    padding-top: 8px;
+                    display: inline-block;
+                    text-align: right;
+                    .tab_item{
+                        margin-left: 15px;
+                        display: inline-block;
+                        cursor: pointer;
+                        font-size: 16px;
+                        color: #fff;
+                        span{
+                            color: #ff7385;
+                        }
+                    }
+                }
+            }
+            .j_comment_Warp{
+                width: 100%;
+                height: 1300px;
+                .j_load_list{
+                    position: relative;
+                    // overflow: hidden;
+                    .j_load_more{
+                        position: absolute;
+                        width: 240px;
+                        padding: 20px;
+                        margin-bottom: 20px;
+                        background-color: #ffffff;
+                        .j-comment_head{
+                            width: 36px;
+                            height: 36px;
+                            img{
+                                width: 36px;
+                                height: 36px;
+                                border-radius: 50%;
+                            }
+                        }
+                        .j-comment_info{
+                            position: relative;
+                            width: 190px;
+                            .j_ci_name{
+                                line-height: 24px;
+                                color: #666666;
+                                font-size: 18px;
+                            }
+                            .j_ci_spot{
+                                line-height: 24px;
+                                color: #666666;
+                                font-size: 14px;
+                            }
+                            .j_ci_wrapper{
+                               position: relative;
+                               width: 100px;
+                               height: 13px;
+                                .ci_start_bg{
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 100%;
+                                    left: 0;
+                                    z-index: 1;
+                                    i{
+                                        color: #ff7385;
+                                    }
+                                }
                     
-//                             }
-//                             .j_ci_text{
-//                                 padding: 8px 0 20px;
-//                                 font-size: 14px;
-//                                 line-height: 20px;
-//                                 color: #999999;
-//                                 word-break: break-all;
-//                                 word-wrap: break-word;
-//                             }
-//                             .j_ci_pics{
-//                                 overflow: hidden;
-//                                 .j_ci_pc{
-//                                     width: 55px;
-//                                     height: 55px;
-//                                     margin: 0 10px 5px 0;
-//                                 }
-//                             }
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// //通用背景色
-// .j_active{
-//     color: #ff7385;
-// }
-// //更多城市
-// .j_tipCity{
-//     background-color: #fff;
-//     padding: 40px 0;
-//     .j_tipCity_center{
-//         width: 1180px;
-//         margin: 0 auto;
-//         .j_tipCity_title{
-//             padding-bottom: 20px;
-//             h2{
-//                 font-size: 24px;
-//                 line-height: 30px;
-//                 color: #2f2f2f;
-//             }
-//         }
-//         .j_tipCity_row{
-//             margin-left: -20px;
-//             height: 280px;
-//             .j_tipCity_city{
-//                 position: relative;
-//                 width: 280px;
-//                 height: 280px;
-//                 margin-bottom: 20px;
-//                 margin-left: 20px;
-//                 .j_tipCity_mask{
-//                     position: absolute;
-//                     top: 0;
-//                     left: 0;
-//                     width: 100%;
-//                     height: 100%;
-//                     background-color: rgba(0, 0, 0, 0.3);
-//                 }
-//                 .j_tipCity_img{
-//                     width: 100px;
-//                     height: 100%;
-//                 }
-//                 .j_tipCity_info{
-//                     position: absolute;
-//                     top: 72px;
-//                     left: 100px;
+                            }
+                            .j_ci_text{
+                                padding: 8px 0 20px;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #999999;
+                                word-break: break-all;
+                                word-wrap: break-word;
+                            }
+                            .j_ci_pics{
+                                overflow: hidden;
+                                .j_ci_pc{
+                                    width: 55px;
+                                    height: 55px;
+                                    margin: 0 10px 5px 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+//通用背景色
+.j_active{
+    color: #ff7385;
+}
+//更多城市
+.j_tipCity{
+    background-color: #fff;
+    padding: 40px 0;
+    .j_tipCity_center{
+        width: 1180px;
+        margin: 0 auto;
+        .j_tipCity_title{
+            padding-bottom: 20px;
+            h2{
+                font-size: 24px;
+                line-height: 30px;
+                color: #2f2f2f;
+            }
+        }
+        .j_tipCity_row{
+            margin-left: -20px;
+            height: 280px;
+            .j_tipCity_city{
+                position: relative;
+                width: 280px;
+                height: 280px;
+                margin-bottom: 20px;
+                margin-left: 20px;
+                .j_tipCity_mask{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.3);
+                }
+                .j_tipCity_img{
+                    width: 100px;
+                    height: 100%;
+                }
+                .j_tipCity_info{
+                    position: absolute;
+                    top: 72px;
+                    left: 100px;
                   
-//                     text-align: center;
-//                     color: #ffffff;
-//                     .j_tipCity_city_icon{
-//                         i{
-//                             color: #fff;
-//                             font-size: 32px;
-//                         }
-//                     }
-//                     .j_tipCity_spot{
-//                         font-size: 30px;
+                    text-align: center;
+                    color: #ffffff;
+                    .j_tipCity_city_icon{
+                        i{
+                            color: #fff;
+                            font-size: 32px;
+                        }
+                    }
+                    .j_tipCity_spot{
+                        font-size: 30px;
 
-//                     }
-//                     .j_tipCity_spoten{
-//                         font-size: 18px;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
+                    }
+                    .j_tipCity_spoten{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
