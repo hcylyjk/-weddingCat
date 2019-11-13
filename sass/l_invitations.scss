@@ -465,14 +465,14 @@
                     font-size: 32px;
                     color: #3d3d3d;
                     transform: translate(-100px, 0);
-                    transition: all 1s ease-in-out;
+                    transition: all 3s ease-in-out;
                     opacity: 0;
                 }
                 .l_small-text{
                     font-size: 18px;
                     color: #999;
                     transform: translate(-100px, 0);
-                    transition: all 1.4s ease-in-out;
+                    transition: all 3.4s ease-in-out;
                     opacity: 0;
                 }
             }
@@ -486,7 +486,7 @@
                     margin-left: -100px;
                     z-index: 1;
                     transform: translate(50px, 0);
-                    transition: all 1s ease-in-out;
+                    transition: all 3s ease-in-out;
                     opacity: 0;
                     img{
                         box-shadow: -5px 6px 17px 0 rgba(0,0,0,0.2);
@@ -495,7 +495,7 @@
                 .l_secound{
                     padding: 20px 0 0 110px;
                     z-index: 1;
-                    transition: all 1.6s ease-in-out;
+                    transition: all 3.6s ease-in-out;
                     opacity: 0;
                 }
                 .l_thirld{
