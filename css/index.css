@@ -76,7 +76,7 @@
   transform: rotate(180deg);
   color: #ff7385; }
 
-.h_nav ul li:hover a {
+.h_nav ul li:hover .h_l {
   color: #ff7385; }
 
 .h_self {
@@ -176,19 +176,17 @@
   width: 138px;
   height: 193px; }
 
-.h_nav {
-  position: relative; }
-  .h_nav .h_li {
-    z-index: 300; }
-    .h_nav .h_li li {
-      float: left;
-      height: 40px;
-      line-height: 40px;
-      margin: 0 5px; }
-    .h_nav .h_li a {
-      color: #4D4B4B; }
-    .h_nav .h_li li:hover a {
-      color: #ff7385; }
+.h_nav .h_li {
+  z-index: 300; }
+  .h_nav .h_li li {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 5px; }
+  .h_nav .h_li a {
+    color: #4D4B4B; }
+  .h_nav .h_li li:hover a {
+    color: #ff7385; }
 
 .h_lis {
   position: absolute;
@@ -206,25 +204,101 @@
     .h_lis dl dt {
       padding: 15px 15px;
       width: 191px;
-      height: 54px; }
-      .h_lis dl dt a {
+      height: 62px;
+      position: relative; }
+      .h_lis dl dt .h_jp1 {
         display: block;
         color: #fff;
         text-align: left;
         margin: 0 5px;
         padding: 0;
-        border-bottom: 1px solid #ccc;
-        padding: 0 0 16px 0; }
-        .h_lis dl dt a h4 {
-          margin-bottom: 12px;
-          margin-left: 4px; }
-        .h_lis dl dt a span {
-          padding: 0 20px 0 4px;
+        border-bottom: 1px solid #757978;
+        height: 76px; }
+        .h_lis dl dt .h_jp1 h4 {
+          margin-left: 4px;
+          height: 30px;
+          line-height: 30px; }
+        .h_lis dl dt .h_jp1 span {
+          padding: 0 14px 0 3px;
           font-size: 12px;
           margin-bottom: 2px;
           display: inline-block; }
-        .h_lis dl dt a .h_native {
+        .h_lis dl dt .h_jp1 .h_native {
           padding: 0; }
+    .h_lis dl .h_tuijian {
+      background-color: #757978;
+      width: 220px;
+      height: 54px;
+      padding: 4px;
+      box-sizing: border-box;
+      margin-top: -2px; }
+      .h_lis dl .h_tuijian span {
+        background: #ff7385;
+        padding: 0px 6px;
+        border-radius: 4px; }
+      .h_lis dl .h_tuijian a {
+        color: #fff; }
+
+.h_hunsho {
+  display: none;
+  position: absolute;
+  left: 221px;
+  top: 0;
+  background-image: url(../img/index_img/ia_200000163.jpg);
+  width: 380px;
+  height: 380px;
+  padding: 20px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: 30px bottom;
+  border-top: 1px solid #ccc; }
+  .h_hunsho .h_zuopin1 .h_z1 .h_zu2 .h_hj113 {
+    padding: 0;
+    font-size: 13px;
+    font-weight: 600;
+    float: left; }
+  .h_hunsho .h_zuopin1 .h_z1 .h_zu2 .h_allliss {
+    text-align: left;
+    float: left;
+    margin-left: 12px; }
+    .h_hunsho .h_zuopin1 .h_z1 .h_zu2 .h_allliss .h_ch {
+      padding: 0;
+      font-size: 13px;
+      height: 20px;
+      line-height: 20px; }
+
+.h_op112 {
+  position: absolute;
+  color: #444;
+  left: 246px;
+  bottom: 18px; }
+  .h_op112 .h_66 {
+    font-size: 20px; }
+  .h_op112 .h_pppp {
+    font-size: 16px; }
+  .h_op112 .h_kl22 {
+    display: block;
+    width: 89px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ff7385;
+    border-radius: 4px;
+    margin-left: 21px; }
+
+.h_han:hover .h_hunsho {
+  display: block; }
+
+.h_moshow:hover .h_hunsho {
+  display: block; }
+
+.h_moshow1:hover .h_hunsho {
+  display: block; }
+
+.h_moshow2:hover .h_hunsho {
+  display: block; }
+
+.h_han:hover {
+  background-color: #757978; }
 
 .h_move:hover .h_erw {
   display: block; }
@@ -638,6 +712,7 @@ span:hover {
   background-color: #fff;
   position: absolute;
   top: 170px;
+  left: 0;
   z-index: 1000;
   margin: 0 auto;
   border-top: 2px solid #ccc;
@@ -645,7 +720,7 @@ span:hover {
   .h_content1 .h_content2 {
     padding: 20px 0 15px 0; }
     .h_content1 .h_content2 .h_contleft {
-      margin-left: 26px; }
+      line-height: normal; }
       .h_content1 .h_content2 .h_contleft img {
         width: 220px;
         height: 120px; }
@@ -655,7 +730,7 @@ span:hover {
 
 .h_contleft7 {
   margin-top: 15px;
-  margin-left: 80px; }
+  margin-left: 50px; }
   .h_contleft7 a {
     width: 80px;
     height: 80px;
@@ -669,23 +744,26 @@ span:hover {
       font-size: 16px; }
 
 .h_contleft9 {
-  margin-left: 60px;
+  margin-left: 57px;
   text-align: center;
-  width: 70px; }
+  width: 79px; }
   .h_contleft9 .h_a22 img {
     width: 56px;
     height: 54px; }
   .h_contleft9 .h_a22 p {
-    margin: 13px 0;
     font-size: 14px; }
   .h_contleft9 .h_aaaa {
     font-size: 10px; }
 
 .h_theme1 {
-  position: relative; }
+  position: relative;
+  height: 121px;
+  text-align: left;
+  box-sizing: border-box; }
   .h_theme1 .h_a1 {
     display: inline-block;
-    vertical-align: top; }
+    vertical-align: top;
+    padding: 0 14px; }
     .h_theme1 .h_a1 .h_th2 {
       display: inline-block;
       font-size: 15px;
@@ -693,23 +771,23 @@ span:hover {
   .h_theme1 .h_a {
     position: absolute;
     top: 28px;
-    left: 0; }
+    left: 9px; }
   .h_theme1 .h_ul2 {
-    width: 150px;
+    width: 175px;
     height: 100px;
-    margin-left: 15px;
     display: inline-block;
     vertical-align: top;
-    border-right: 1px solid #ddd;
-    padding-right: 10px; }
+    border-right: 1px solid #ddd; }
     .h_theme1 .h_ul2 a {
       display: inline-block;
       margin: 0 13px 17px 4px;
       font-size: 12px;
-      line-height: 2px; }
+      line-height: 2px;
+      padding: 0; }
     .h_theme1 .h_ul2 .h_change {
       margin: 0 8px 17px 4px;
-      font-size: 10px; }
+      font-size: 10px;
+      width: 79px; }
   .h_theme1 .h_ul25 {
     width: 100px;
     height: 100px;
@@ -732,6 +810,13 @@ span:hover {
 
 .h_theme1 .h_th2:hover {
   color: #ff7385; }
+
+.h_hjjjo {
+  width: 80px;
+  height: 149px;
+  text-align: center; }
+  .h_hjjjo a {
+    padding: 0 !important; }
 
 .h_quan888 .h_quan1 {
   position: absolute;
@@ -1119,7 +1204,8 @@ span:hover {
         margin-left: 4px; }
 
 .h_jhss .h_7 {
-  text-align: center; }
+  text-align: center;
+  display: none; }
   .h_jhss .h_7 .h_8 img {
     width: 50px;
     height: 50px;
@@ -1149,3 +1235,21 @@ span:hover {
       border-radius: 5px; }
     .h_jhss .h_7 ol .h_olactive {
       background-color: #ff7385; }
+
+.h_jhss .h_b {
+  display: block; }
+
+.h_hunsha:hover .h_col1 {
+  display: block; }
+
+.h_hunjiu:hover .h_col2 {
+  display: block; }
+
+.h_aroundWorld:hover .h_col3 {
+  display: block; }
+
+.h_jiefw:hover .h_col4 {
+  display: block; }
+
+.h_jiegj:hover .h_col5 {
+  display: block; }

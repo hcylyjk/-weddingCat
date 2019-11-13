@@ -307,6 +307,8 @@ body{
                         color: #fc5066;
                         position: relative;
                         top: 2px;
+                        transform: rotate(0deg);
+                        transition: all 0.3s ease-in-out;
                     }
                     .l_title-list-bridge{
                         position: absolute;
@@ -358,6 +360,10 @@ body{
                         color: hsl(352, 87%, 75%);
                     }
                 }
+            }
+            .l_header-nav-select:hover .icon-sort_desc-copy{
+                display: inline-block;
+                transform: rotate(180deg);
             }
             .l_header-nav-list{
                 display: inline-block;
@@ -591,6 +597,7 @@ a, span, div {
                     position: relative;
                     left: 110px;
                     color: #999;
+                    
                 }
                 .l_tip_groupbuy{
                     position: relative;

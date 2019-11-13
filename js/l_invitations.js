@@ -46,55 +46,35 @@ var l_btn = document.querySelector('#l_btn');
 l_download.onclick = function (e) {
     var ev = e || window.event;
     l_qrWin.style.display = 'block';
+
 };
 l_close.onclick = function () {
     l_qrWin.style.display = 'none';
 };
 
-var item = setTimeout(function () {
-        document.onclick = function () {
-            l_qrWin.style.display = 'none';
-            clearTimeout(item);
-        }
-}, 2000);
+// 模版、简介、评价展示
+$(window).scroll(function(){
+    console.log($(window).scrollTop())
+    if($(window).scrollTop() > 350){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		$('.l_animater').addClass('l_active')
+    }
+    if($(window).scrollTop() > 1500){
+        $('.l_firstGroup').addClass('l_activer')
+		$('.l_secoundGroup').addClass('l_activer')
+		$('.l_thirldGroup').addClass('l_activer')
+    }
+    if($(window).scrollTop() > 3600){
+		$('.l_appraise-img').addClass('active')
+	}
+});
 
 
 
 
-// $(document).ready(function () {
-//     //滚动动画
-//     var animateStartHeight = 300;
-//     var windowHeight = $(window).height();
-//     var animateDOMs = $(".block");
-//     var animateItems = animateDOMs.map(function (key, item) {
-//         return {elem: item, offsetTop: $(item).offset().top, outerHeight: $(item).outerHeight(), isAnimate: false};
-//     });
 
-//     $(window).scroll(function () {
-//         var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-//         //判断各个元素是否符合触发动画的标准，是的话触发
-//         for (var i = 0; i < animateItems.length; i++) {
-//             if (!animateItems[i].isAnimate && windowHeight + scrollTop - animateItems[i].offsetTop > animateStartHeight && scrollTop - animateItems[i].offsetTop - animateItems[i].outerHeight < animateStartHeight) {
-//                 if($(animateItems[i].elem).find('.l_animate')){
-//                     $(animateItems[i].elem).find('.l_animate').addClass("l_active");
-//                 }
-//                 var $imgLazys = $(animateItems[i].elem).find('img.lazy');
-//                 if($(animateItems[i].elem).hasClass('lazy')){
-//                     if($(animateItems[i].elem).attr('data-url')){
-//                         $(animateItems[i].elem).css('background-image','url('+animateItems[i].elem.dataset.url+')').removeAttr('_url').removeClass('lazy');
-//                     }
-//                 }
-//                 $imgLazys.each(function(index,item){
-//                     if($(item).attr('_src')){
-//                         $(item).attr('src',$(item).attr('_src')).removeAttr('_src').removeClass('lazy');
-//                     }else if($(item).attr('_url')){
-//                         $(item).css('background-image','url('+item.dataset.url+')').removeAttr('_url').removeClass('lazy');
-//                     }
-//                 })
-//                 animateItems[i].isAnimate = true;
-//             }
-//         }
-//     });
+
+
+
 
 
 
