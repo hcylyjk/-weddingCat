@@ -44,6 +44,10 @@
             .xhx:hover{
                 border-bottom: 1px solid #fff;
             }
+            .icon-sort_desc-copy{
+                transition: all 0.3s ease-in-out;
+                transform: rotate(0deg);
+            }
             .l_nav-tool-menu{
                 width: 120px;
                 height: 195px;
@@ -90,6 +94,10 @@
                 background: #fff;
                 opacity: 0.5;
             }
+        }
+        .l_layer:hover .icon-sort_desc-copy{
+            display: inline-block;
+            transform: rotate(180deg);
         }
         .active{
             border-bottom: 1px solid #fff;
@@ -208,7 +216,7 @@
             }
         }
     }
-    // 蒙版部分
+    // 模版部分
     .l_templet{
         height: 1077px;
         .l_templet-text{
@@ -238,6 +246,8 @@
                 float: left;
                 overflow: hidden;
                 margin-left: 16px;
+                transform: translate(0,100px);
+                opacity: 0;
                 .l_item-qr{
                     position: relative;
                     width: 100%;
@@ -291,6 +301,40 @@
                     width: 100%;
                 }
             }
+            .l_item1{
+                transition: all 1s ease-in-out;
+            }
+            .l_item2{
+                transition: all 1.4s ease-in-out;
+            }
+            .l_item3{
+                transition: all 1.8s ease-in-out;
+            }
+            .l_item4{
+                transition: all 2.2s ease-in-out;
+            }
+            .l_item5{
+                transition: all 2.6s ease-in-out;
+            }
+            .l_item6{
+                transition: all 3s ease-in-out;
+            }
+            .l_item7{
+                transition: all 3.4s ease-in-out;
+            }
+            .l_item8{
+                transition: all 3.6s ease-in-out;
+            }
+            .l_item9{
+                transition: all 4s ease-in-out;
+            }
+            .l_item10{
+                transition: all 4.4s ease-in-out;
+            }
+        }
+        .l_active .l_item-list{
+            transform: translate(0, 0);
+            opacity: 1;
         }
     }
     // 简介
@@ -309,10 +353,16 @@
                     margin-bottom: 10px;
                     font-size: 32px;
                     color: #3d3d3d;
+                    transition: all 1s ease-in-out;
+                    transform: translate(-100px, 0);
+                    opacity: 0;
                 }
                 .l_small-text{
                     font-size: 18px;
                     color: #999;
+                    transition: all 1.2s ease-in-out;
+                    transform: translate(-100px, 0);
+                    opacity: 0;
                 }
             }
             .l_group-img{
@@ -329,9 +379,34 @@
                         li img{
                             margin: 0 0 10px 15px;
                         }
+                        .l_list1{
+                            transition: all 1s ease-in-out;
+                            transform: translate(50px, 0);
+                            opacity: 0;
+                            z-index: 10;
+                        }
+                        .l_list2{
+                            transition: all 1.4s ease-in-out;
+                            transform: translate(50px, 0);
+                            opacity: 0;
+                        }
+                        .l_list3{
+                            transition: all 1.8s ease-in-out;
+                            transform: translate(50px, 0);
+                            opacity: 0;
+                        }
+                        .l_list4{
+                            transition: all 2.2s ease-in-out;
+                            transform: translate(50px, 0);
+                            opacity: 0;
+                        }
                     }
                 }
             }
+        }
+        .l_activer .l_fly{
+            transform: translate(0, 0) !important;
+            opacity: 1 !important;
         }
         .l_secoundGroup{
             margin-top: 39px;
@@ -344,6 +419,9 @@
                     left: 306px;
                     top: 5px;
                     z-index: 10;
+                    transform: translate(-50px, 0);
+                    transition: all 1s ease-in-out;
+                    opacity: 0;
                 }
                 .l_add-img{
                     position: absolute;
@@ -361,10 +439,16 @@
                     margin-bottom: 10px;
                     font-size: 32px;
                     color: #3d3d3d;
+                    transform: translate(100px, 0);
+                    transition: all 1s ease-in-out;
+                    opacity: 0;
                 }
                 .l_small-text{
                     font-size: 18px;
                     color: #999;
+                    transform: translate(100px, 0);
+                    transition: all 1.4s ease-in-out;
+                    opacity: 0;
                 }
             }
         }
@@ -380,10 +464,16 @@
                     margin-bottom: 10px;
                     font-size: 32px;
                     color: #3d3d3d;
+                    transform: translate(-100px, 0);
+                    transition: all 3s ease-in-out;
+                    opacity: 0;
                 }
                 .l_small-text{
                     font-size: 18px;
                     color: #999;
+                    transform: translate(-100px, 0);
+                    transition: all 3.4s ease-in-out;
+                    opacity: 0;
                 }
             }
             .l_group-img{
@@ -395,6 +485,9 @@
                     padding-top: 90px;
                     margin-left: -100px;
                     z-index: 1;
+                    transform: translate(50px, 0);
+                    transition: all 3s ease-in-out;
+                    opacity: 0;
                     img{
                         box-shadow: -5px 6px 17px 0 rgba(0,0,0,0.2);
                     }
@@ -402,6 +495,8 @@
                 .l_secound{
                     padding: 20px 0 0 110px;
                     z-index: 1;
+                    transition: all 3.6s ease-in-out;
+                    opacity: 0;
                 }
                 .l_thirld{
                     padding-left: 160px;
@@ -494,8 +589,13 @@
                     top: 3px;
                 }
             }
+            .l_appraise-img-item{
+                transition: all 2s ease-in-out;
+                opacity: 0;
+            }
             .l_appraise-img-1{
                 margin: 47px 0 0 100px;
+                transform: translate(-60px, 0);
                 p{
                     width: 306px;
                     line-height: 1.86;
@@ -514,6 +614,7 @@
             .l_appraise-img-2{
                 margin:125px 0 0 635px;
                 z-index: 2;
+                transform: translate(80px, -60px);
                 p{
                     width: 146px;
                     font-size: 14px;
@@ -532,6 +633,7 @@
             .l_appraise-img-3{
                 margin: 294px 0 0 174px;
                 z-index: 3;
+                transform: translate(-80px, 60px);
                 p{
                     width: 146px;
                     font-size: 14px;
@@ -545,6 +647,7 @@
             .l_appraise-img-4{
                 margin: 459px 0 0 519px;
                 z-index: 4;
+                transform: translate(80px, 0);
                 p{
                     width: 302px;
                     font-size: 14px;
@@ -555,6 +658,10 @@
                     top: 112px;
                 }
             }
+        }
+        .active .l_appraise-img-item{
+            transform: translate(0,0);
+            opacity: 1;
         }
     }
     // footer开始
@@ -798,6 +905,12 @@
                         overflow: hidden;
                     }
                 }
+                .l_item-info:hover .l_news-summary{
+                    text-decoration: underline;
+                }
+            }
+            li:hover{
+                transform: translateY(-10px);
             }
         }
     }
@@ -833,7 +946,7 @@
             margin-top: -161px;
             z-index: 10;
             .l_background-download-close{
-                font-size: 16px;
+                font-size: 24px;
                 color: #4b4b4b;
                 position: absolute;
                 top: 18px;

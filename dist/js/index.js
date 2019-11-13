@@ -1,5 +1,6 @@
 
 
+
 $('.h_self').on('mouseenter',function(){
     $('.h_get').css('display','block');
 });
@@ -48,14 +49,15 @@ let stl1 = {
 //ob->元素  style-》样式添加
 function done(delay,ins,dom,stl){
     //console.log(ins,dom,stl);
-    carousel(delay, ins,dom,stl);
-    dclick(delay,dom,stl);
+    carousel(delay, ins,dom,stl,timer);
+    dclick(delay,dom,stl,timer);
 }
 done(5000, ins,ob1,stl1);
-function carousel(delay, ins, dom , stl) {
-    clearInterval(timer);
+
+function carousel(delay, ins, dom , stl,time) {
+    clearInterval(time);
     //console.log(delay,ins,dom,stl);
-    timer = setInterval(function () {
+    time = setInterval(function () {
         //console.log(delay,ins,dom,stl);
         removeAll(dom,stl);
         addAll(dom,ins,stl);
@@ -67,7 +69,7 @@ function carousel(delay, ins, dom , stl) {
         return ins;
     }, delay);
 }
-function dclick(delay,dom,stl){
+function dclick(delay,dom,stl,time){
     var dom1 = dom;
     //console.log(dom1);
     for (let i = 0, len = dom.do2.length; i < len; i++) {
@@ -77,12 +79,12 @@ function dclick(delay,dom,stl){
         dom1.do2[i].onclick = function () {
             //console.log(dom1);
             removeAll(dom1,stl);
-            clearInterval(timer);
+            clearInterval(time);
             let ins = this.index;
             addAll(dom1,ins,stl);
             setTimeout(function () {
                // console.log(dom1)
-                timer = setInterval(function () {
+               time = setInterval(function () {
                    // console.log(dom1);
                     ins = addAll(dom1,ins,stl);
                     removeAll(dom1,stl);
@@ -116,72 +118,73 @@ $('.h_pic1 span').on('mouseenter', function () {
     $(this).addClass('h_active1');
 });
 
+
+// 免费结婚工具
+$('.h_lisss li').on('mouseenter',function(){
+    var index = $(this).attr('data-index');
+    var sel = $('.h_bgjg')[index];
+    $('.h_lisss li').removeClass('h_activebg');
+    $('.h_bgjg').removeClass('h_b');
+    $('.h').removeClass('h_b');
+    $(this).addClass('h_activebg');
+    $('.h_activebg .h').addClass('h_b');
+    sel.classList.add('h_b');
+})
+
+
 //婚纱摄影轮播
-// function h_lbAll(){
+function h_lbAll(){
+    let h_timer3;
+let h_second = 0;
+let obj2 = {
+    do1: document.querySelectorAll('.h_slides2 li'),
+    do2: document.querySelectorAll('.h_ols2 li'),
+    do3: document.querySelector('.h_leftBtn'),
+    do4: document.querySelector('.h_rightBtn'),
+    do5: document.querySelectorAll('.h_pte'),
+}
+let stl2 = {
+    dom1: 'h_bgz',//z-index
+    dom2: 'h_op2',//透明度
+    dom3: 'h_active4',
+    dom4: 'h_hidden1',//隐藏
+    dom5: 'h_show1'
+}
+let h_timer2;
+function activebl1(delay, ins, dom, stl,time) {
+    clearInterval(time);
+    carousel(delay, ins, dom, stl,time);
+    dclick(delay, dom, stl,time);
+}
+activebl1(4000, h_second, obj2, stl2,h_timer3);
+
+obj2.do3.onclick = function () {
+    var index = document.querySelector('.h_active4').getAttribute('data-index');
+    index--;
+    if (index < 0) {
+        index = 3;
+    }
+    getLr(index)
+}
+obj2.do4.onclick = function () {
+   
+    var index = document.querySelector('.h_active4').getAttribute('data-index');
+    console.log(index);
+    index++;
+    if (index > 3) {
+        index = 0;
+    }
+    getLr(index);
+}
+function getLr(index) {
+    console.log(index);
     
-// }
-// let h_second = 0;
-// let obj2 = {
-//     do1: document.querySelectorAll('.h_slides2 li'),
-//     do2: document.querySelectorAll('.h_ols2 li'),
-//     do3: document.querySelector('.h_leftBtn'),
-//     do4: document.querySelector('.h_rightBtn'),
-//     do5: document.querySelectorAll('.h_pte'),
-// }
-// let stl2 = {
-//     dom1: 'h_bgz',//z-index
-//     dom2: 'h_op2',//透明度
-//     dom3: 'h_active4',
-//     dom4: 'h_hidden1',//隐藏
-//     dom5: 'h_show1'
-// }
-// let h_timer2;
-// function activebl1(delay, ins, dom, stl) {
+    removeAll(obj2, stl2);
+    addAll(obj2, index, stl2);
+    activebl1(4000, index, obj2, stl2,h_timer3);
+}
 
-//     carousel(delay, ins, dom, stl);
-//     dclick(delay, dom, stl);
-//     moveText(delay, ins, dom, stl);
-// }
-// activebl1(4000, h_second, obj2, stl2);
-
-// function moveText(delay, index, dom, stl) {
-//     clearInterval(h_timer2);
-//     console.log(delay,index,dom,stl);
-    
-//     h_timer2 = setInterval(function(){
-//         console.log(delay,index,dom,stl);
-//         for(var i =0,len = dom.do5.length; i< len;i++){
-//             dom.do5[i].classList.remove(stl.dom5);
-//         }
-//         dom.do5[index].classList.add(stl.dom5);
-//         index++
-//         if(index > dom.do5.length-1){
-//             index = 0;
-//         }
-//     },delay)
-// }
-
-// obj2.do3.onclick = function () {
-//     var index = document.querySelector('.h_active4').getAttribute('data-index');
-//     index--;
-//     if (index < 0) {
-//         index = 3;
-//     }
-//     getLr(index)
-// }
-// obj2.do4.onclick = function () {
-//     var index = document.querySelector('.h_active4').getAttribute('data-index');
-//     index++;
-//     if (index > 3) {
-//         index = 0;
-//     }
-//     getLr(index);
-// }
-// function getLr(index) {
-//     removeAll(obj2, stl2);
-//     addAll(obj2, index, stl2);
-//     activebl1(4000, index, obj2, stl2);
-// }
-
+}
+// h_lbAll()
 
 

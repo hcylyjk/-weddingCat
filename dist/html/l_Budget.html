@@ -5,10 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>结婚预算</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/iconfont.css">
     <link rel="stylesheet" href="../css/l_Budget.css">
+    <link rel="stylesheet" href="../html/demo.html">
+    <link rel="icon" href="../img/c_image/index/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/mod_footer.css">
+    <script src="../js/jquery-1.8.3.min.js"></script>
 
 </head>
 
@@ -23,7 +28,7 @@
                     <div class="l_header-top-left">
                         <div class="l_header-city">
                             <div class="l_header-city-current">
-                                <a href="javascript:" class="l_header-back">
+                                <a href="http://localhost:8080/dist/index.html" class="l_header-back">
                                     <i class="iconfont icon-zhuye-"></i>
                                     <span>婚礼猫首页</span>
                                 </a>
@@ -87,9 +92,6 @@
                                         <span class="l_customer-center-link l_cus-link"
                                             linkto="/l_customer?tab=info">账号设置</span>
                                     </li>
-                                    <li class="l_customer-center-logout ">
-                                        <span class="l_customer-center-link logout">退出账号</span>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -135,7 +137,7 @@
                 <a class="l_header-logo" href="javascript:">
                     <span class="l_xt-icon"><img src="../img/l_image/l_Budget/hlm_03.jpg" alt=""></span>
                     <span class="l_header-title-wrap">
-                        <h1 class="l_header-title-zh tool l_budget">结婚预算</h1>
+                        <h2 class="l_header-title-zh tool l_budget">结婚预算</h2>
                         <span class="l_header-title-en tool l_budget">WEDDING BUDGET</span>
                     </span>
                 </a>
@@ -159,7 +161,7 @@
                 </div>
                 <ul class="l_header-nav-list fr">
                     <li class="l_header-nav-item l_header-tag l_header-tool">
-                        <a href="javascript:" target="_blank" class="l_header-nav-link">
+                        <a href="http://localhost:8080/dist/html/l_invitations.html" target="_blank" class="l_header-nav-link">
                             <span class="l_header-nav-innertext">微信喜帖</span>
                         </a>
                     </li>
@@ -184,7 +186,7 @@
                         </a>
                     </li>
                     <li class="l_header-nav-item l_header-tag l_header-tool">
-                        <a href="javascript:" class="l_header-nav-link">
+                        <a href="http://localhost:8080/dist/html/l_Budget.html" target="_block" class="l_header-nav-link">
                             <span class="l_header-nav-innertext">结婚预算</span>
                         </a>
                     </li>
@@ -195,7 +197,7 @@
     <!-- center content-->
     <!-- 页面位置 -->
     <div class="l_nav-title l_nav-title-center">
-        <a href="javascript:" target="l_blank">首页</a> &gt; <h2>结婚工具</h2> &gt;
+        <a href="http://localhost:8080/dist/index.html" target="_blank">首页</a> &gt; <h2>结婚工具</h2> &gt;
         <h1>结婚预算</h1>
     </div>
     <div class="l_wedding_center_content">
@@ -226,56 +228,105 @@
                 </div>
                 <div class="l_result_title">建议预算分配</div>
                 <table class="l_result_table">
-                    <tr>
-                        <td class="l_result_tit">婚宴总预算</td>
-                        <td id="l_totalParty">0￥</td>
-                        <td class="l_result_tit">每桌预算</td>
-                        <td id="l_price">0￥</td>
-                        <td class="l_result_tit">婚礼蛋糕</td>
-                        <td id="l_pie">0￥</td>
-                    </tr>
-                    <tr>
-                        <td class="l_result_tit">婚纱&amp;礼服</td>
-                        <td id="l_dress">0￥</td>
-                        <td class="l_result_tit">婚戒</td>
-                        <td id="l_ring">0￥</td>
-                        <td class="l_result_tit">喜糖/回礼</td>
-                        <td id="l_sweet">0￥</td>
-                    </tr>
-                    <tr>
-                        <td class="l_result_tit">新人饰品</td>
-                        <td id="l_dressup">0￥</td>
-                        <td class="l_result_tit">摄影&amp;摄像</td>
-                        <td id="l_camera">0￥</td>
-                        <td class="l_result_tit">请帖/婚礼卡片</td>
-                        <td id="l_card">0￥</td>
-                    </tr>
-                    <tr>
-                        <td class="l_result_tit">乐队/司仪</td>
-                        <td id="l_music">0￥</td>
-                        <td class="l_result_tit">捧花&amp;花艺</td>
-                        <td id="l_flower">0￥</td>
-                        <td class="l_result_tit">其他</td>
-                        <td id="l_other">0￥</td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td class="l_result_tit">婚宴总预算</td>
+                            <td id="l_totalParty">0￥</td>
+                            <td class="l_result_tit">每桌预算</td>
+                            <td id="l_price">0￥</td>
+                            <td class="l_result_tit">婚礼蛋糕</td>
+                            <td id="l_pie">0￥</td>
+                        </tr>
+                        <tr>
+                            <td class="l_result_tit">婚纱&amp;礼服</td>
+                            <td id="l_dress">0￥</td>
+                            <td class="l_result_tit">婚戒</td>
+                            <td id="l_ring">0￥</td>
+                            <td class="l_result_tit">喜糖/回礼</td>
+                            <td id="l_sweet">0￥</td>
+                        </tr>
+                        <tr>
+                            <td class="l_result_tit">新人饰品</td>
+                            <td id="l_dressup">0￥</td>
+                            <td class="l_result_tit">摄影&amp;摄像</td>
+                            <td id="l_camera">0￥</td>
+                            <td class="l_result_tit">请帖/婚礼卡片</td>
+                            <td id="l_card">0￥</td>
+                        </tr>
+                        <tr>
+                            <td class="l_result_tit">乐队/司仪</td>
+                            <td id="l_music">0￥</td>
+                            <td class="l_result_tit">捧花&amp;花艺</td>
+                            <td id="l_flower">0￥</td>
+                            <td class="l_result_tit">其他</td>
+                            <td id="l_other">0￥</td>
+                        </tr>
+                    </tbody>
                 </table>
                 <div class="l_tip">
                     <div class="l_tip_tit">Tips:</div>
-                    <div class="l_tip_budget">您的总预算为：<span id="l_myBudget" class="l_tip_strong_content"></span></div>
+                    <div class="l_tip_budget">您的总预算为：<span id="l_myBudget" class="l_tip_strong_content" style="color: #ff6699;font-size: 16px;"></span></div>
                     <div class="l_tip_groupbuy">
                         现在通过婚礼猫预订酒店坐享最优惠价格，能够获得超值大礼包赠送，快来抢订吧！
                     </div>
                     <div class="l_tip_groupbuy" style="margin-top:5px;">
-                        预算还没确定？试试婚礼猫<a href="javascript:"
-                            style="color:#ff6699;margin:0 3px">婚礼管家</a>吧！
+                        预算还没确定？试试婚礼猫<a href="javascript:" style="color:#ff6699;margin:0 3px">婚礼管家</a>吧！
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- 三步走-->
     <!-- 其他工具 -->
-
+    <div class="l_other_tool_tit">
+        <span class="l_other_tool_de">其他工具</span>
+    </div>
+    <div class="l_tool_pic_content">
+        <div class="l_each_tool_pic">
+            <a href="http://localhost:8080/dist/html/l_invitations.html" target="_block">
+                <img src="../img/l_image/l_Budget/ia_500000001.png" alt="">
+                <div class="l_each l_each_tool_pic_tit">微信喜帖</div>
+            </a>
+        </div>
+        <div class="l_each_tool_pic">
+            <a href="javascript:">
+                <img src="../img/l_image/l_Budget/ia_500000002.png" alt="">
+                <div class="l_each l_each_tool_pic_tit">最美相册</div>
+            </a>
+        </div>
+        <div class="l_each_tool_pic">
+            <a href="javascript:">
+                <img src="../img/l_image/l_Budget/ia_500000003.png" alt="">
+                <div class="l_each l_each_tool_pic_tit">结婚登记处</div>
+            </a>
+        </div>
+        <div class="l_each_tool_pic">
+            <a href="javascript:">
+                <img src="../img/l_image/l_Budget/ia_500000004.png" alt="">
+                <div class="l_each l_each_tool_pic_tit">黄道吉日</div>
+            </a>
+        </div>
+        <div class="l_each_tool_pic">
+            <a href="http://localhost:8080/dist/html/l_Budget.html#" target="_block">
+                <img src="../img/l_image/l_Budget/ia_500000005.png" alt="">
+                <div class="l_each l_each_tool_pic_tit">结婚预算</div>
+            </a>
+        </div>
+    </div>
+    <!-- 页面底部 -->
+    <div class="footer">
+            <script>
+                    $('.footer').load('mod_footer.html');
+            </script>
+        <!-- $('.footer').load('mod_footer.html') -->
+    </div>
 </body>
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script src="../js/l_Budget.js"></script>
+<script>
+    window.onload = function () {
+        $('.mod_bottom_right ul li:nth-of-type(3) a').addClass('mod_active');
+        $('.mod_bottom_right ul li:nth-of-type(3) i').addClass('mod_first');
+    }
+</script>
 
 </html>
