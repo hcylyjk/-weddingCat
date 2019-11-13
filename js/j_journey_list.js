@@ -31,16 +31,16 @@ oL3.onclick = function () {
     
 // })
 // console.log($(document).scrollTop())
-var fixnav = document.querySelector('.j_fiednnav')
-window.onscroll = function () {
-    var html = document.documentElement || document.body;
-    if(html<=480){
-        fixnav.style.position='fixed';
-        fixnav.style.top=0;
-        fixnav.style.right=0;
-    }
-    console.log(html.scrollTop);
-  }
+// var fixnav = document.querySelector('.j_fiednnav')
+// window.onscroll = function () {
+//     var html = document.documentElement || document.body;
+//     if(html<=480){
+//         fixnav.style.position='fixed';
+//         fixnav.style.top=0;
+//         fixnav.style.right=0;
+//     }
+//     console.log(html.scrollTop);
+//   }
 //   window.onscroll = function () {
 //     var scrollTop = document.documentElement.scrollTop || document.body.scrollTop; // 获取滚动高度
 //     // console.log(scrollTop, topContent.offsetHeight);
@@ -52,3 +52,46 @@ window.onscroll = function () {
 //       right.style.position = 'initial';
 //     }
 //   }
+
+var uls4 = document.querySelector('.j_list_warps ul');
+console.log(uls4)
+var oR4 = document.querySelector('.nave_right4');
+var oL4 = document.querySelector('.nave_left4');
+var a = 0
+
+oR4.onclick = function () {
+   
+    a-=880
+   
+    uls4.style.left= a + 'px';
+    if(a==-8800){
+        oR4.onclick='';
+     }
+    oL4.style.display = 'block';
+   
+   
+}
+oL4.onclick = function () {
+   
+    a+=880
+    uls4.style.left = a + 'px';
+    if(a==0){
+        oR4.onclick='';
+        oL4.style.display = 'none';
+     }else{
+        oR4.onclick = function () {
+   
+            a-=880
+           
+            uls4.style.left= a + 'px';
+            if(a==-8800){
+                oR4.onclick='';
+             }
+            oL4.style.display = 'block';
+           
+           
+        }
+     }
+   
+};
+

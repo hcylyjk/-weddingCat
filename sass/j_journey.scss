@@ -204,7 +204,6 @@ body,html{
     padding: 20px;
     width: 1220px;
     margin-left: -20px;
-    // overflow: hidden;
 }
 .j_cityBlist ul{
     width: 10000px;
@@ -236,34 +235,50 @@ body,html{
     height: 100%;
     position: absolute;
     left: 0;
-    top:0;
+    top:240px;
     display: block;
     text-align: center;
-    // -webkit-transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out;
+  
     
 }
-.j_cityBlist ul li a .j_info:hover{
+
+.j_cityBlist ul li a:hover .j_info{
     transform:translateY(-240px);
 }
-
-.j_cityBlist ul li a .j_info .j_name{
+.j_cityBlist ul li a:hover .j_name{
+    transform:translateY(-80px);
+}
+.j_cityBlist ul li a:hover .j_num{
+    transform:translateY(-105px);
+}
+.j_cityBlist ul li a:hover .j_before{
+    transform:translateY(-110px);
+}
+.j_donghua{
+    text-align: center;
+    position: relative;
+}
+.j_cityBlist ul li a .j_donghua .j_name{
     color: #fff;
     font-size: 20px;
-    display: block;
-    transform: translate(0,80px);
+    position: absolute;
+    top: 180px;
+    left: 150px;
+    transition: all 1s;
+   
 }   
 
-.j_info .j_num{
-    padding-top: 14px;
+.j_donghua .j_num{
+    position: absolute;
+    top: 246px;
+    left: 157px;
     font-size: 14px;
     color: #fff;
-    transform: translate(0,122px);
-    display: block;    
+    transition: all 1.5s;   
 }
-.j_info .j_num::before{
+.j_donghua .j_before{
     position: absolute;
-    top: 6px;
+    top: 241px;
     left: 50%;
     margin-left: -60px;
     content: '';
@@ -271,6 +286,7 @@ body,html{
     width: 120px;
     height: 2px;
     border-top: solid 2px #999;
+    transition: all 1.1s;   
 }
 .nave_left{
     position: absolute;
@@ -320,14 +336,12 @@ body,html{
 .j_warp_box{
     width: 100%;
     height: 500px;
-    // overflow: hidden;
 }
 .j_month_list{
     padding: 20px;
     width: 1180px;
     height: 270px;
     margin-left: -20px;
-    // position: relative;
 }
 .j_month_list ul{
     position: relative;
@@ -345,22 +359,7 @@ body,html{
     transition: transform 0.3s ease-in-out;
     
 }
-// .li ::before{
-//     content: '';
-//     position: absolute;
-//     width: 95%;
-//     height: 310px;
-//     background-color: #c5c5c5;
-//     top: 10px;
-//     left: 2.5%;
-//     border-radius: 25px;
-//     filter: blur(10px);
-//     -webkit-filter: blur(10px);
-//     border: 0;
-//     box-shadow: none;
-//     // transition: transform .3s ease-in-out;
-//     opacity: 0;
-// }
+
 .j_itme_link {
     position: relative;
     display: block;
@@ -447,22 +446,26 @@ body,html{
     position: relative;
     width: 140px;
     height: 100%;
+    overflow: hidden;
 }
-// .j_teamr a{
-
-// }
+.j_teamr a:hover .j_active{
+    transform: translateY(-280px);
+}
+.j_teamr a:hover span{
+    transform: translateY(-90px)
+}
 .j_active{
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 0;
+    top: 280;
     left: 0;
     background-color: rgba(0,0,0,0.58);
-    opacity: 0;
+    opacity: 1;
 }
 .j_teamr a span{
     position: absolute;
-    top: 140px;
+    top: 238px;
     left: 0;
     width: 100%;
     height: 40px;
@@ -470,8 +473,7 @@ body,html{
     font-size: 16px;
     margin-top: -20px;
     color: #fff;
-    // z-index: 1000;
-    // transform: translate(0,110px);
+    transition: all 1.0s;
 }
 
 // 旅拍城市
@@ -484,6 +486,7 @@ body,html{
 .j_takebg{
     width: 1180px;
     margin: 0 auto; 
+    overflow: hidden;
  
 }
 .j_title_warp{
@@ -544,6 +547,13 @@ body,html{
 .j_city_items:hover{
     transform:translateY(-20px);
 }
+.j_city_items:hover .j_c i{
+    color: #ff7385
+}
+.j_city_items:hover .j_c span{
+    color: #000;
+}
+
 .j_city_items a {
     width: 100%;
     height: 100%;
@@ -561,9 +571,7 @@ body,html{
     position: relative;
     text-align: center;
 }
-.j_city_items .j_c:hover{
-    color: #ff7385
-}
+
 .j_city_items .j_c i{
     position: absolute;
     top: 4px;
