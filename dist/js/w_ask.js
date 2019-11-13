@@ -17,7 +17,7 @@ $.ajax({
     dataType: 'json',
     success: function myCallback(data) {
         $('title').text(data.title);
-        $('q_title').text(data.title);
+        $('.q_title').text(data.title);
         $('.question_header').attr('questionId',data.questionId);
         $('.question_header_content .title').text(data.title);
         $('.detailed_box .detailed').text(data.detailed);
