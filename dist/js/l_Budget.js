@@ -24,8 +24,29 @@ l_nav.onmouseout = function() {
 $('.l_budget_submit').click(function(){
        var zys = $('#l_total_budget').val();
        var zs = $('#l_table_count').val();
-       var hlZys = zys * 3/10
+       var hlZys = zys * 30/100;
+       var dg = zys * 3/100;
+       var hlf = zys * 13/100;
+       var hj = zys * 14/100;
+       var xt = zys * 2/100;
+       var sp = zys * 2/100;
+       var sy = zys * 12/100;
+       var kp = zys * 2/100;
+       var ld = zys * 10/100;
+       var ph = zys * 10/100;
+       var qt = zys * 2/100;
+
        $('#l_totalParty').html(hlZys + '￥');
-       $('#l_price').html(hlZys/zs + '￥')
-    //    console.log( hlZys/zs);
+       $('#l_price').html(hlZys/zs + '￥');
+       $('#l_pie').html(dg + '￥');
+       $('#l_dress').html(hlf + '￥');
+       $('#l_ring').html(hj + '￥');
+       $('#l_sweet').html(xt + '￥');
+       $('#l_dressup').html(sp + '￥');
+       $('#l_camera').html(sy + '￥');
+       $('#l_card').html(kp + '￥');
+       $('#l_music').html(ld + '￥');
+       $('#l_flower').html(ph + '￥');
+       $('#l_other').html(qt + '￥');
+       $('#l_myBudget').html(zys + '￥');
 });
