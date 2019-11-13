@@ -12,33 +12,20 @@ oL3.onclick = function () {
     oL3.style.display = 'none';
 };
 
-// $(function(){
-//  console.log( $(window) .scroll(function() {}))  
-      
-    
-// })
-// console.log($(document).scrollTop())
-// var fixnav = document.querySelector('.j_fiednnav')
-// window.onscroll = function () {
-//     var html = document.documentElement || document.body;
-//     if(html<=480){
-//         fixnav.style.position='fixed';
-//         fixnav.style.top=0;
-//         fixnav.style.right=0;
-//     }
-//     console.log(html.scrollTop);
-//   }
-//   window.onscroll = function () {
-//     var scrollTop = document.documentElement.scrollTop || document.body.scrollTop; // 获取滚动高度
-//     // console.log(scrollTop, topContent.offsetHeight);
-//     if (scrollTop >= ) { // 滚动高度 > 头部内容高度
-//       right.style.position = 'fixed';
-//       right.style.top = 0;
-//       right.style.right = 0;
-//     } else {
-//       right.style.position = 'initial';
-//     }
-//   }
+//返回顶部
+// var lis = document.querySelector('.mod_kl');
+// console.log(lis)
+// lis.onclick = function () {
+//     document.documentElement.scrollTop = 0
+// };
 
-// 
-
+var nav = document.querySelector('.j_fiednnav');
+console.log(nav)
+var h2s = document.querySelectorAll('.j_nav_ietm');
+var titop=document.documentElement.scrollTop
+document.onscroll=function(){
+    console.log(titop)
+    if (document.documentElement.scrollTop==480){
+       alert(666);
+    }
+}

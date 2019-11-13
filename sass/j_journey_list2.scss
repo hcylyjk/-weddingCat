@@ -7,7 +7,7 @@
     height: 100%;
 }
 .j_banner{
-    background: url(../img/j_image/j_list_img/ia_2000002271.jpg) no-repeat;
+    background: url(../img/j_image/j_list2_img/ia_200000313.jpg) no-repeat;
     position: relative;
     width: 100%;
     min-width: 1180px;
@@ -201,6 +201,10 @@
             margin-bottom: 20px;
             line-height: 0;
             cursor: pointer;
+            img{
+                width: 720px; 
+                height: 100%;
+            }
         }
         .j_load{
             width: 290px;
@@ -942,4 +946,10 @@
             }
         }
     }
+}
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
