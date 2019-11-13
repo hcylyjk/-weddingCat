@@ -199,8 +199,14 @@ body{
 		float: right;
 		span{
 			margin-right: 20px;
+			// &:hover a{
+			// 	color: #FF7385;
+			// }
 		}
 	}
+
+	
+
 	.img_show_list{
 		width: 1180px;
 		display: flex;
@@ -320,9 +326,247 @@ body{
 			 }
 		}
 	}
+	.tabShow{
+		display: none;
+	}
 }
 
 
 .img_show_list .imgs:hover .show_new p{ 
 	color: #808080;
+}
+
+
+//  结尾套餐和攻略
+.r_end{
+	background: #F5F5F5;
+	.r_inner{
+		width: 1180px;
+		margin: 0 auto;
+		h3{
+			height: 50px;
+			line-height: 50px;
+			font-size: 20px;
+			position: relative;
+			padding-left: 20px;
+			&:after{
+				content: ' ';
+				width: 5px;
+				height: 32px;
+				background: #FF7385;
+				position: absolute;
+				left: 0;
+				top:10px;
+			}
+		}
+		.end_imgs{
+			width: 1180px;
+			ul{
+				display: flex;
+				li{
+					width: 280px;
+					background: #ffffff;
+					margin-right: 20px;
+					position: relative;
+					a{
+						display: block;
+						position: absolute;
+						left: 0;
+						top: 0;
+						width: 100%;
+						height: 100%;
+					}
+					&:hover img{
+						transform: scale(1.2,1.2);
+					}
+					.img_box{
+						width: 280px;
+						height: 158px;
+						overflow: hidden;
+						img{
+							width: 280px;
+							height: 158px;
+							transition:all 0.4s ease-in-out;
+						}
+					}
+					.end_bottom{
+						width: 100%;
+						height: 80px;
+						padding-left: 15px;
+						p{
+							line-height: 40px;
+							font-size: 14px;
+							color: #4d4b4b;
+						}
+						span:first-of-type{
+							color: #FF7385;
+							font-size: 16px;
+						}
+						span:last-of-type{
+							font-size: 12px;
+							color: #999999;
+							padding-left: 10px;
+							text-decoration: line-through;
+						}
+					}
+				}
+			}
+		}
+		.tips{
+			width: 1180px;
+			padding-bottom: 30px;
+			i{
+				display: inline-block;
+				width: 0;
+				height: 0;
+				border: 5px solid ;
+				border-color: transparent transparent transparent #FF7385;
+			}
+			h4{
+				font-size: 18px;
+				color: #4d4b4b;
+				line-height: 80px;
+			}
+			.tips_left{
+				width: 590px;
+				p{
+					height: 21.6px;
+					margin: 10px 5px;
+					&:hover a{
+						color: #FF7385;
+						text-decoration: underline;
+					}
+					a{
+						font-size: 14px;
+						color: #2f2f2f;
+					}
+				}
+			}
+			.tips_right{
+				width: 590px;
+				p{
+					height: 21.6px;
+					margin: 10px 5px;
+					&:hover a{
+						color: #FF7385;
+						text-decoration: underline;
+					}
+					a{
+						font-size: 14px;
+						color: #2f2f2f;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+.img_show_list{
+	.img_inner{
+		width: 1180px;
+		display: flex;
+		flex-wrap: wrap;
+		.item{
+			width: 580px;
+			height: 190px;
+			background: #ffffff;
+			border: 1px solid #e6e6e6;
+			margin: 10px 8px 10px 0px;
+			
+			.item_left{
+				position: relative;
+				width: 248px;
+				a{
+					display: block;
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 248px;
+					height: 190px;
+				}
+				.imgl{
+				
+					width: 64px;
+					height: 64px;
+					overflow: hidden;
+					border-radius: 50%;
+					margin: 20px auto;
+					img{
+						width: 100%;
+					}
+				}
+				h3{
+					text-align: center;
+					color: #4d4b4b;
+				}
+				p{
+					text-align: center;
+					line-height: 50px;
+					span{
+						padding-right: 15px;
+						color: #999999;
+						font-size: 14px;
+					}
+				}
+			}
+			.item_right{
+				width: 310px;
+				position: relative;
+				a{
+					display: block;
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 310px;
+					height: 190px;
+				}
+				.imgr{
+					width: 290px;
+					height: 170px;
+					margin: 10px 4px 10px 5px;
+					position: relative;
+					overflow: hidden;
+					img{
+						width: 100%;
+						height: 100%;
+					}
+					.mask{
+						width: 290px;
+						height:100%;
+						position: absolute;
+						left: 0;
+						top: 0;
+						z-index: 2;
+						background: rgba(0, 0, 0, 0);
+					}
+				}
+				.tips{
+					position: absolute;
+					width: 250px;
+					height: 30px;
+					top: 0%;
+					left: 38%;
+					opacity: 0;
+					color: #ffffff;		
+					font-size: 16px;
+					transition: all 0.5s linear;	
+					z-index: 3;
+				}
+				&:hover .tips{
+					// transform:translate(30px,50px);
+					top: 45%;
+					left: 38%;
+					opacity: 1;
+				}
+				&:hover .mask{
+					background: rgba(0, 0, 0, 0.3);
+				}
+			}
+		}
+		.item:nth-child(2n){
+			margin-left: 0px;
+		}
+	}
 }

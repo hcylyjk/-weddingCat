@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="访客端交互设计文档" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="访客端所有界面" transform="translate(-2788.000000, -1210.000000)" fill="#FFFFFF">
+            <path d="M2796,1210 C2791.584,1210 2788,1213.584 2788,1218 C2788,1222.416 2791.584,1226 2796,1226 C2800.416,1226 2804,1222.416 2804,1218 C2804,1213.584 2800.416,1210 2796,1210 Z M2795,1213 L2797,1213 L2797,1219 L2795,1219 L2795,1213 Z M2795,1221 L2797,1221 L2797,1223 L2795,1223 L2795,1221 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

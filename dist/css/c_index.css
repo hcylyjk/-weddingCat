@@ -27,12 +27,10 @@
 .swiper-container img{
     width: 100%;
 }
-
   
 #main {width:100%;background:#fff;}
 #main .main_inner{width:1180px;background:#fff;margin:0 auto;position: relative;}
 #main .main_inner .enter{width:100%;height:215px;}
-
 #main .main_inner .sidenav{position: absolute;left:0;top:-420px;z-index: 4;width:280px;height:420px;background:rgba(0,0,0,.6);border-radius:6px;}
 #main .main_inner .sidenav .topside {width:100%;height:84px;background:#545350;}
 #main .main_inner .sidenav .topside img{width:50px;height:50px;margin-top:15px;margin-left:10px;}
@@ -42,12 +40,10 @@
 #main .main_inner .sidenav .list>li>span{display:block;font-size:14px;}
 #main .main_inner .sidenav .list>li>div{display:block;font-size:18px;margin-top:5px;font-weight: bold;}
 #main .main_inner .sidenav .list>li>.iconfont{position: absolute;left:220px;top:30PX;font-size:16px;color:#fff;}
-
 #main .main_inner .sidenav .list .listbox {width:0;height:410px;background:#fff;position: absolute;left:280px;top:-84px;z-index: 99999;overflow: hidden;}
 #main .main_inner .sidenav .list .listbox .listbox_inner{width:660px;height:410px;position: relative;}
 #main .main_inner .sidenav .list .listbox  .listboxcon .close{margin-left:590px;width:20px;height:20px;cursor: pointer;}
 #main .main_inner .sidenav .list .listbox  .listboxcon .close img{width:100%;height:100%;}
-
 #main .main_inner .sidenav .list .listbox  .listboxcon h3 {font-size:26px;color:#4D4B4B;display:block;margin:12px 0 35px 45px;}
 #main .main_inner .sidenav .list .listbox  .listboxcon h3 span{color:#FF7385;}
 #main .main_inner .sidenav .list .listbox  .listboxcon .hobbychoose {width:100%;height:200px; display:flex;justify-content: space-between;margin-left:25px;}
@@ -85,12 +81,10 @@
 #main .main_inner .sidenav .list .listbox  .listboxcon .liststepstyle>ul>li a:hover{color:#FF7385;border:1px solid #FF7385;}
 #main .main_inner .sidenav .list .listbox  .listboxcon .liststepstyle>ul>li:nth-of-type(2) {width:490px;margin-top:20px;}
 #main .main_inner .sidenav .list .listbox  .listboxcon .liststepstyle>ul>li:nth-of-type(3) {width:490px;margin-top:15px;}
-
 #main .main_inner .sidenav .bomside {width:100%;height:84px;}
 #main .main_inner .sidenav .bomside .have{width:240px;height:40px;background:#FF7385;margin:5px auto 0;border-radius: 4px;line-height:40px;text-align: center;font-size:18px;color:#fff;cursor: pointer;font-weight: bold;}
 #main .main_inner .sidenav .bomside .have .iconfont{font-size:20px;margin-right:5px;font-weight: bold;}
 #main .main_inner .sidenav .bomside .have:hover {background:#FC5066;}
-
 #main .main_inner .enter .entertop{width:230px; height:70px;}
 #main .main_inner .enter .entertop strong{font-size:30px;;line-height:70px;color:#666;}
 #main .main_inner .enter .entertop .direct{display:inline-block;font-size:8px;color:#666;position: relative;top:3px;}
@@ -106,17 +100,14 @@
 #main .main_inner .enter .enterbottom .enterone .two:hover .iconfont{background:#FF7385;color:#fff;font-weight: bold;}
 #main .main_inner .enter .enterbottom .enterone .three:hover {background:#FF7385;color:#fff;font-weight: bold;}
 #main .main_inner .enter .enterbottom .enterone .three:hover .iconfont{background:#FF7385;color:#fff;font-weight: bold;}
-
 #main .main_inner .enter .enterbottom .entertwo{float:left;width:285px;height:92px;background:url('../img/c_image/index/bg1.png'); margin-left:25px; font-size:14px;color:#fff;text-align: center;cursor: pointer;}
 #main .main_inner .enter .enterbottom .entertwo:hover {transform: translateY(-4px);transition: .5s;}
 #main .main_inner .enter .enterbottom .enterthree:hover {transform: translateY(-4px);transition: .5s;}
 #main .main_inner .enter .enterbottom .enterfour:hover {transform: translateY(-4px);transition: .5s;}
-
 #main .main_inner .enter .enterbottom .enterbox {margin-top:20px;;}
 #main .main_inner .enter .enterbottom .enterbox strong{font-size:20px;font-weight: bold;}
 #main .main_inner .enter .enterbottom .enterthree{float:left;width:285px;height:92px;background:url('../img/c_image/index/bg2.png');margin-left:6px; font-size:14px;color:#fff;text-align: center; cursor: pointer;}
 #main .main_inner .enter .enterbottom .enterfour{float:left;width:285px;height:92px;background:url('../img/c_image/index/bg3.png');margin-left:6px; font-size:14px;color:#fff;text-align: center;cursor: pointer; }
-
 #main .main_inner .everypictur {width:100%;height:380px;background:#F2F2F2;}
 #main .main_inner .everypictur .everypictur_inner{width:100%;height:380px;background:#F2F2F2;}
 #main .main_inner .everypictur .everypictur_inner .entertop strong{font-size:30px;;line-height:70px;color:#666;}
@@ -124,22 +115,17 @@
 #main .main_inner .everypictur .everypictur_inner .entertop {position: relative;margin-top:10px;}
 #main .main_inner .everypictur .everypictur_inner .entertop .prev3 {position: absolute;left:-50px;top:135px;z-index: 6666;cursor: pointer;}
 #main .main_inner .everypictur .everypictur_inner .entertop .next3 {position: absolute;left:1195px;top:135px;z-index: 6666;cursor: pointer;}
-
-
 #main .main_inner .everypictur .everypictur_inner .somanymassage {position: absolute;left:1080px;top:35px;color:#666;font-size:16px;}
 #main .main_inner .everypictur .everypictur_inner .somanymassage:hover {color:#FF7385;cursor: pointer;}
-
 #main .main_inner .everypictur .everypictur_inner .enterpicture {width:100%;height:300px;overflow: hidden;display:flex;margin-top:10px;}
 #main .main_inner .everypictur .everypictur_inner .enterpicture .picmessage {position: relative;cursor: pointer;}
 #main .main_inner .everypictur .everypictur_inner .enterpicture .picmessage .one{position: absolute;left:0;top:-240px;width:380px;height:240px;background:rgba(0,0,0,.7)}
 #main .main_inner .everypictur .everypictur_inner .enterpicture .picmessage h2{font-size:18px;color:#fff;text-align: center;display:block;margin-top:90px;}
 #main .main_inner .everypictur .everypictur_inner .enterpicture .picmessage p{font-size:14px;color:#fff;text-align: center;display:block;}
 #main .main_inner .everypictur .everypictur_inner .enterpicture .picmessage:hover .one{transform: translateY(240px);transition: 1s;}
-
 #main .main_inner .everypictur .everypictur_inner .enterpicture .ma_enterpicture{width:5000px;height:300px;display:flex;}
 #main .main_inner .everypictur .everypictur_inner .enterpicture .ma_enterpicture .picmessage{width:380px;height:240px;margin-right:19px;}
 #main .main_inner .everypictur .everypictur_inner .enterpicture .ma_enterpicture .picmessage img{width:100%;height:100%;}
-
 #main .main_inner .theme {width:100%;height:590px;background:#fff;}
 #main .main_inner .theme {width:100%;height:590px;background:#fff;}
 #main .main_inner .theme .entertop strong{font-size:30px;;line-height:70px;color:#666;}
@@ -147,7 +133,6 @@
 #main .main_inner .theme .entertop {position: relative;margin-top:10px;}
 #main .main_inner .theme .somanymassage {position: absolute;left:1080px;top:30px;color:#666;font-size:16px;}
 #main .main_inner .theme .somanymassage:hover {color:#FF7385;cursor: pointer;}
-
 #main .main_inner .theme .manytheme {width:100%;height:455px;display:flex;justify-content: space-between;}
 #main .main_inner .theme .manytheme .manythemebox{width:280px;height:455px;text-align: center;border:1px solid #ddd;cursor: pointer;}
 #main .main_inner .theme .manytheme .manythemebox:hover{transform: translateY(-5px);box-shadow: 0 10px 10px #666;transition: 0.5s;}
@@ -155,14 +140,11 @@
 #main .main_inner .theme .manytheme .manythemebox img{width:100%;height:360px;}
 #main .main_inner .theme .manytheme .manythemebox strong{font-size:18px;font-weight: bold;display:block;margin-top:20px;}
 #main .main_inner .theme .manytheme .manythemebox span {color:#666;display:block;margin-top:-15px;}
-
 #main .process{width:100%;height:140px;background:#F2F2F2;}
 #main .process .process_inner{width:1180px;height:100%;margin:0 auto;}
 #main .process .process_inner img{display:block;padding-top:20px;box-sizing: border-box;}
-
 #main .photography{width:100%;height:400px;background:#2F2F2F;}
 #main .photography .photography_inner{width:1180px;height:400px;margin:0 auto;}
-
 #main .photography .photography_inner .photographynav{width:100%;height:100px;border-bottom:1px solid #666;}
 #main .photography .photography_inner .photographynav .photomassage{float:left;font-size:30px;color:#fff;line-height:100px;}
 #main .photography .photography_inner .photographynav ul{float:left;margin-left:40px;width:480px;height:100%;}
@@ -170,7 +152,6 @@
 #main .photography .photography_inner .photographynav ul li:hover {color:#fff;}
 #main .photography .photography_inner .photographynav span{float:right;display:block;margin-top:60px;;font-size:16px;color:#fff;margin-right:20px;cursor: pointer;}
 #main .photography .photography_inner .photographynav span:hover{color:#FF7385;}
-
 #main .photography .photography_inner .information {width:100%;position: relative;}
 #main .photography .photography_inner .information .informationcon{width:100%;height:230px;margin-top:40px;position: absolute;left:0;top:0;}
 #main .photography .photography_inner .information .informationcon .informationconleft{float: left;width:220px;}
@@ -179,13 +160,11 @@
 #main .photography .photography_inner .information .informationcon .informationconleft p{font-size:14px;color:#fff;display:block;width:200px;margin-top:25px;line-height:25px;}
 #main .photography .photography_inner .information .informationcon .informationconleft span{font-size:14px;color:#fff;display:block;width:200px;margin-top:25px;cursor: pointer;}
 #main .photography .photography_inner .information .informationcon .informationconleft span:hover{color:#FF7385;}
-
 #main .photography .photography_inner .information .informationcon .list{float: left;width:960px;height:260px;}
 #main .photography .photography_inner .information .informationcon .list li{float: left;width:300px;height:220px;}
 #main .photography .photography_inner .information .informationcon .list li:nth-of-type(1) {margin-right:28px;}
 #main .photography .photography_inner .information .informationcon .list li:nth-of-type(2) {margin-right:28px;}
 #main .photography .photography_inner .information .informationcon .list li img{width:100%;height:100%;}
-
 #main .theme {width:100%;height:590px;background:#F2F2F2;}
 #main .theme .theme_inner{width:1180px;height:590px;background:#F2F2F2;margin:0 auto;}
 #main .theme .theme_inner .entertop strong{font-size:30px;;line-height:70px;color:#666;}
@@ -193,7 +172,6 @@
 #main .theme .theme_inner .entertop {position: relative;margin-top:10px;}
 #main .theme .theme_inner .somanymassage {position: absolute;left:1080px;top:30px;color:#666;font-size:16px;}
 #main .theme .theme_inner .somanymassage:hover {color:#FF7385;cursor: pointer;}
-
 #main .theme .theme_inner .manytheme {width:100%;height:455px;display:flex;justify-content: space-between;}
 #main .theme .theme_inner .manytheme .manythemebox{width:280px;height:455px;text-align: center;border:1px solid #ddd;cursor: pointer;}
 #main .theme .theme_inner .manytheme .manythemebox:hover{transform: translateY(-5px);box-shadow: 0 10px 10px #666;transition: 0.5s;}
@@ -201,9 +179,7 @@
 #main .theme .theme_inner .manytheme .manythemebox img{width:100%;height:360px;}
 #main .theme .theme_inner .manytheme .manythemebox strong{font-size:18px;font-weight: bold;display:block;margin-top:20px;}
 #main .theme .theme_inner .manytheme .manythemebox span {color:#666;display:block;margin-top:-15px;}
-
 .active{display:none;}
-
 #main .attractions{width:100%;background:#fff;}
 #main .attractions .attractions_inner{width:1180px;height:340px;background:#fff;margin:0 auto;}
 #main .attractions .attractions_inner .entertop strong{font-size:30px;;line-height:70px;color:#666;}
@@ -211,20 +187,17 @@
 #main .attractions .attractions_inner .entertop {position: relative;margin-top:10px;}
 #main .attractions .attractions_inner .somanymassage {position: absolute;left:1080px;top:30px;color:#666;font-size:16px;}
 #main .attractions .attractions_inner .somanymassage:hover {color:#FF7385;cursor: pointer;}
-
 #main .attractions .attractions_inner .hotvisite{width:100%;height:200px;margin-top:20px;display:flex;justify-content:space-between;}
 #main .attractions .attractions_inner .hotvisite .hotvisitebox{width:280px;height:200px;position: relative;cursor: pointer;}
 #main .attractions .attractions_inner .hotvisite .hotvisitebox img{width:280px;height:200px;position: absolute;left:0;top:0;z-index: 3;}
 #main .attractions .attractions_inner .hotvisite .hotvisitebox span{display:block;position: absolute;left:0;top:0;width:280px;height:200px;background:rgba(0,0,0,.7);z-index: 999;font-size:18px;font-weight: bold;color:#fff;text-align: center;line-height:200px;}
 #main .attractions .attractions_inner .hotvisite .hotvisitebox:hover span{background:rgba(0,0,0,.4)}
-
 #main .evaluate{width:100%;background:#F2F2F2;}
 #main .evaluate .evaluate_inner{width:1180px;height:530px;background:#F2F2F2;margin:0 auto;position: relative;}
 #main .evaluate .evaluate_inner .entertop strong{font-size:30px;;line-height:70px;color:#666;}
 #main .evaluate .evaluate_inner .entertop {position: relative;margin-top:10px;}
 #main .evaluate .evaluate_inner .somanymassage {position: absolute;left:1080px;top:30px;color:#666;font-size:16px;}
 #main .evaluate .evaluate_inner .somanymassage:hover {color:#FF7385;cursor: pointer;}
-
 #main .evaluate .evaluate_inner .evaluatemassage{width:100%;height:390px;overflow: hidden;}
 #main .evaluate .evaluate_inner .evaluatemassage .evaluatemassagecon{width:5000px;height:390px;margin-top:25px;display:flex;}
 #main .evaluate .evaluate_inner .evaluatemassage .evaluatemassagecon .evaluatemassageconbox{width:280px;height:370px;background:#fff;padding:0 20px;box-sizing: border-box;position: relative;margin-right:15px;cursor: pointer;}
@@ -233,10 +206,8 @@
 #main .evaluate .evaluate_inner .evaluatemassage .evaluatemassagecon .evaluatemassageconbox .confirstname span{display:block;height:30px;margin-top:-15px;color:#666;}
 #main .evaluate .evaluate_inner .evaluatemassage .evaluatemassagecon .evaluatemassageconbox .confirstcontent{width:100%;margin-top:20px;color:#777;line-height:20px;}
 #main .evaluate .evaluate_inner .evaluatemassage .evaluatemassagecon .evaluatemassageconbox .confirstname img{border-radius: 50%;position: absolute;left:110px;top:-25px;width:60px;height:60px;}
-
 #main .evaluate .evaluate_inner .prev {position: absolute;left:-45px;top:230px;display:none;cursor: pointer;}
 #main .evaluate .evaluate_inner .next {position: absolute;left:1180px;top:230px;cursor: pointer;}
-
 #main .experience{width:100%;background:#fff;}
 #main .experience .experience_inner{width:1180px;height:520px;background:#fff;margin:0 auto;}
 #main .experience .experience_inner .entertop strong{font-size:30px;;line-height:70px;color:#666;}
@@ -245,7 +216,6 @@
 #main .experience .experience_inner .somanymassage {position: absolute;left:750px;top:30px;color:#666;font-size:22px;}
 #main .experience .experience_inner .somanymassage span{margin:0 10px;}
 #main .experience .experience_inner .somanymassage span:hover{color:#FF7385;cursor: pointer;}
-                                                    
 #main .experience .experience_inner .experiencemassage {width:100%;margin-top:20px;height:380px;}                                         
 #main .experience .experience_inner .experiencemassage .experiencemassageleft {float: left;width:660px;height:380px;margin-right:20px;}                                         
 #main .experience .experience_inner .experiencemassage .experiencemassageleft img{width:660px;height:380px;}                                         
@@ -255,7 +225,6 @@
 #main .experience .experience_inner .experiencemassage .experiencemassageright>p{display: block;margin:25px 0;color:#000;font-weight: bold;}                                         
 #main .experience .experience_inner .experiencemassage .experiencemassageright .masstime{color:#666;font-weight: bold;}                                         
 #main .experience .experience_inner .experiencemassage .experiencemassageright .masstime>span{color:#000;font-weight: bold;}                                         
-                                                    
 #main .szwedding{width:100%;background:#F2F2F2}     
 #main .szwedding .szwedding_inner{width:1180px;height:560px;margin:0 auto;background:#F2F2F2}     
 #main .szwedding .szwedding_inner .entertop strong{font-size:30px;;line-height:70px;color:#666;}
@@ -263,7 +232,6 @@
 #main .szwedding .szwedding_inner .entertop {position: relative;margin-top:10px;}
 #main .szwedding .szwedding_inner .somanymassage {position: absolute;left:1080px;top:30px;color:#666;font-size:16px;}
 #main .szwedding .szwedding_inner .somanymassage:hover {color:#FF7385;cursor: pointer;}
-                                                    
 #main .szwedding .szwedding_inner .szweddingmassage {width:100%;height:440px;display:flex;justify-content: space-between;}                                      
 #main .szwedding .szwedding_inner .szweddingmassage .szweddingmassagechoose{width:580px;height:440px;}
 #main .szwedding .szwedding_inner .szweddingmassage .szweddingmassagechoose .showimg{width:580px;height:180px; position: relative;overflow: hidden;cursor: pointer;}
@@ -272,14 +240,11 @@
 #main .szwedding .szwedding_inner .szweddingmassage .szweddingmassagechoose .showimg .contentinline{position: absolute;left:20px;top:120px;z-index: 666;}
 #main .szwedding .szwedding_inner .szweddingmassage .szweddingmassagechoose .showimg .contentinline p{font-size:16px;color:#fff;font-weight: bold;}
 #main .szwedding .szwedding_inner .szweddingmassage .szweddingmassagechoose .showimg .contentinline span{font-size:14px;color:#fff;}
-
 #main .szwedding .szwedding_inner .szweddingmassage .szweddingmassagechoose ul{width:580px;height:260px;margin-top:10px;}
 #main .szwedding .szwedding_inner .szweddingmassage .szweddingmassagechoose ul li{width:580px;height:50px;text-indent: 2em;position: relative;}
 #main .szwedding .szwedding_inner .szweddingmassage .szweddingmassagechoose ul li a {font-size:18px;color:#666;line-height:52px;}
 #main .szwedding .szwedding_inner .szweddingmassage .szweddingmassagechoose ul li a:hover {color:#FF7385}
-
 #main .szwedding .szwedding_inner .szweddingmassage .szweddingmassagechoose ul li:after{content:' ';width:10px;height:12px;background:url('../img/c_image/index/list.jpg');position: absolute;left:0;top:21px;}
-                                                
 #main .weedingask {width:100%;background:#fff;}
 #main .weedingask .weedingask_inner{width:1180px;background:#fff;height:470px;margin:0 auto;}
 #main .weedingask .weedingask_inner .entertop strong{font-size:30px;;line-height:70px;color:#666;}
@@ -287,18 +252,15 @@
 #main .weedingask .weedingask_inner .entertop {position: relative;margin-top:10px;}
 #main .weedingask .weedingask_inner .somanymassage {position: absolute;left:1080px;top:30px;color:#666;font-size:16px;}
 #main .weedingask .weedingask_inner .somanymassage:hover {color:#FF7385;cursor: pointer;}
-
 #main .weedingask .weedingask_inner .massageweedingspan {width:100%;height:270px;margin-top:30px;display: flex;justify-content: space-between;}
 #main .weedingask .weedingask_inner .massageweedingspan ul{width:580px;height:270px;}
 #main .weedingask .weedingask_inner .massageweedingspan ul li{width:580px;height:50px;text-indent: 2em;position: relative;}
 #main .weedingask .weedingask_inner .massageweedingspan ul li a {font-size:18px;color:#666;line-height:52px;}
 #main .weedingask .weedingask_inner .massageweedingspan ul li a:hover {color:#FF7385}
-
 #main .weedingask .weedingask_inner .massageweedingspan ul li:after{content:' ';width:10px;height:12px;background:url('../img/c_image/index/list.jpg');position: absolute;left:0;top:21px;}
-                                                    
-                                                
-
- 
+#fixednav { width:100%;height:0;position: fixed;left:0;bottom:0;overflow: hidden;z-index: 999999999;}
+#fixednav .fixednav_inner{ width:1180px;height:150px;margin:0 auto;position: relative;cursor: pointer;border-radius: 6px;}
+#fixednav .fixednav_inner span{display:block;width:30px;height:30px;background:transparent;position: absolute;left:0;top:0;cursor: pointer;}
 
 
 

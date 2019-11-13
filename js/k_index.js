@@ -1,4 +1,31 @@
 
+
+// 轮播图
+(function () {
+    var mySwiper = new Swiper('#mySwiper', {
+        loop: true, // 循环模式选项
+        autoplay: {
+            delay: 4000,
+            stopOnLastSlide: false,
+            disableOnInteraction: false,
+        },
+
+        effect: 'fade',
+        // 分页器
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        // 前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    })
+})()
+
+
+
 $('.k_show').mouseenter(function(){//鼠标进去右边nav
 	var index = $(this).index()
 	// $('.k_top').eq(index).find('.iconfont').css('color','#FF7385')

@@ -3,9 +3,20 @@
 body {
   overflow-x: hidden; }
 
+.swiper-button-prev {
+  left: 100px; }
+
+.swiper-button-next {
+  right: 100px; }
+
 .k_banner {
   width: 100%;
   height: 420px; }
+  .k_banner .swiper-container {
+    --swiper-theme-color: #ff6600;
+    /* 设置Swiper风格 */
+    --swiper-navigation-size: 50px;
+    /* 设置按钮大小 */ }
   .k_banner img {
     position: relative;
     left: 50%;
@@ -16,7 +27,8 @@ body {
     left: 175px;
     width: 218px;
     height: 350px;
-    background: #ffffff; }
+    background: #ffffff;
+    z-index: 2; }
     .k_banner .K_left_nav .k_show {
       height: 70px;
       box-sizing: border-box;
@@ -71,6 +83,7 @@ body {
             .k_banner .K_left_nav .k_show .k_list ul li:hover a {
               color: #FF7385; }
   .k_banner .k_pull {
+    z-index: 2;
     width: 280px;
     height: 350px;
     background: #ffffff;
