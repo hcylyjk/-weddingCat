@@ -51,14 +51,55 @@ function getNews(){//ajax获取信息
 
 
 
+	
+var getdata=function(){
+	// 请求数据图片和信息
+			$.ajax({
+				url: '../json/online.json',
+				type: 'get',
+				dataType: 'json',
+				cache: 'false',
+				success: function (data) {
+					// console.log(data.length);
+					var num=Math.floor(Math.random()*data.length)
+					console.log(data[num].b);
+					var onews=data[num].a
+					var oimgs=data[num].b
+					addnews(onews,oimgs)
+				}
+			})
+				
+}
+getdata()//请求数据图片和信息
+
+	function addnews(onews,oimgs){//随机添加图片和信息
+		var oLil=$('<li class="left">'+onews+'</li>')
+		$('.online_inner .show ul').append(oLil)
+		console.log('我又执行随机添加了')
+		$('.online_inner .show').css({
+			'background-image':oimgs
+		})
+	}
+	
+
 	$('.online_bottom').css('display','none')
 	$('.online').css('top','600px')
 	setTimeout(function(){//设定时间自己显示
 	$('.online_bottom').css('display','block')
 	$('.online').css('top','250px')
-	},5000)
+	},2000)
 
 	
+	$('.online .clear').click(function(){//清空数据
+		$('.online .show ul').html('')
+		$('.online_inner .input').val('')
+		var oLir=$('<li class="left">你干嘛清空人家，好讨厌</li>')
+		$('.online_inner .show ul').append(oLir)
+		console.log(6675);
+		getdata()
+	})
+
+
 		
 })
 

@@ -59,21 +59,33 @@
 
 .input{
 	position: absolute;
+	left: 0px;
 	bottom: -30px;
-	width: 316px;
+	width: 280px;
 	height: 30px;
 	outline: none;
 }
 .send{
 	position: absolute;
 	bottom: -30px;
+	right: 36px;
+	width: 40px;
+	height: 35px;
+}
+.clear{
+	position: absolute;
+	bottom: -30px;
 	right: 0;
 	width: 40px;
 	height: 35px;
+	z-index: 10000;
 }
 
 .online_inner .war .send:hover{
 	background: #129611;
+}
+.online_inner .war .clear:hover{
+	background: #E18189;
 }
 
 .online_inner .war .show{
@@ -82,11 +94,10 @@ height: 349px;
 overflow: hidden;
 overflow-y: auto;
 /* background: #ECECEC; */
-background-image: url(../img/k_image/index/sss03.jpg);
+/* background-image: url(../img/k_image/index/sss02.jpg); */
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
-back
 z-index: 10000;
 }
 .online .online_inner .show ul  .left{
