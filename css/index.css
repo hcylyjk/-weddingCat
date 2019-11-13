@@ -204,23 +204,101 @@
     .h_lis dl dt {
       padding: 15px 15px;
       width: 191px;
-      height: 54px; }
-      .h_lis dl dt a {
+      height: 62px;
+      position: relative; }
+      .h_lis dl dt .h_jp1 {
         display: block;
         color: #fff;
         text-align: left;
         margin: 0 5px;
         padding: 0;
-        border-bottom: 1px solid #ccc; }
-        .h_lis dl dt a h4 {
-          margin-left: 4px; }
-        .h_lis dl dt a span {
+        border-bottom: 1px solid #757978;
+        height: 76px; }
+        .h_lis dl dt .h_jp1 h4 {
+          margin-left: 4px;
+          height: 30px;
+          line-height: 30px; }
+        .h_lis dl dt .h_jp1 span {
           padding: 0 14px 0 3px;
           font-size: 12px;
           margin-bottom: 2px;
           display: inline-block; }
-        .h_lis dl dt a .h_native {
+        .h_lis dl dt .h_jp1 .h_native {
           padding: 0; }
+    .h_lis dl .h_tuijian {
+      background-color: #757978;
+      width: 220px;
+      height: 54px;
+      padding: 4px;
+      box-sizing: border-box;
+      margin-top: -2px; }
+      .h_lis dl .h_tuijian span {
+        background: #ff7385;
+        padding: 0px 6px;
+        border-radius: 4px; }
+      .h_lis dl .h_tuijian a {
+        color: #fff; }
+
+.h_hunsho {
+  display: none;
+  position: absolute;
+  left: 221px;
+  top: 0;
+  background-image: url(../img/index_img/ia_200000163.jpg);
+  width: 380px;
+  height: 380px;
+  padding: 20px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: 30px bottom;
+  border-top: 1px solid #ccc; }
+  .h_hunsho .h_zuopin1 .h_z1 .h_zu2 .h_hj113 {
+    padding: 0;
+    font-size: 13px;
+    font-weight: 600;
+    float: left; }
+  .h_hunsho .h_zuopin1 .h_z1 .h_zu2 .h_allliss {
+    text-align: left;
+    float: left;
+    margin-left: 12px; }
+    .h_hunsho .h_zuopin1 .h_z1 .h_zu2 .h_allliss .h_ch {
+      padding: 0;
+      font-size: 13px;
+      height: 20px;
+      line-height: 20px; }
+
+.h_op112 {
+  position: absolute;
+  color: #444;
+  left: 246px;
+  bottom: 18px; }
+  .h_op112 .h_66 {
+    font-size: 20px; }
+  .h_op112 .h_pppp {
+    font-size: 16px; }
+  .h_op112 .h_kl22 {
+    display: block;
+    width: 89px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ff7385;
+    border-radius: 4px;
+    margin-left: 21px; }
+
+.h_han:hover .h_hunsho {
+  display: block; }
+
+.h_moshow:hover .h_hunsho {
+  display: block; }
+
+.h_moshow1:hover .h_hunsho {
+  display: block; }
+
+.h_moshow2:hover .h_hunsho {
+  display: block; }
+
+.h_han:hover {
+  background-color: #757978; }
 
 .h_move:hover .h_erw {
   display: block; }
