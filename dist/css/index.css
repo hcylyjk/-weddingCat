@@ -1265,3 +1265,42 @@ span:hover {
 
 .h_jiegj:hover .h_col5 {
   display: block; }
+
+.h_nav_item {
+  width: 42px;
+  padding: 4px;
+  box-sizing: border-box; }
+  .h_nav_item .h_nav_a {
+    display: block;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    height: 59px;
+    box-sizing: border-box;
+    padding-top: 13px; }
+    .h_nav_item .h_nav_a .h_nav_hun {
+      font-size: 10px;
+      width: 32px;
+      height: 45px; }
+      .h_nav_item .h_nav_a .h_nav_hun .h_nav_i {
+        font-size: 29px; }
+    .h_nav_item .h_nav_a .h_nav_active {
+      color: #ff7385; }
+    .h_nav_item .h_nav_a .h_nav_hidden {
+      display: none; }
+    .h_nav_item .h_nav_a .h_nav_show {
+      display: block; }
+
+.h_nav_position {
+  position: absolute;
+  top: 962px;
+  left: 2px; }
+
+.h_nav_fixed {
+  position: fixed;
+  top: 174px; }
+
+.h_nav_a:hover .h_nav_hidden {
+  display: block; }
+
+.h_nav_a:hover .h_nav_ii {
+  display: none; }

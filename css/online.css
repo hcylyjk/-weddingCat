@@ -8,7 +8,8 @@
 .online{
 	width: 360px;
 	right: 60px;
-	top: 250px;
+	/* top: 250px; */
+	bottom: 460px;
 	z-index: 10000;
 	position: fixed;
 }
@@ -108,16 +109,33 @@ background: greenyellow;
 border-radius: 10px;
 padding: 5px;
 }
+.online .online_inner .show ul li span{
+	position: absolute;
+	right: 15px;
+	bottom: 0;
+	display: block;
+	z-index: 10000;
+	width: 100px;
+	height: 15px;
+	color: #666666;
+	font-size: 12px;
+}
+
 .online .online_inner .show ul  .right{
 margin: 10px;
 background: #ffffff;
 text-align: right;
 border-radius: 10px;
-padding: 5px;
-
+padding: 5px 5px 10px 5px;
+position: relative;
 }
 .show ul{
 height: auto;
 width: 100%;
 }
+
+
+
+
+
 

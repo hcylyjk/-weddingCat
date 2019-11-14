@@ -12,13 +12,22 @@ $(function(){
 			getNews()
 		}
 	})
+	function getDate(){
+		var date=new Date;
+		var h=date.getHours()
+		var m=date.getMinutes()
+		var s=date.getSeconds()
+		// console.log(h,m,s);
+		return {h:h,m:m,s:s}
+	}
 
-	
 function getNews(){//ajax获取远程信息
 	if($('.online_inner .input').val().length==0){
 		return
 	}else{
-		var oLir=$('<li class="right">'+$('.online_inner .input').val()+'</li>')
+		getDate()
+		console.log('这是'+getDate().s)
+		var oLir=$('<li class="right">'+$('.online_inner .input').val()+'<span>'+'--'+(getDate().h)+'时'+(getDate().m)+'分'+(getDate().s)+'秒</span></li>')
 		$('.online_inner .show ul').append(oLir)
 		$('.online_inner .show')[0].scrollTop=10000;
 		$.ajax({
@@ -40,15 +49,14 @@ function getNews(){//ajax获取远程信息
 	
 
 	$(document).on('click','.online_top .icon-sort_desc-copy',function(){//显示隐藏
-		if($('.online').css('top')=='250px'){//隐藏
+		if($('.online').css('bottom')=='460px'){//隐藏
 			$('.online_bottom').toggle( );
-			$('.online').css('top','600px')
+			$('.online').css('bottom','100px')
 		}else{
 			$('.online_bottom').toggle( );//显示
-			$('.online').css('top','250px')
+			$('.online').css('bottom','460px')
 		}
 	})
-
 
 
 	
@@ -83,7 +91,7 @@ getdata()//请求数据图片和信息
 				var oLil=$('<li class="left">'+onews+'</li>')
 				$('.online_inner .show ul').append(oLil)
 				$('.online_bottom').toggle( );
-				$('.online').css('top','600px')
+				$('.online').css('bottom','100px')
 				clearTimeout(timeone)
 			},100)
 		}else{//第二次执行该函数进去
@@ -94,12 +102,17 @@ getdata()//请求数据图片和信息
 		})
 		}	
 	}
-	
 
 	var time_show=setTimeout(function(){//设定时间自己显示
-	$('.online_bottom').toggle( );
-	$('.online').css('top','250px')
-	clearTimeout(time_show)
+		if($('.online').css('bottom')=='460px'){
+			console.log('到达250')
+			clearTimeout(time_show)
+			return	false
+		}else{
+			$('.online_bottom').toggle( );
+			$('.online').css('bottom','460px')
+		}
+		clearTimeout(time_show)
 	},2000)
 
 	var arr_text=['你干嘛清空人家，好讨厌','叫你不要清了，你还清','能听话不','你好无聊','我不理你了']
