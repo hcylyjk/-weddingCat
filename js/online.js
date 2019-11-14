@@ -103,6 +103,7 @@ getdata()//请求数据图片和信息
 		}	
 	}
 	
+	
 
 	var time_show=setTimeout(function(){//设定时间自己显示
 		if($('.online').css('top')=='250px'){
