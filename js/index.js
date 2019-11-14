@@ -23,21 +23,20 @@ $('.h_select li').on('mouseenter', function (e) {
     var img2 = $('.h_bg2')[$index]
     img.classList.add('h_img');
     img2.classList.remove('h_img');
-})
+});
 $('.h_select li').on('mouseleave', function (e) {
     var $index = parseInt($(this).attr('z-index'));
     var img = $('.h_bg1')[$index];
     var img2 = $('.h_bg2')[$index]
     img.classList.remove('h_img');
     img2.classList.add('h_img');
-})
+});
 
  //封装清除样式 elem->需要清除的列表  stl->需要清除的样式
  function hClear(elem, stl, value) {
     for (var i = 0, len = elem.length; i < len; i++) {
         elem[i].classList.remove(stl[value]);
     }
-}
 //封装添加样式 index->需添加的下标 elem->需添加的列表 value->stl的值
 function hAdd(elem, index, stl, value) {
     // console.log(stl[value])
@@ -133,7 +132,7 @@ var stl2 = {
     dom3: 'h_active4',
     dom4: 'h_hidden1',//隐藏
     dom5: 'h_show1'
-}
+};
 //婚宴酒店
 
 
@@ -223,25 +222,16 @@ hMove1(3000);
 
 
 
-$('.h_pic1 span').on('mouseenter', function () {
-    $('.h_pic1 span').removeClass('h_active1');
-    $(this).addClass('h_active1');
-});
-
-
-// 免费结婚工具
-$('.h_lisss li').on('mouseenter',function(){
-    var index = $(this).attr('data-index');
-    var sel = $('.h_bgjg')[index];
-    $('.h_lisss li').removeClass('h_activebg');
-    $('.h_bgjg').removeClass('h_b');
-    $('.h').removeClass('h_b');
-    $(this).addClass('h_activebg');
-    $('.h_activebg .h').addClass('h_b');
-    sel.classList.add('h_b');
-})
 
 
 
+
+
+
+
+
+
+
+ 
 
 

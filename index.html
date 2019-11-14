@@ -1250,7 +1250,7 @@
                 </div>
                 <div class="h_rightBtn h_lr h_right123">
 
-                </div> 
+                </div>
                 <ol class="h_ols2">
                     <li class="h_active4" data-index="0"></li>
                     <li data-index="1"></li>
@@ -1258,30 +1258,30 @@
                     <li data-index="3"></li>
                 </ol>
                 <div class="h_bte clearfix">
-                        <div class="h_pte h_hidden1 h_show1 h_ps22">
-                            越夜越美丽
-                            <br>
-                            多场景&多主题 开启
-                        </div>
-                        <div class="h_pte h_hidden1 h_ps22">
-                            锦绣姻缘-定制中国风
-                            <br>
-                            婚照一定要有一组中国
-                        </div>
-                        <div class="h_pte h_hidden1 h_ps22">
-                            婚纱照怎么能没有海？
-    
-                            <br>
-                            海景主题清凉发布
-                        </div>
-                        <div class="h_pte h_hidden1 h_ps22">
-                            美不只是一面
-    
-                            <br>
-                            8大风格 放肆任拍
-                        </div>
-                        <a href="javascript:" class="h_moa">立即抢购<i class="iconfont icon-sort_desc-copy h_transf"></i></a>
+                    <div class="h_pte h_hidden1 h_show1 h_ps22">
+                        越夜越美丽
+                        <br>
+                        多场景&多主题 开启
                     </div>
+                    <div class="h_pte h_hidden1 h_ps22">
+                        锦绣姻缘-定制中国风
+                        <br>
+                        婚照一定要有一组中国
+                    </div>
+                    <div class="h_pte h_hidden1 h_ps22">
+                        婚纱照怎么能没有海？
+
+                        <br>
+                        海景主题清凉发布
+                    </div>
+                    <div class="h_pte h_hidden1 h_ps22">
+                        美不只是一面
+
+                        <br>
+                        8大风格 放肆任拍
+                    </div>
+                    <a href="javascript:" class="h_moa">立即抢购<i class="iconfont icon-sort_desc-copy h_transf"></i></a>
+                </div>
             </div>
             <div class="h_hotSp">
                 <div class="h_more">
@@ -1976,12 +1976,145 @@
             </div>
         </div>
     </div>
+
+    <div class="h_nav_item h_nav_position">
+        <a href="javascript:;" class="h_nav_a">
+            <span class="h_nav_hun h_nav_active h_nav_text">婚纱摄影</span>
+            <span class="h_nav_hun h_nav_hidden h_nav_ii h_nav_pic">
+                <i class="iconfont icon-libao1 h_nav_i"></i>
+            </span>
+        </a>
+        <a href="javascript:;" class="h_nav_a">
+            <span class="h_nav_hun h_nav_hidden h_nav_text h_nav_active">全球旅拍</span>
+            <span class="h_nav_hun h_nav_ii h_nav_pic">
+                <i class="iconfont icon-gongjiao h_nav_i"></i>
+            </span>
+        </a>
+        <a href="javascript:;" class="h_nav_a">
+            <span class="h_nav_hun h_nav_hidden h_nav_text h_nav_active">婚宴酒店</span>
+            <span class="h_nav_hun h_nav_ii h_nav_pic">
+                <i class="iconfont icon-ziyuan h_nav_i"></i>
+            </span>
+        </a>
+        <a href="javascript:;" class="h_nav_a">
+            <span class="h_nav_hun h_nav_hidden h_nav_text h_nav_active">结婚服务</span>
+            <span class="h_nav_hun h_nav_ii h_nav_pic">
+                <i class="iconfont icon-ziyuan h_nav_i"></i>
+            </span>
+        </a>
+        <a href="javascript:;" class="h_nav_a">
+            <span class="h_nav_hun h_nav_hidden h_nav_text h_nav_active">结婚工具</span>
+            <span class="h_nav_hun h_nav_ii h_nav_pic">
+                <i class="iconfont icon-fukuan h_nav_i"></i>
+            </span>
+        </a>
+        <a href="javascript:;" class="h_nav_a">
+            <span class="h_nav_hun h_nav_hidden h_nav_text h_nav_active">百科</span>
+            <span class="h_nav_hun h_nav_ii h_nav_pic">
+                <i class="iconfont icon-xindai h_nav_i"></i>
+            </span>
+        </a>
+        <a href="javascript:;" class="h_nav_a" style="border:0;">
+            <span class="h_nav_hun h_nav_hidden h_nav_text h_nav_active">资讯</span>
+            <span class="h_nav_hun h_nav_ii h_nav_pic">
+                <i class="iconfont icon-dingdan1 h_nav_i"></i>
+            </span>
+        </a>
+    </div>
     <script src="js/swiper.min.js"></script>
     <script src="js/mod_rightFix.js"></script>
     <script src="js/index.js"></script>
     <script>
-        
-       
+        //滚动事件
+        window.onscroll = function () {
+            //console.log(document.documentElement.scrollTop);
+            var allText = document.querySelectorAll('.h_nav_text');//获取所有文字
+            //console.log(scrollHeight)
+            var allPic = document.querySelectorAll('.h_nav_pic');//获取所有图标
+            var hNav = document.querySelector('.h_nav_item');
+            var scrollHeight = document.documentElement.scrollTop || document.body.scrollTop;
+            var wrap = 1207;
+            var fixWrap = 600;
+            if (scrollHeight < 520) {
+                hNav.classList.remove('h_nav_fixed');
+                hNav.classList.add('h_nav_position');
+            } else {
+                hNav.classList.remove('h_nav_position');
+                hNav.classList.add('h_nav_fixed');
+            }
+            if (scrollHeight < wrap) {
+                hClearText(allText);
+                hClearpic(allPic);
+                allText[0].classList.remove('h_nav_hidden');
+                allPic[0].classList.add('h_nav_hidden')
+                return;
+            }
+            if (scrollHeight > wrap && scrollHeight < wrap + fixWrap) {
+                hClearText(allText);
+                hClearpic(allPic);
+                allText[1].classList.remove('h_nav_hidden');
+                allPic[1].classList.add('h_nav_hidden');
+            }
+            if (scrollHeight > wrap + fixWrap && scrollHeight < wrap + fixWrap * 2) {
+                hClearText(allText);
+                hClearpic(allPic);
+                allText[2].classList.remove('h_nav_hidden');
+                allPic[2].classList.add('h_nav_hidden');
+            }
+            if (scrollHeight > wrap + fixWrap * 2 && scrollHeight < wrap + fixWrap * 3) {
+                hClearText(allText);
+                hClearpic(allPic);
+                allText[3].classList.remove('h_nav_hidden');
+                allPic[3].classList.add('h_nav_hidden');
+            }
+            if (scrollHeight > wrap + fixWrap * 3 && scrollHeight < wrap + fixWrap * 4) {
+                hClearText(allText);
+                hClearpic(allPic);
+                allText[4].classList.remove('h_nav_hidden');
+                allPic[4].classList.add('h_nav_hidden');
+            }
+            if (scrollHeight > wrap + fixWrap * 4 && scrollHeight < wrap + fixWrap * 4 + 300) {
+                hClearText(allText);
+                hClearpic(allPic);
+                allText[5].classList.remove('h_nav_hidden');
+                allPic[5].classList.add('h_nav_hidden');
+            }
+            if (scrollHeight > wrap + fixWrap * 5 && scrollHeight < wrap + fixWrap * 6) {
+                hClearText(allText);
+                hClearpic(allPic);
+                allText[6].classList.remove('h_nav_hidden');
+                allPic[6].classList.add('h_nav_hidden');
+            }
+        }
+        function hClearText(dom) {//所有文字隐藏
+            for (var i = 0, len = dom.length; i < len; i++) {
+                dom[i].classList.add('h_nav_hidden');
+            }
+        }
+        function hClearpic(dom) {//所有图标显示
+            for (var i = 0, len = dom.length; i < len; i++) {
+                dom[i].classList.remove('h_nav_hidden');
+            }
+        }
+
+        // 免费结婚工具
+
+        $('.h_lisss li').on('mouseenter', function () {
+            var index = $(this).attr('data-index');
+            var sel = $('.h_bgjg')[index];
+            $('.h_lisss li').removeClass('h_activebg');
+            $('.h_bgjg').removeClass('h_b');
+            $('.h').removeClass('h_b');
+            $(this).addClass('h_activebg');
+            $('.h_activebg .h').addClass('h_b');
+            sel.classList.add('h_b');
+        });
+
+        //文字添加固定的样式
+        $('.h_pic1 span').on('mouseenter', function () {
+            $('.h_pic1 span').removeClass('h_active1');
+            $(this).addClass('h_active1');
+        });
     </script>
 </body>
 
