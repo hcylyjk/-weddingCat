@@ -990,7 +990,11 @@
     </div>
     <div class="mod_right">
         <script>
-            $('.mod_right').load('mod_rightFix.html');
+            $('.mod_right').load('mod_rightFix.html',function(){
+                $('.mod_kl').click(function(){
+                    $('html,body').animate({ scrollTop: '0' }, 'slow');
+                })
+            });
         </script>
     </div>
     <div class="footer">
