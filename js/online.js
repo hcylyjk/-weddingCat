@@ -1,9 +1,9 @@
 
 $(function(){
-	$('.online .online_inner .send').on('click',function(){//点击发送按钮
+	
+	$(document).on('click','.online .send',function(){//点击发送按钮
 		getNews()
 	})
-
 
 	$(document).keyup(function(e){//按下回车发送消息
 		if($('.online_inner .input').val().length==0){
@@ -14,7 +14,7 @@ $(function(){
 	})
 
 	
-function getNews(){//ajax获取信息
+function getNews(){//ajax获取远程信息
 	if($('.online_inner .input').val().length==0){
 		return
 	}else{
@@ -38,8 +38,8 @@ function getNews(){//ajax获取信息
 	}
 }
 	
-	
-	$('.online_top .icon-sort_desc-copy').click(function(){//显示隐藏
+
+	$(document).on('click','.online_top .icon-sort_desc-copy',function(){//显示隐藏
 		if($('.online').css('top')=='250px'){//隐藏
 			$('.online_bottom').toggle( );
 			$('.online').css('top','600px')
@@ -71,38 +71,51 @@ var getdata=function(){
 				
 }
 getdata()//请求数据图片和信息
-
+	var taggle_num=0
 	function addnews(onews,oimgs){//随机添加图片和信息
-		var oLil=$('<li class="left">'+onews+'</li>')
-		$('.online_inner .show ul').append(oLil)
+		taggle_num++
 		console.log('我又执行随机添加了')
+		if(taggle_num<2){//只在页面第一次加载才进去
+			var timeone=setTimeout(function(){
+				$('.online_inner .show').css({
+					'background-image':oimgs
+				})
+				var oLil=$('<li class="left">'+onews+'</li>')
+				$('.online_inner .show ul').append(oLil)
+				$('.online_bottom').toggle( );
+				$('.online').css('top','600px')
+				clearTimeout(timeone)
+			},100)
+		}else{//第二次执行该函数进去
+			var oLil=$('<li class="left">'+onews+'</li>')
+		$('.online_inner .show ul').append(oLil)
 		$('.online_inner .show').css({
 			'background-image':oimgs
 		})
+		}	
 	}
 	
 
-	$('.online_bottom').css('display','none')
-	$('.online').css('top','600px')
-	setTimeout(function(){//设定时间自己显示
-	$('.online_bottom').css('display','block')
+	var time_show=setTimeout(function(){//设定时间自己显示
+	$('.online_bottom').toggle( );
 	$('.online').css('top','250px')
+	clearTimeout(time_show)
 	},2000)
 
-	
-	$('.online .clear').click(function(){//清空数据
+	var arr_text=['你干嘛清空人家，好讨厌','叫你不要清了，你还清','能听话不','你好无聊','我不理你了']
+	var conts=-1;
+	$(document).on('click','.online .clear',function(){//清空数据
 		$('.online .show ul').html('')
 		$('.online_inner .input').val('')
-		var oLir=$('<li class="left">你干嘛清空人家，好讨厌</li>')
+		conts++;
+		if(conts>=4){
+			conts=4;
+		}
+		var oLir=$('<li class="left">'+arr_text[conts]+'</li>')
 		$('.online_inner .show ul').append(oLir)
-		console.log(6675);
 		getdata()
 	})
-
-
-		
 })
-
 
 
 
