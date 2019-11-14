@@ -15,6 +15,7 @@ $('.h_list li').hover(function(){
     $(this).css('background','#efecec');
 });
 
+
 // 结婚流程-图片转换
 $('.h_select li').on('mouseenter', function (e) {
     var $index = parseInt($(this).attr('z-index'));
@@ -31,86 +32,195 @@ $('.h_select li').on('mouseleave', function (e) {
     img2.classList.add('h_img');
 })
 
-
-//轮播
-let ins = 0;
-// let lis = document.querySelectorAll('.h_slides li');
-// let ols = document.querySelectorAll('.h_ols li');
-let timer;
-let ob1={
-    do1:document.querySelectorAll('.h_slides li'),//背景图片
-    do2: document.querySelectorAll('.h_ols li'),//小方框
+ //封装清除样式 elem->需要清除的列表  stl->需要清除的样式
+ function hClear(elem, stl, value) {
+    for (var i = 0, len = elem.length; i < len; i++) {
+        elem[i].classList.remove(stl[value]);
+    }
 }
-let stl1 = {
+//封装添加样式 index->需添加的下标 elem->需添加的列表 value->stl的值
+function hAdd(elem, index, stl, value) {
+    // console.log(stl[value])
+    elem[index].classList.add(stl[value]);
+}
+//主页大图轮播
+var st = {
     dom1:'h_index',
     dom2:'h_op',
-    dom3:'h_active',
+    dom3:'h_active'
 }
-//ob->元素  style-》样式添加
-function done(delay,ins,dom,stl){
-    //console.log(ins,dom,stl);
-    carousel(delay, ins,dom,stl,timer);
-    dclick(delay,dom,stl,timer);
-}
-done(5000, ins,ob1,stl1);
-
-function carousel(delay, ins, dom , stl,time) {
-    clearInterval(time);
-    //console.log(delay,ins,dom,stl);
-    time = setInterval(function () {
-        //console.log(delay,ins,dom,stl);
-        removeAll(dom,stl);
-        addAll(dom,ins,stl);
-        ins++;
-       // console.log(ins)
-        if (ins > dom.do1.length - 1) {
-            ins = 0;
+var h_bigl = document.querySelectorAll('.h_slides li');//大图
+var h_big2 = document.querySelectorAll('.h_ols li')
+function hMovey(delay) {
+    clearInterval(timer);
+    var timer;
+    var times = delay;
+    var index =0;
+    timer = setInterval(function () {
+        hClear(h_bigl, st, 'dom1');
+        hClear(h_bigl, st, 'dom2');
+        hClear(h_big2, st, 'dom3');
+        if (index > elem1.length - 1) {
+            index = 0;
         }
-        return ins;
+        //console.log(index);
+        hAdd(h_bigl, index, st, 'dom1');
+        hAdd(h_bigl, index, st, 'dom2');
+        hAdd(h_big2, index, st, 'dom3');
+        index++;
     }, delay);
-}
-function dclick(delay,dom,stl,time){
-    var dom1 = dom;
-    //console.log(dom1);
-    for (let i = 0, len = dom.do2.length; i < len; i++) {
-        //console.log(dom.do1.length)
-        //console.log(dom1);
-        dom1.do2[i].index = i;
-        dom1.do2[i].onclick = function () {
-            //console.log(dom1);
-            removeAll(dom1,stl);
-            clearInterval(time);
-            let ins = this.index;
-            addAll(dom1,ins,stl);
-            setTimeout(function () {
-               // console.log(dom1)
-               time = setInterval(function () {
-                   // console.log(dom1);
-                    ins = addAll(dom1,ins,stl);
-                    removeAll(dom1,stl);
-                    addAll(dom1,ins,stl);
-                    ins++;
-                    if (ins > dom1.do2.length - 1) {
-                        ins = 0;
-                    }
-                }, delay);
-            }, 2000)
+    for(var i = 0,len=h_big2.length; i< len;i++){
+        h_big2[i].index = i;
+        h_big2[i].onclick = function(){
+            clearInterval(timer);
+            hClear(h_bigl, st, 'dom1');
+            hClear(h_bigl, st, 'dom2');
+            hClear(h_big2, st, 'dom3');
+            var ins = this.index;
+            hAdd(h_bigl, ins, st, 'dom1');
+            hAdd(h_bigl, ins, st, 'dom2');
+            hAdd(h_big2, ins, st, 'dom3');
         }
     }
+
 }
-function removeAll(dom,stl) {
-    for (let i = 0, len = dom.do1.length; i < len; i++) {
-        dom.do1[i].classList.remove(stl.dom1);//z-index
-        dom.do1[i].classList.remove(stl.dom2);//透明度
-        dom.do2[i].classList.remove(stl.dom3);//图标样式
+hMovey(5000);
+
+
+
+
+// 新浪轮播
+var stl4 = {
+    'dom1': 'h_olactive',
+    'dom2': 'h_b'
+}
+var elem1 = document.querySelectorAll('.h_circles li');//所有li
+var elem2 = document.querySelectorAll('.h_7');//所有要显示的块
+function hMove(delay) {
+    clearInterval(timer);
+    var timer;
+    var times = delay;
+    var index =0;
+    timer = setInterval(function () {
+        hClear(elem1, stl4, 'dom1');
+        hClear(elem2, stl4, 'dom2');
+        if (index > elem1.length - 1) {
+            index = 0;
+        }
+        //console.log(index);
+        hAdd(elem1, index, stl4, 'dom1');
+        hAdd(elem2, index, stl4, 'dom2');
+        index++;
+    }, delay);
+    for(var i = 0,len=elem1.length; i< len;i++){
+        elem1[i].index = i;
+        elem1[i].onclick = function(){
+            clearInterval(timer);
+            hClear(elem1, stl4, 'dom1');
+            hClear(elem2, stl4, 'dom2');
+            var ins = this.index;
+            hAdd(elem1, ins, stl4, 'dom1');
+            hAdd(elem2, ins, stl4, 'dom2');
+        }
+    }
+
+}
+hMove(2000)
+
+var stl2 = {
+    dom1: 'h_bgz',//z-index
+    dom2: 'h_op2',//透明度
+    dom3: 'h_active4',
+    dom4: 'h_hidden1',//隐藏
+    dom5: 'h_show1'
+}
+//婚宴酒店
+
+
+
+
+
+//结婚服务轮播
+
+var h_ele1 = document.querySelectorAll('.h_olsn1 li');//获取所有圆点
+var h_ele2 = document.querySelectorAll('.h_slidesn2 li');//所有图片
+var h_allTex = document.querySelectorAll('.h_ps1');//获取所有文本
+var h_left12 = document.querySelector('.h_left12');//获取左键
+var h_right12 = document.querySelector('.h_right12');
+//console.log(h_allTex)
+function hMove1(delay) {
+    clearInterval(timer);
+    var timer;
+    var times = delay;
+    var index = 0;
+    timer = setInterval(function () {
+        hClear(h_ele1, stl2, 'dom3');
+        hClear(h_ele2, stl2, 'dom1');
+        hClear(h_ele2, stl2, 'dom2');
+        hClear(h_allTex, stl2, 'dom5');
+        if (index > h_ele1.length - 1) {
+            index = 0;
+        }
+        // console.log(index);
+        hAdd(h_ele1, index, stl2, 'dom3');
+        hAdd(h_ele2, index, stl2, 'dom1');
+        hAdd(h_ele2, index, stl2, 'dom2');
+        hAdd(h_allTex, index, stl2, 'dom5');
+        index++;
+    }, delay);
+    for (var i = 0, len = h_ele1.length; i < len; i++) {
+        h_ele1[i].index = i;
+        h_ele1[i].onclick = function () {
+            clearInterval(timer);
+            hClear(h_ele1, stl2, 'dom3');
+            hClear(h_ele2, stl2, 'dom1');
+            hClear(h_ele2, stl2, 'dom2');
+            hClear(h_allTex, stl2, 'dom5');
+            var ins = this.index;
+            hAdd(h_ele1, ins, stl2, 'dom3');
+            hAdd(h_ele2, ins, stl2, 'dom1');
+            hAdd(h_ele2, ins, stl2, 'dom2');
+            hAdd(h_allTex, index, stl2, 'dom5');
+        }
+    }
+    h_left12.onclick = function () {
+        clearInterval(timer);
+        var index = document.querySelector('.h_olsn1 .h_active4').getAttribute('data-index');
+        index--;
+        if (index < 0) {
+            index = h_ele1.length - 1;
+        }
+        hClear(h_ele1, stl2, 'dom3');
+        hClear(h_ele2, stl2, 'dom1');
+        hClear(h_ele2, stl2, 'dom2');
+        hClear(h_allTex, stl2, 'dom5');
+        var ins = this.index;
+        hAdd(h_ele1, ins, stl2, 'dom3');
+        hAdd(h_ele2, ins, stl2, 'dom1');
+        hAdd(h_ele2, ins, stl2, 'dom2');
+        hAdd(h_allTex, ins, stl2, 'dom5');
+    }
+    h_right12.onclick = function () {
+        clearInterval(timer);
+        var index = document.querySelector('.h_olsn1 .h_active4').getAttribute('data-index');
+        index++;
+        if (index > h_ele1.length - 1) {
+            index = 0;
+        }
+        hClear(h_ele1, stl2, 'dom3');
+        hClear(h_ele2, stl2, 'dom1');
+        hClear(h_ele2, stl2, 'dom2');
+        hClear(h_allTex, stl2, 'dom5');
+        var ins = this.index;
+        hAdd(h_ele1, ins, stl2, 'dom3');
+        hAdd(h_ele2, ins, stl2, 'dom1');
+        hAdd(h_ele2, ins, stl2, 'dom2');
+        hAdd(h_allTex, ins, stl2, 'dom5');
     }
 }
-function addAll(dom,index,stl) {
-    dom.do1[index].classList.add(stl.dom1);
-    dom.do1[index].classList.add(stl.dom2);
-    dom.do2[index].classList.add(stl.dom3);
-    return index;
-}
+hMove1(3000);
+
+
 
 
 $('.h_pic1 span').on('mouseenter', function () {
@@ -132,59 +242,6 @@ $('.h_lisss li').on('mouseenter',function(){
 })
 
 
-//婚纱摄影轮播
-function h_lbAll(){
-    let h_timer3;
-let h_second = 0;
-let obj2 = {
-    do1: document.querySelectorAll('.h_slides2 li'),
-    do2: document.querySelectorAll('.h_ols2 li'),
-    do3: document.querySelector('.h_leftBtn'),
-    do4: document.querySelector('.h_rightBtn'),
-    do5: document.querySelectorAll('.h_pte'),
-}
-let stl2 = {
-    dom1: 'h_bgz',//z-index
-    dom2: 'h_op2',//透明度
-    dom3: 'h_active4',
-    dom4: 'h_hidden1',//隐藏
-    dom5: 'h_show1'
-}
-let h_timer2;
-function activebl1(delay, ins, dom, stl,time) {
-    clearInterval(time);
-    carousel(delay, ins, dom, stl,time);
-    dclick(delay, dom, stl,time);
-}
-activebl1(4000, h_second, obj2, stl2,h_timer3);
 
-obj2.do3.onclick = function () {
-    var index = document.querySelector('.h_active4').getAttribute('data-index');
-    index--;
-    if (index < 0) {
-        index = 3;
-    }
-    getLr(index)
-}
-obj2.do4.onclick = function () {
-   
-    var index = document.querySelector('.h_active4').getAttribute('data-index');
-    console.log(index);
-    index++;
-    if (index > 3) {
-        index = 0;
-    }
-    getLr(index);
-}
-function getLr(index) {
-    console.log(index);
-    
-    removeAll(obj2, stl2);
-    addAll(obj2, index, stl2);
-    activebl1(4000, index, obj2, stl2,h_timer3);
-}
-
-}
-// h_lbAll()
 
 

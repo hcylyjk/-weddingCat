@@ -253,8 +253,6 @@
   background-position: 30px bottom;
   border-top: 1px solid #ccc; }
   .h_hunsho .h_zuopin1 .h_z1 .h_zu2 .h_hj113 {
-    padding: 0;
-    font-size: 13px;
     font-weight: 600;
     float: left; }
   .h_hunsho .h_zuopin1 .h_z1 .h_zu2 .h_allliss {
@@ -298,6 +296,15 @@
   display: block; }
 
 .h_han:hover {
+  background-color: #757978; }
+
+.h_moshow:hover {
+  background-color: #757978; }
+
+.h_moshow1:hover {
+  background-color: #757978; }
+
+.h_moshow2:hover {
   background-color: #757978; }
 
 .h_move:hover .h_erw {
@@ -606,7 +613,7 @@ span:hover {
   box-shadow: 0px -14px 41px rgba(0, 0, 0, 0.2);
   background-color: rgba(0, 0, 0, 0.4); }
   .h_bte .h_pte {
-    display: inline-block;
+    float: left;
     color: #fff; }
   .h_bte a {
     display: inline-block;
@@ -619,8 +626,9 @@ span:hover {
     line-height: 32px;
     text-align: center;
     position: relative;
-    top: -12px;
-    left: 22px; }
+    top: 2px;
+    left: -4px;
+    float: right; }
 
 .h_transf {
   transform: rotate(270deg);
@@ -686,7 +694,7 @@ span:hover {
   opacity: 1 !important; }
 
 .h_hidden1 {
-  display: none !important; }
+  display: none; }
 
 .h_show1 {
   display: block; }
@@ -1222,22 +1230,26 @@ span:hover {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden; }
-  .h_jhss .h_7 ol {
-    margin-top: 53px;
-    text-align: center;
-    margin-left: 30px; }
-    .h_jhss .h_7 ol li {
-      width: 30px;
-      height: 2px;
-      background-color: #ccc;
-      float: left;
-      margin-right: 21px;
-      border-radius: 5px; }
-    .h_jhss .h_7 ol .h_olactive {
-      background-color: #ff7385; }
 
 .h_jhss .h_b {
   display: block; }
+
+.h_circles {
+  margin-top: 53px;
+  text-align: center;
+  margin-left: 30px;
+  width: 160px;
+  height: 20px; }
+  .h_circles li {
+    width: 30px;
+    height: 2px;
+    background-color: #ccc;
+    float: left;
+    margin-right: 21px;
+    border-radius: 5px;
+    cursor: pointer; }
+  .h_circles .h_olactive {
+    background-color: #ff7385; }
 
 .h_hunsha:hover .h_col1 {
   display: block; }

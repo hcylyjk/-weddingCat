@@ -8,86 +8,29 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/mod_head.css">
+    <link rel="stylesheet" href="../css/mod_rightFix.css">
+    <link rel="stylesheet" href="../css/mod_footer.css">
+    <link rel="icon" href="../img/c_image/index/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/mod_leftFix.css">
+    <script src="../js/jquery-1.8.3.min.js"></script>
 
 </head>
 
-<body style="background-color:#f5f5f5">
-    <div class="h_content1">
-        <div class="container h_content2">
-            <div class="h_contleft fl">
-                <img src="../img/index_img/ia_200000002.png">
-            </div>
-            <div class="h_contleft fl">
-                    <div class="h_theme1">
-                        <a href="javascript:;" class="h_a1">
-                            <span class="h_th2">主题</span>
-                        </a>
-                         <ul class="h_ul2">
-                            <a href="javascript:;"> 韩式美学</a>
-                            <a href=" javascript:;"> 水墨中国风</a>                                              
-                            <a href="javascript:;"> 城市热恋</a>                                                          
-                            <a href=" javascript:;"> 私奔到海</a>                                                            
-                            <a href="javascript:;">爱情小确幸</a>
-                            <a href=" javascript:;">花田囍事</a> 
-                         </ul>
-                    </div>
-            </div>
-            <div class="h_contleft fl">
-                    <div class="h_theme1">
-                        <a href="javascript:;" class="h_a1">
-                            <span class="h_th2">摄影师</span>
-                        </a>
-                         <ul class="h_ul2">
-                            <a href="javascript:;"> 资深级 ￥2500</a>
-                            <a href=" javascript:;"> 总监级 ￥3500</a>                                              
-                            <a href="javascript:;"> 创作级 ￥4500+</a>                                                          
-                          
-                         </ul>
-                    </div>
-            </div>
-            <div class="h_contleft fl">
-                    <div class="h_theme1">
-                        <a href="javascript:;" class="h_a1">
-                            <span class="h_th2">景点</span>
-                        </a>
-                         <ul class="h_ul2">
-                            <a href="javascript:;" class="h_change"> 沙面</a>
-                            <a href=" javascript:;" class="h_change"> 斯里兰半岛</a>                                              
-                            <a href="javascript:;" class="h_change"> 佛罗伦庄园</a>                                                          
-                            <a href=" javascript:;" class="h_change"> 翡翠湾</a>                                                            
-                            <a href="javascript:;" class="h_change">奥斯丁影视城</a>
-                            <a href=" javascript:;" class="h_change"> 韩式摄影基地</a> 
-                            <a href=" javascript:;" class="h_change">  赫拉恋城</a> 
-                         </ul>
-                    </div>
-            </div>
-            <div class="h_contleft fl">
-                    <div class="h_theme1">
-                        <a href="javascript:;" class="h_a1">
-                            <span class="h_th2">每月</span>
-                        </a>
-                        <a href="javascript:;" class="h_a">
-                                <span class="h_th2">精选</span>
-                            </a>
-                         <ul class="h_ul2">
-                            <a href="javascript:;">  6月</a>
-                            <a href=" javascript:;"> 5月</a>                                              
-                            <a href="javascript:;"> 4月</a>                                                          
-                            <a href=" javascript:;"> 3月</a>                                                            
-                            <a href="javascript:;"> 2月</a>
-                         </ul>
-                    </div>
-            </div>
-           
-        </div>
+<body>
         
-           
-    </div>
-    <script src="../js/jquery-1.8.3.min.js"></script>
 
     <script>
 
+        $.ajax({
+            type: 'get',
+            url: 'https://api.growingio.com/v2/afc9ec12e0db79e1/web/action',
+            data: { stm: "1573648647911" },
+            success: function (data) {
+                console.log(data);
+                //  console.log(JSON.parse(data.data.inviterule).inviteText);
+            }
+        })
     </script>
 </body>
 
