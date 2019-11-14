@@ -883,7 +883,12 @@
 	<!-- 右边固定部分 -->
 	<div class="mod_right">
 		<script>
-			$('.mod_right').load('mod_rightFix.html');
+			$('.mod_right').load('./mod_rightFix.html', function () {
+				$(".mod_kl").click(function () {
+					$('html,body').animate({ scrollTop: '0' }, 'slow');
+				});
+			});
+
 		</script>
 	</div>
 	<!-- 头部引用的-->
@@ -896,9 +901,9 @@
 
 	<!-- 智能客服 -->
 	<div class="online">
-		 <script>
-				$('.online').load('online.html')
-		</script> 
+		<script>
+			$('.online').load('online.html')
+		</script>
 	</div>
 
 </body>

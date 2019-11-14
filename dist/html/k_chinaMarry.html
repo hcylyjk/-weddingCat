@@ -901,9 +901,14 @@
 
 	<!-- 右边固定部分 -->
 	<div class="mod_right">
-		<script>
-			$('.mod_right').load('mod_rightFix.html');
-		</script>
+			<script>
+					$('.mod_right').load('./mod_rightFix.html', function () {
+						$(".mod_kl").click(function () {
+							$('html,body').animate({ scrollTop: '0' }, 'slow');
+						});
+					});
+		
+				</script>
 	</div>
 	<!-- 脚部引用的-->
 	<div class="footer">
@@ -928,6 +933,7 @@
 	}
 </script>
 <script src="../js/k_chinaMarry.js"></script>
+<script src="../js/mod_rightFix.js"></script>
 <script src="../js/online.js"></script>
 
 </html>

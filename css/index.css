@@ -1304,3 +1304,12 @@ span:hover {
 
 .h_nav_a:hover .h_nav_ii {
   display: none; }
+
+.h_holder {
+  position: fixed;
+  bottom: 0;
+  right: 60px; }
+
+.h_bottom_btn {
+  background-color: #ff7385;
+  color: #fff; }

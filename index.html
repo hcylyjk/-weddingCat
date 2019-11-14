@@ -572,7 +572,7 @@
                                     </div>
                                     <div class="h_contleft7 fl">
                                         <div class="h_theme1">
-                                            <a href="html/j_journey_list2.html;" class="h_a1">
+                                            <a href="html/j_journey_list2.html" class="h_a1">
                                                 <img src="img/index_img/ia_200000008.png">
                                                 <p>大理</p>
                                             </a>
@@ -2021,12 +2021,62 @@
             </span>
         </a>
     </div>
+    <!-- 机器人 -->
+    <div class="h_holder" id="h_btn_hodler">
+        <div class="h_bottom_btn">
+
+        </div>
+    </div>
     <script src="js/swiper.min.js"></script>
     <script src="js/mod_rightFix.js"></script>
     <script src="js/index.js"></script>
+    
     <script>
-      
+      //存储历史记录http://api.yunque360.com/v1/chat/chat/web-history
+      //获取头部信息http://imapi.yunque360.com/company?id=c9vev9hnp66s&_=1573711609732
+      //发送信息http://imapi.yunque360.com/pull
+      //发送数据时的地址http://imapi.yunque360.com/send
+        $.ajax({
+            url:'http://imapi.yunque360.com/company',
+            type:'get',
+            data:{id:'c9vev9hnp66s'},
+            dataType:'json',
+            success:function(data){
+                console.log(data)
+            }
+        })
+        $.ajax({
+            url:'http://imapi.yunque360.com/pull',
+            type:'post',
+            data:{uid:'u38h8hhhtfgbj',company_id: 'c9vev9hnp66s',from: 4,worker_name: '1002'},
+            dataType:'json',
+            success:function(data){
+                console.log(data);
+                
+            }
+        })
+        $.ajax({
+            url:'http://api.yunque360.com/v1/chat/chat/web-history',
+            type:'post',
+            dataType:'json',
+            success:function(data){
+                console.log(data)
+            }
+        })
 
+        $.ajax({
+            url:'http://imapi.yunque360.com/send',
+            type:'post',
+            dataType:'json',
+            data:{uid: 'u38h8hhhtfgbj',company_id: 'c9vev9hnp66s',body: '广告',cmd: 'user',cmicrotime: '1573717782801',worker_name: '1002'},
+            success:function(data){
+                console.log(data)
+            }
+
+
+
+
+        })
 
     </script>
 </body>
