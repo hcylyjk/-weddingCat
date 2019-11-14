@@ -2025,96 +2025,9 @@
     <script src="js/mod_rightFix.js"></script>
     <script src="js/index.js"></script>
     <script>
-        //滚动事件
-        window.onscroll = function () {
-            //console.log(document.documentElement.scrollTop);
-            var allText = document.querySelectorAll('.h_nav_text');//获取所有文字
-            //console.log(scrollHeight)
-            var allPic = document.querySelectorAll('.h_nav_pic');//获取所有图标
-            var hNav = document.querySelector('.h_nav_item');
-            var scrollHeight = document.documentElement.scrollTop || document.body.scrollTop;
-            var wrap = 1207;
-            var fixWrap = 600;
-            if (scrollHeight < 520) {
-                hNav.classList.remove('h_nav_fixed');
-                hNav.classList.add('h_nav_position');
-            } else {
-                hNav.classList.remove('h_nav_position');
-                hNav.classList.add('h_nav_fixed');
-            }
-            if (scrollHeight < wrap) {
-                hClearText(allText);
-                hClearpic(allPic);
-                allText[0].classList.remove('h_nav_hidden');
-                allPic[0].classList.add('h_nav_hidden')
-                return;
-            }
-            if (scrollHeight > wrap && scrollHeight < wrap + fixWrap) {
-                hClearText(allText);
-                hClearpic(allPic);
-                allText[1].classList.remove('h_nav_hidden');
-                allPic[1].classList.add('h_nav_hidden');
-            }
-            if (scrollHeight > wrap + fixWrap && scrollHeight < wrap + fixWrap * 2) {
-                hClearText(allText);
-                hClearpic(allPic);
-                allText[2].classList.remove('h_nav_hidden');
-                allPic[2].classList.add('h_nav_hidden');
-            }
-            if (scrollHeight > wrap + fixWrap * 2 && scrollHeight < wrap + fixWrap * 3) {
-                hClearText(allText);
-                hClearpic(allPic);
-                allText[3].classList.remove('h_nav_hidden');
-                allPic[3].classList.add('h_nav_hidden');
-            }
-            if (scrollHeight > wrap + fixWrap * 3 && scrollHeight < wrap + fixWrap * 4) {
-                hClearText(allText);
-                hClearpic(allPic);
-                allText[4].classList.remove('h_nav_hidden');
-                allPic[4].classList.add('h_nav_hidden');
-            }
-            if (scrollHeight > wrap + fixWrap * 4 && scrollHeight < wrap + fixWrap * 4 + 300) {
-                hClearText(allText);
-                hClearpic(allPic);
-                allText[5].classList.remove('h_nav_hidden');
-                allPic[5].classList.add('h_nav_hidden');
-            }
-            if (scrollHeight > wrap + fixWrap * 5 && scrollHeight < wrap + fixWrap * 6) {
-                hClearText(allText);
-                hClearpic(allPic);
-                allText[6].classList.remove('h_nav_hidden');
-                allPic[6].classList.add('h_nav_hidden');
-            }
-        }
-        function hClearText(dom) {//所有文字隐藏
-            for (var i = 0, len = dom.length; i < len; i++) {
-                dom[i].classList.add('h_nav_hidden');
-            }
-        }
-        function hClearpic(dom) {//所有图标显示
-            for (var i = 0, len = dom.length; i < len; i++) {
-                dom[i].classList.remove('h_nav_hidden');
-            }
-        }
+      
 
-        // 免费结婚工具
 
-        $('.h_lisss li').on('mouseenter', function () {
-            var index = $(this).attr('data-index');
-            var sel = $('.h_bgjg')[index];
-            $('.h_lisss li').removeClass('h_activebg');
-            $('.h_bgjg').removeClass('h_b');
-            $('.h').removeClass('h_b');
-            $(this).addClass('h_activebg');
-            $('.h_activebg .h').addClass('h_b');
-            sel.classList.add('h_b');
-        });
-
-        //文字添加固定的样式
-        $('.h_pic1 span').on('mouseenter', function () {
-            $('.h_pic1 span').removeClass('h_active1');
-            $(this).addClass('h_active1');
-        });
     </script>
 </body>
 
