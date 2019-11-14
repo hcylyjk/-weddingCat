@@ -101,17 +101,21 @@
     left: 50%;
     margin-top: -250px;
     margin-left: -400px;
-    background: #FAAAAA;
+    background: #fff;
     z-index: 10;
 }
 .answer_frame_title{
     margin-bottom: 20px;
     font-weight: bold;
     font-size: 24px;
+    color: #FF7385;
 }
 #answer_textarea{
+    box-sizing: border-box;
+    padding: 5px;
+    border: 3px solid #FF7385;
     border-radius: 5px;
-    background: #FAAAAA;
+    background: #fff;
     font-family: "黑体";
     font-size: 18px;
     font-weight: bold;
@@ -119,6 +123,8 @@
     width: 700px;
     height: 300px;
     resize: none;
+    outline:none;
+    caret-color: #FF7385;
 }
 .answer_list_title{
     padding: 0;
@@ -139,10 +145,13 @@
     margin-right: 10px;
 }
 #aff_name{
-    border: 1px solid #999;
+    box-sizing: border-box;
+    border: 2px solid #FF7385;
     border-radius: 2px;
-    height: 20px;
-    background: #FAAAAA;
+    height: 25px;
+    background: #fff;
+    padding-left: 5px;
+    caret-color: #FF7385;;
 }
 .aff_sub{
     float: right;
@@ -159,6 +168,10 @@
     /* border: 1px solid #999; */
     border-radius: 5px;
     color: #fff;
+    transition: all 0.2s ease;
+}
+.aff_sub a:hover{
+    transform: scale(1.2);
 }
 .aff_sub :nth-of-type(1){
     background: #999;
@@ -167,13 +180,43 @@
     background: #FF7385;
 }
 .close_frame{
+    box-sizing: border-box;
     display: block;
-    width: 44px;
-    height: 44px;
+    width: 30px;
+    height: 30px;
     position: absolute;
-    background: url('../img/w_image/ask/ia_300000172.png');
-    top: 10px;
-    right: 10px;
+    /* background: url('../img/w_image/ask/ia_300000172.png'); */
+    top: 20px;
+    right: 20px;
+    border-radius: 15px;
+    border: 2px solid rgb(189, 189, 189);
+    transition: all 0.5s ease;
+}
+.close_frame span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -10px;
+    margin-top: -2px;
+    display: inline-block;
+    width: 20px;
+    height: 4px;
+    background: rgb(189, 189, 189);
+    transform-origin: 50% 50%;
+    border-radius: 2px;
+}
+.close_frame:hover{
+    transform: rotate(180deg);
+    border-color: #FF7385;
+}
+.close_frame:hover span{
+    background: #FF7385;
+}
+.close_frame span:nth-of-type(1){
+    transform: rotate(45deg);
+}
+.close_frame span:nth-of-type(2){
+    transform: rotate(-45deg);
 }
 /* 回答列表 */
 .answer_item{

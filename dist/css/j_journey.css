@@ -1,6 +1,12 @@
 body, html {
   width: 100%; }
 
+.banner {
+  width: 100%;
+  height: 420px;
+  position: relative;
+  overflow: hidden; }
+
 .swiper-container {
   width: 100%;
   height: 420px;
@@ -161,8 +167,7 @@ body, html {
 .j_cityBlist {
   padding: 20px;
   width: 1220px;
-  margin-left: -20px;
-  overflow: hidden; }
+  margin-left: -20px; }
 
 .j_cityBlist ul {
   width: 10000px;
@@ -175,7 +180,8 @@ body, html {
   height: 240px;
   margin-right: 20px;
   overflow: hidden;
-  float: left; }
+  float: left;
+  bottom: 0; }
 
 .j_cityBlist ul li img {
   width: 100%; }
@@ -193,43 +199,74 @@ body, html {
   height: 100%;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 240px;
   display: block;
-  text-align: center;
-  transition: transform 0.3s ease-in-out; }
+  text-align: center; }
 
-.j_cityBlist ul li a .j_info:hover {
+.j_cityBlist ul li a:hover .j_info {
   transform: translateY(-240px); }
 
-.j_cityBlist ul li a .j_info .j_name {
+.j_cityBlist ul li a:hover .j_name {
+  transform: translateY(-80px); }
+
+.j_cityBlist ul li a:hover .j_num {
+  transform: translateY(-105px); }
+
+.j_cityBlist ul li a:hover .j_before {
+  transform: translateY(-110px); }
+
+.j_donghua {
+  text-align: center;
+  position: relative; }
+
+.j_cityBlist ul li a .j_donghua .j_name {
   color: #fff;
   font-size: 20px;
-  display: block;
-  transform: translate(0, 80px); }
+  position: absolute;
+  top: 180px;
+  left: 150px;
+  transition: all 1s; }
 
-.j_info .j_num {
-  padding-top: 14px;
+.j_donghua .j_num {
+  position: absolute;
+  top: 246px;
+  left: 157px;
   font-size: 14px;
   color: #fff;
-  transform: translate(0, 122px);
-  display: block; }
+  transition: all 1.5s; }
 
-.j_info .j_num::before {
+.j_donghua .j_before {
   position: absolute;
-  top: 6px;
+  top: 241px;
   left: 50%;
   margin-left: -60px;
   content: '';
   display: inline-block;
   width: 120px;
   height: 2px;
-  border-top: solid 2px #999; }
+  border-top: solid 2px #999;
+  transition: all 1.1s; }
+
+.nave_left {
+  position: absolute;
+  left: 0px;
+  top: 1026px;
+  z-index: 9999;
+  cursor: pointer; }
+
+.nave_right {
+  position: absolute;
+  left: 1230px;
+  top: 1026px;
+  z-index: 9999;
+  cursor: pointer; }
 
 .j_month_juest {
   width: 100%;
   padding: 40px 0 20px;
   height: 450px;
-  background: rgba(241, 241, 241, 0.7); }
+  background: rgba(241, 241, 241, 0.7);
+  position: relative; }
 
 .j_monthcenter {
   width: 1180px;
@@ -254,32 +291,27 @@ body, html {
 
 .j_warp_box {
   width: 100%;
-  height: 500px;
-  overflow: hidden; }
+  height: 500px; }
 
 .j_month_list {
   padding: 20px;
   width: 1180px;
   height: 270px;
-  margin-left: -20px;
-  position: relative; }
+  margin-left: -20px; }
 
 .j_month_list ul {
   position: relative;
-  width: 10000px;
-  height: 100%; }
+  width: 10000px; }
 
-.j_lists {
+.j_month_list .j_lists {
   position: relative;
+  top: 0;
   width: 380px;
   height: 310px;
   margin-right: 20px;
   float: left;
   -webkit-transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out; }
-
-.j_lists :hover {
-  transform: translateY(-10px); }
 
 .j_itme_link {
   position: relative;
@@ -292,7 +324,7 @@ body, html {
   width: 380px;
   height: 240px; }
 
-.j_month_list_names {
+.j_itme_link_name {
   position: relative;
   display: block;
   width: 340px;
@@ -304,10 +336,25 @@ body, html {
   line-height: 30px;
   background-color: #fff;
   z-index: 1; }
+  .j_itme_link_name span {
+    color: #c5c5c5; }
 
-.j_month_list_names span {
-  color: #c5c5c5;
-  margin-left: 10px; }
+.j_month_list .j_lists:hover {
+  transform: translateY(-10px); }
+
+.nave_left1 {
+  position: absolute;
+  left: 0px;
+  top: 190px;
+  z-index: 9999;
+  cursor: pointer; }
+
+.nave_right1 {
+  position: absolute;
+  right: 0px;
+  top: 190px;
+  z-index: 9999;
+  cursor: pointer; }
 
 .j_cameraman {
   width: 100%;
@@ -346,28 +393,35 @@ body, html {
   float: left;
   position: relative;
   width: 140px;
-  height: 100%; }
+  height: 100%;
+  overflow: hidden; }
 
-.j_teamr a::before {
-  content: '';
+.j_teamr a:hover .j_active {
+  transform: translateY(-280px); }
+
+.j_teamr a:hover span {
+  transform: translateY(-90px); }
+
+.j_active {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0;
+  top: 280;
   left: 0;
   background-color: rgba(0, 0, 0, 0.58);
-  opacity: 0; }
+  opacity: 1; }
 
 .j_teamr a span {
   position: absolute;
-  top: 50%;
+  top: 238px;
   left: 0;
   width: 100%;
   height: 40px;
   text-align: center;
   font-size: 16px;
+  margin-top: -20px;
   color: #fff;
-  z-index: 1000; }
+  transition: all 1.0s; }
 
 .j_take_city {
   width: 100%;
@@ -377,7 +431,8 @@ body, html {
 
 .j_takebg {
   width: 1180px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden; }
 
 .j_title_warp {
   width: 100%;
@@ -432,6 +487,12 @@ body, html {
 
 .j_city_items:hover {
   transform: translateY(-20px); }
+
+.j_city_items:hover .j_c i {
+  color: #ff7385; }
+
+.j_city_items:hover .j_c span {
+  color: #000; }
 
 .j_city_items a {
   width: 100%;

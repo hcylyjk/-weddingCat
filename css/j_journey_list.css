@@ -208,14 +208,15 @@
           color: #666666; }
     .j_work .j_work_center .j_floor .j_floor_list {
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      position: relative; }
       .j_work .j_work_center .j_floor .j_floor_list .j_list_warp {
         padding: 20px 0;
         width: 100%;
-        height: 370px; }
+        height: 370px;
+        position: relative;
+        overflow: hidden; }
         .j_work .j_work_center .j_floor .j_floor_list .j_list_warp ul {
-          width: 10000px;
-          height: 100%;
           position: relative; }
           .j_work .j_work_center .j_floor .j_floor_list .j_list_warp ul li {
             position: relative;
@@ -234,7 +235,8 @@
               z-index: 1; }
               .j_work .j_work_center .j_floor .j_floor_list .j_list_warp ul li .j_al img {
                 border: none;
-                width: 100%; }
+                width: 100%;
+                height: 100%; }
             .j_work .j_work_center .j_floor .j_floor_list .j_list_warp ul li .j_ar {
               position: relative;
               left: 0;
@@ -253,6 +255,18 @@
                 color: #ffffff; }
           .j_work .j_work_center .j_floor .j_floor_list .j_list_warp ul li:hover {
             transform: translateY(-10px); }
+      .j_work .j_work_center .j_floor .j_floor_list .nave_left3 {
+        position: absolute;
+        left: 0px;
+        top: 100px;
+        z-index: 9999;
+        cursor: pointer; }
+      .j_work .j_work_center .j_floor .j_floor_list .nave_right3 {
+        position: absolute;
+        right: 0px;
+        top: 100px;
+        z-index: 9999;
+        cursor: pointer; }
     .j_work .j_work_center .j_team_blocl {
       padding-bottom: 20px; }
       .j_work .j_work_center .j_team_blocl .j_team_blocl_conter {
@@ -322,8 +336,10 @@
                   display: block;
                   z-index: 1; }
                   .j_work .j_work_center .j_team_blocl div .j_team_blocl_list .j_list ul .j_team a .j_herds img {
-                    width: 100%;
-                    border-radius: 50%; }
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    transition: all 1.5s; }
                 .j_work .j_work_center .j_team_blocl div .j_team_blocl_list .j_list ul .j_team a .j_item_inner {
                   position: absolute;
                   top: 0;
@@ -331,8 +347,9 @@
                   width: 100%;
                   height: 100%;
                   overflow: hidden;
-                  opacity: 0; }
-                  .j_work .j_work_center .j_team_blocl div .j_team_blocl_list .j_list ul .j_team a .j_item_inner .j_item_inner_name {
+                  opacity: 0;
+                  transition: all 0.3s; }
+                  .j_work .j_work_center .j_team_blocl div .j_team_blocl_list .j_list ul .j_team a .j_item_inner p {
                     position: absolute;
                     top: 100%;
                     left: 0;
@@ -340,7 +357,9 @@
                     display: block;
                     font-size: 24px;
                     text-align: center;
-                    color: #fff; }
+                    color: #fff;
+                    transition: all 1.7s;
+                    z-index: 999; }
                   .j_work .j_work_center .j_team_blocl div .j_team_blocl_list .j_list ul .j_team a .j_item_inner .j_item_inner_num {
                     position: absolute;
                     top: 100%;
@@ -349,7 +368,16 @@
                     display: block;
                     font-size: 18px;
                     text-align: center;
-                    color: #ffffff; }
+                    color: #ffffff;
+                    transition: all 2.3s; }
+              .j_work .j_work_center .j_team_blocl div .j_team_blocl_list .j_list ul .j_team a:hover img {
+                transform: translate(147px, -100px); }
+              .j_work .j_work_center .j_team_blocl div .j_team_blocl_list .j_list ul .j_team a:hover .j_item_inner {
+                opacity: 1; }
+              .j_work .j_work_center .j_team_blocl div .j_team_blocl_list .j_list ul .j_team a:hover .j_item_inner p {
+                transform: translateY(-120px); }
+              .j_work .j_work_center .j_team_blocl div .j_team_blocl_list .j_list ul .j_team a:hover .j_item_inner .j_item_inner_num {
+                transform: translateY(-90px); }
 
 .j_store {
   min-width: 1180px;
@@ -449,30 +477,30 @@
   width: 100%;
   background-color: #fff;
   padding-bottom: 40px; }
-  .j_guidanc .j_guidan_center {
+  .j_guidanc .j_guidan_centers {
     width: 1180px;
     height: 100%;
     margin: auto; }
-    .j_guidanc .j_guidan_center .j_title {
+    .j_guidanc .j_guidan_centers .j_titles {
       width: 100%;
       height: 82px;
-      padding: 36px 0 3px;
+      padding: 30px 0 3px;
       line-height: 46px;
       text-align: center; }
-      .j_guidanc .j_guidan_center .j_title span {
+      .j_guidanc .j_guidan_centers .j_titles .span_x {
         display: inline-block;
         width: 430px;
         height: 2px;
         vertical-align: middle;
         background: #ccc; }
-      .j_guidanc .j_guidan_center .j_title h2 {
+      .j_guidanc .j_guidan_centers .j_titles h2 {
         display: inline-block;
         width: 300px;
         color: #000;
         font-size: 30px;
         vertical-align: middle;
         text-align: center; }
-        .j_guidanc .j_guidan_center .j_title h2 i {
+        .j_guidanc .j_guidan_centers .j_titles h2 i {
           display: block;
           font-family: Arial, sans-serif;
           font-weight: normal;
@@ -480,25 +508,25 @@
           font-size: 14px;
           line-height: 20px;
           color: #666666; }
-    .j_guidanc .j_guidan_center .j_gui h3 {
+    .j_guidanc .j_guidan_centers .j_gui h3 {
       font-size: 14px;
       line-height: 28px;
       color: #666666; }
-    .j_guidanc .j_guidan_center .j_gui .j_gui_point {
+    .j_guidanc .j_guidan_centers .j_gui .j_gui_point {
       padding-top: 34px; }
-      .j_guidanc .j_guidan_center .j_gui .j_gui_point .j_gui_item_a {
+      .j_guidanc .j_guidan_centers .j_gui .j_gui_point .j_gui_item_a {
         width: 470px;
         display: inline-block; }
-        .j_guidanc .j_guidan_center .j_gui .j_gui_point .j_gui_item_a .j_gui_item_title {
+        .j_guidanc .j_guidan_centers .j_gui .j_gui_point .j_gui_item_a .j_gui_item_title {
           font-size: 18px;
           line-height: 30px;
           color: #999999; }
-        .j_guidanc .j_guidan_center .j_gui .j_gui_point .j_gui_item_a .j_gui_conter {
+        .j_guidanc .j_guidan_centers .j_gui .j_gui_point .j_gui_item_a .j_gui_conter {
           padding-top: 12px;
           font-size: 16px;
           line-height: 28px;
           color: #2f2f2f; }
-          .j_guidanc .j_guidan_center .j_gui .j_gui_point .j_gui_item_a .j_gui_conter .j_gui_conter_left {
+          .j_guidanc .j_guidan_centers .j_gui .j_gui_point .j_gui_item_a .j_gui_conter .j_gui_conter_left {
             display: inline-block;
             margin-right: 10px;
             padding: 9px 20px;
@@ -508,7 +536,7 @@
             color: #666666;
             border-radius: 4px;
             border: 1px solid #c7c5c5; }
-          .j_guidanc .j_guidan_center .j_gui .j_gui_point .j_gui_item_a .j_gui_conter .j_gui_conter_right {
+          .j_guidanc .j_guidan_centers .j_gui .j_gui_point .j_gui_item_a .j_gui_conter .j_gui_conter_right {
             display: inline-block;
             margin-right: 10px;
             padding: 9px 20px;
@@ -518,46 +546,46 @@
             color: #666666;
             border-radius: 4px;
             border: 1px solid #c7c5c5; }
-      .j_guidanc .j_guidan_center .j_gui .j_gui_point .j_gui_item_b {
+      .j_guidanc .j_guidan_centers .j_gui .j_gui_point .j_gui_item_b {
         display: inline-block;
         width: 238px;
         padding-left: 18px;
         border-left: 1px solid #ccc; }
-        .j_guidanc .j_guidan_center .j_gui .j_gui_point .j_gui_item_b .j_gui_item_title {
+        .j_guidanc .j_guidan_centers .j_gui .j_gui_point .j_gui_item_b .j_gui_item_title {
           font-size: 18px;
           line-height: 31px;
           color: #999999; }
-        .j_guidanc .j_guidan_center .j_gui .j_gui_point .j_gui_item_b .j_gui_item_b_t {
+        .j_guidanc .j_guidan_centers .j_gui .j_gui_point .j_gui_item_b .j_gui_item_b_t {
           padding-top: 12px;
           font-size: 16px;
           line-height: 27px;
           color: #2f2f2f; }
-      .j_guidanc .j_guidan_center .j_gui .j_gui_point .j_gui_item_c {
+      .j_guidanc .j_guidan_centers .j_gui .j_gui_point .j_gui_item_c {
         display: inline-block;
         width: 238px;
         padding-left: 18px;
         border-left: 1px solid #ccc; }
-        .j_guidanc .j_guidan_center .j_gui .j_gui_point .j_gui_item_c .j_gui_item_title {
+        .j_guidanc .j_guidan_centers .j_gui .j_gui_point .j_gui_item_c .j_gui_item_title {
           font-size: 18px;
           line-height: 31px;
           color: #999999; }
-        .j_guidanc .j_guidan_center .j_gui .j_gui_point .j_gui_item_c .j_gui_item_b_t {
+        .j_guidanc .j_guidan_centers .j_gui .j_gui_point .j_gui_item_c .j_gui_item_b_t {
           padding-top: 12px;
           font-size: 16px;
           line-height: 27px;
           color: #2f2f2f; }
-      .j_guidanc .j_guidan_center .j_gui .j_gui_point .j_gui_item_d {
+      .j_guidanc .j_guidan_centers .j_gui .j_gui_point .j_gui_item_d {
         width: 100%;
         padding-top: 30px;
         display: inline-block; }
-        .j_guidanc .j_guidan_center .j_gui .j_gui_point .j_gui_item_d .j_gui_item_title {
+        .j_guidanc .j_guidan_centers .j_gui .j_gui_point .j_gui_item_d .j_gui_item_title {
           padding-bottom: 10px;
           font-size: 18px;
           line-height: 30px;
           color: #999999; }
-        .j_guidanc .j_guidan_center .j_gui .j_gui_point .j_gui_item_d .j_gui_item_d_row {
+        .j_guidanc .j_guidan_centers .j_gui .j_gui_point .j_gui_item_d .j_gui_item_d_row {
           margin-left: -20px; }
-          .j_guidanc .j_guidan_center .j_gui .j_gui_point .j_gui_item_d .j_gui_item_d_row a {
+          .j_guidanc .j_guidan_centers .j_gui .j_gui_point .j_gui_item_d .j_gui_item_d_row a {
             display: block;
             width: 276px;
             height: 106px;
@@ -567,16 +595,16 @@
             margin-left: 20px;
             padding: 0 0 px;
             float: left; }
-            .j_guidanc .j_guidan_center .j_gui .j_gui_point .j_gui_item_d .j_gui_item_d_row a .j_gui_info {
+            .j_guidanc .j_guidan_centers .j_gui .j_gui_point .j_gui_item_d .j_gui_item_d_row a .j_gui_info {
               width: 235px;
               height: 78px;
               padding: 20px; }
-              .j_guidanc .j_guidan_center .j_gui .j_gui_point .j_gui_item_d .j_gui_item_d_row a .j_gui_info .j_item_title {
+              .j_guidanc .j_guidan_centers .j_gui .j_gui_point .j_gui_item_d .j_gui_item_d_row a .j_gui_info .j_item_title {
                 font-size: 16px;
                 line-height: 20px;
                 text-overflow: ellipsis;
                 white-space: nowrap; }
-                .j_guidanc .j_guidan_center .j_gui .j_gui_point .j_gui_item_d .j_gui_item_d_row a .j_gui_info .j_item_title span {
+                .j_guidanc .j_guidan_centers .j_gui .j_gui_point .j_gui_item_d .j_gui_item_d_row a .j_gui_info .j_item_title span {
                   display: inline-block;
                   width: 18px;
                   height: 18px;
@@ -586,7 +614,7 @@
                   text-align: center;
                   border-radius: 4px;
                   background-color: #ff7385; }
-                .j_guidanc .j_guidan_center .j_gui .j_gui_point .j_gui_item_d .j_gui_item_d_row a .j_gui_info .j_item_title p {
+                .j_guidanc .j_guidan_centers .j_gui .j_gui_point .j_gui_item_d .j_gui_item_d_row a .j_gui_info .j_item_title p {
                   width: 100%;
                   height: 40px;
                   margin-top: 10px;

@@ -255,7 +255,9 @@ body {
             font-size: 18px;
             color: #fc5066;
             position: relative;
-            top: 2px; }
+            top: 2px;
+            transform: rotate(0deg);
+            transition: all 0.3s ease-in-out; }
           .l_header .l_header-wrapper .l_header-page-title .l_header-nav-select .l_header-select-title .l_title-list-bridge {
             position: absolute;
             bottom: -14px;
@@ -299,6 +301,9 @@ body {
           .l_header .l_header-wrapper .l_header-page-title .l_header-nav-select .l_header-select-list .l_header-select-item:hover {
             background: rgba(255, 119, 139, 0.1);
             color: #f78897; }
+      .l_header .l_header-wrapper .l_header-page-title .l_header-nav-select:hover .icon-sort_desc-copy {
+        display: inline-block;
+        transform: rotate(180deg); }
       .l_header .l_header-wrapper .l_header-page-title .l_header-nav-list {
         display: inline-block;
         height: 50px;
@@ -346,6 +351,8 @@ a, span, div {
   .l_nav-title-center a, .l_nav-title-center h2, .l_nav-title-center h1 {
     display: inline;
     font-size: 14px; }
+  .l_nav-title-center a:hover {
+    color: #ff6699; }
 
 .l_wedding_center_content {
   width: 1200px;

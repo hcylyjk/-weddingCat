@@ -249,13 +249,15 @@
             .j_floor_list{
                 width: 100%;
                 height: 100%;
+                position: relative;
                 .j_list_warp{
                     padding: 20px 0;
                     width: 100%;
                     height: 370px;
+                    position: relative;
+                    overflow: hidden;
                     ul{
-                        width: 10000px;
-                        height: 100%;
+                      
                         position: relative;
                         li{
                             position: relative;
@@ -276,7 +278,7 @@
                                 img{
                                     border: none;
                                     width: 100%;
-                                
+                                    height: 100%;
                                 }
                             }
                             .j_ar{
@@ -302,6 +304,20 @@
                             transform:translateY(-10px);
                         }
                     }
+                }
+                .nave_left3{
+                    position: absolute;
+                    left: 0px;
+                    top: 100px;
+                    z-index: 9999;
+                    cursor: pointer;
+                }
+                .nave_right3{
+                    position: absolute;
+                    right: 0px;
+                    top: 100px;
+                    z-index: 9999;
+                    cursor: pointer;
                 }
             }
         }
@@ -382,8 +398,10 @@
                                         display: block;
                                         z-index: 1;
                                         img{
-                                            width: 100%;
+                                            width: 40px;
+                                            height: 40px;
                                             border-radius: 50%;
+                                            transition: all 1.5s;
                                         }
                                     }
                                     .j_item_inner{
@@ -394,7 +412,8 @@
                                         height: 100%;
                                         overflow: hidden;
                                         opacity: 0;
-                                        .j_item_inner_name{
+                                        transition: all 0.3s;
+                                        p{
                                             position: absolute;
                                             top: 100%;
                                             left: 0;
@@ -403,6 +422,8 @@
                                             font-size: 24px;
                                             text-align: center;
                                             color: #fff; 
+                                            transition: all 1.7s;
+                                            z-index: 999;
                                         }
                                         .j_item_inner_num{
                                             position: absolute;
@@ -413,9 +434,22 @@
                                             font-size: 18px;
                                             text-align: center;
                                             color: #ffffff;
+                                            transition: all 2.3s;
                                         }
                                     }
 
+                                }
+                                a:hover img{
+                                    transform: translate(147px,-100px)
+                                }
+                                a:hover .j_item_inner{
+                                    opacity: 1;
+                                }
+                                a:hover .j_item_inner p{
+                                    transform: translateY(-120px)
+                                }
+                                a:hover .j_item_inner .j_item_inner_num{
+                                    transform: translateY(-90px)
                                 }
                             }
                         }
@@ -550,17 +584,17 @@
         width: 100%;
         background-color: #fff;
         padding-bottom: 40px;
-        .j_guidan_center{
+        .j_guidan_centers{
             width: 1180px;
             height: 100%;
             margin: auto;
-           .j_title{
+           .j_titles{
             width: 100%;
             height: 82px;
-            padding:36px 0 3px;
+            padding:30px 0 3px;
             line-height: 46px;
             text-align: center;
-            span{
+            .span_x{
                 display: inline-block;
                 width: 430px;
                 height: 2px;
@@ -577,12 +611,12 @@
                 text-align: center;
                 i{
                     display: block;
-                    font-family: Arial, sans-serif;
-                    font-weight:normal;
-                    font-style:normal;
-                    font-size:14px;
-                    line-height: 20px;
-                    color: #666666;
+                        font-family: Arial, sans-serif;
+                        font-weight:normal;
+                        font-style:normal;
+                        font-size:14px;
+                        line-height: 20px;
+                        color: #666666;
                 }
             }
         }
