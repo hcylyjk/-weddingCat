@@ -41,25 +41,45 @@ oL3.onclick = function () {
 //   }
 
 //
+var nav_list = document.querySelector('.j_intentions');
+var nav = document.querySelector('.j_navw');
+var h2s = document.querySelectorAll('.j_nav_item');
+console.log(h2s)
+document.onscroll = function () {
+    var btop = document.body.scrollTop || document.documentElement.scrollTop;
+    if (btop >= 480) {
+        //为导航条设置fixed
+       
+        nav.style.position = 'fixed';
+        nav.style.top = 0;
+        nav.style.left = 0;
+        nav.style.width = 100 + '%';
+        nav_list.style.display = 'block';
+       
+    } else if (btop <= 480) {
+        nav.style.position = 'initial';
+        nav_list.style.display = 'none';
+    }
+}
 //返回顶部
 
-$('.mod_kl').click(function(){
+// $('.mod_kl').click(function(){
     
-    var rest = document.documentElement.scrollTop;
-    var tiem = setInterval(function(){
-    rest-=50;
-      if(rest<=0){
-        clearInterval(tiem);
-        rest = 0
+//     var rest = document.documentElement.scrollTop;
+//     var tiem = setInterval(function(){
+//     rest-=50;
+//       if(rest<=0){
+//         clearInterval(tiem);
+//         rest = 0
         
-      }
-      document.documentElement.scrollTop = rest;
+//       }
+//       document.documentElement.scrollTop = rest;
 
-    },3)
+//     },3)
    
 
     
-}) 
+// }) 
 
 //更多摄影师
 var uls4 = document.querySelector('.j_list ul');

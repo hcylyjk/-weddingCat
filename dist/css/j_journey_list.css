@@ -90,7 +90,8 @@
   height: 80px;
   overflow: hidden;
   left: 0;
-  bottom: 0; }
+  bottom: 0;
+  z-index: 10000; }
   .j_fiednnav .j_nav_wrap {
     width: 100%;
     height: 80px;
@@ -132,7 +133,7 @@
           line-height: 50px;
           text-align: center;
           cursor: pointer;
-          z-index: 1000; }
+          z-index: 9999; }
         .j_fiednnav .j_nav_wrap .j_nav_wrap_cont .j_intentions .j_online {
           width: 180PX;
           height: 50px;

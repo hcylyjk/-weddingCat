@@ -109,17 +109,19 @@
                     </div>
                     <!-- 导航 -->
                     <div class="j_fiednnav">
-                        <div class="j_nav_wrap">
-                            <div class="j_fiednnavbj"></div>
-                            <div class="j_nav_wrap_cont">
-                                <h2 class="j_nav_item activ">旅客拍照</h2>
-                                <h2 class="j_nav_item">推荐摄影师</h2>
-                                <h2 class="j_nav_item">体验店</h2>
-                                <h2 class="j_nav_item">了解三亚</h2>
-                                <h2 class="j_nav_item">客户评价</h2>
-                                <div class="j_intentions fr">
-                                    <div class="j_want fl">免费预约摄影师</div>
-                                    <div class="j_online fr">在线咨询</div>
+                        <div class="j_navw">
+                            <div class="j_nav_wrap">
+                                <div class="j_fiednnavbj"></div>
+                                <div class="j_nav_wrap_cont">
+                                    <h2 class="j_nav_item activ">旅客拍照</h2>
+                                    <h2 class="j_nav_item">推荐摄影师</h2>
+                                    <h2 class="j_nav_item">体验店</h2>
+                                    <h2 class="j_nav_item">了解三亚</h2>
+                                    <h2 class="j_nav_item">客户评价</h2>
+                                    <div class="j_intentions fr">
+                                        <div class="j_want fl">免费预约摄影师</div>
+                                        <div class="j_online fr">在线咨询</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -145,7 +147,7 @@
                 <div class="j_work_item">
                     <img src="../img/j_image/j_list_img/ia_200000020.jpg" alt="三亚婚纱照">
                 </div>
-                
+
                 <!-- <div class="j_load">
                     加载更多客照
                 </div> -->
@@ -987,7 +989,13 @@
     <!-- 右边固定部分 -->
     <div class="mod_right">
         <script>
-            $('.mod_right').load('mod_rightFix.html');
+            $('.mod_right').load('./mod_rightFix.html', function () {
+                $(".mod_kl").click(function () {
+                    //alert(123)
+                    $('html,body').animate({ scrollTop: '0' }, 'slow');
+                });
+            });
+
         </script>
     </div>
 
@@ -1012,6 +1020,14 @@
             autoplay: true,//等同于以下设置
             effect: 'fade',
         })
+        $('.mod_right').load('./html/mod_rightFix.html', function () {
+            $(".mod_kl").click(function () {
+                //alert(123)
+                $('html,body').animate({ scrollTop: '0' }, 'slow');
+            });
+        });
+      
+
     </script>
 
 </body>
