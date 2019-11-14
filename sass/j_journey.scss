@@ -391,6 +391,7 @@ body,html{
 
 .j_month_list .j_lists:hover{
     transform:translateY(-10px);
+    box-shadow:5px 5px 5px #999;
 }
 
 .nave_left1{
@@ -458,7 +459,7 @@ body,html{
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 280;
+    top: 280px;
     left: 0;
     background-color: rgba(0,0,0,0.58);
     opacity: 1;
@@ -630,6 +631,7 @@ body,html{
 }
 .j_brandcol img:hover{
     transform: scale(1.05);
+    box-shadow:5px 5px 5px #999;
 }
 //客户评价
 .j_Testimonials{

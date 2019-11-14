@@ -33,7 +33,7 @@ $('.mod_kl').click(function(){
 })
 
 
-var nav = document.querySelector('.j_fiednnav');
+// var nav = document.querySelector('.j_fiednnav');
 // var rect = nav.getBoundingClientRect();
 // var inse = document.captureEvents('div');
 // nav.parentNode.replaceChild(inse,nav);
@@ -52,3 +52,15 @@ var nav = document.querySelector('.j_fiednnav');
 //         nav.className = "";
 // }
 // }
+// 更多摄影师
+var uls5= document.querySelector('.j_list ul');
+var oR5= document.querySelector('.nave_right5');
+var oL5= document.querySelector('.nave_left5');
+oR5.onclick = function () {
+    uls5.style.left = -1200 + 'px';
+    oL5.style.display = 'block';
+}
+oL5.onclick = function () {
+    uls5.style.left = 0 + 'px';
+    oL5.style.display = 'none';
+};

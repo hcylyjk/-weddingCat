@@ -82,10 +82,12 @@
 }
 
 .online_inner .war .send:hover{
-	background: #129611;
+	background:  #00ff33;
+	color: #ffffff;
 }
 .online_inner .war .clear:hover{
 	background: #E18189;
+	color: #ffffff;
 }
 
 .online_inner .war .show{

@@ -61,3 +61,15 @@ $('.mod_kl').click(function(){
     
 }) 
 
+//更多摄影师
+var uls4 = document.querySelector('.j_list ul');
+var oR4 = document.querySelector('.nave_right4');
+var oL4 = document.querySelector('.nave_left4');
+oR4.onclick = function () {
+    uls4.style.left = -1200 + 'px';
+    oL4.style.display = 'block';
+}
+oL4.onclick = function () {
+    uls4.style.left = 0 + 'px';
+    oL4.style.display = 'none';
+};

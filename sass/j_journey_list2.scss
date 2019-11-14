@@ -114,6 +114,7 @@
     overflow: hidden;
     left: 0;
     bottom: 0;
+    
     .j_nav_wrap{
         width: 100%;
         height: 80px;
@@ -393,6 +394,15 @@
                                     width: 100%;
                                     height: 100%;
                                     display: block;
+                                    .j_makt{
+                                        position: absolute;
+                                        width: 100%;
+                                        height: 100%;
+                                        top: 260px;
+                                        left: 0;
+                                        background-color: rgba(0, 0, 0, 0.58);
+                                        opacity: 1;
+                                    }
                                    .j_herds{
                                         position: absolute;
                                         left: 25px;
@@ -443,6 +453,9 @@
                                     }
 
                                 }
+                                a:hover .j_makt{
+                                    transform: translateY(-260px);
+                                }
                                 a:hover img{
                                     transform: translate(147px,-100px)
                                 }
@@ -456,6 +469,20 @@
                                     transform: translateY(-90px)
                                 }
                             }
+                        }
+                        .nave_left5{
+                            position: absolute;
+                            left: 0px;
+                            top: 100px;
+                            z-index: 9999;
+                            cursor: pointer;
+                        }
+                        .nave_right5{
+                            position: absolute;
+                            right: 0px;
+                            top: 100px;
+                            z-index: 9999;
+                            cursor: pointer;
                         }
                     }
                 }
@@ -822,6 +849,14 @@
                         padding: 20px;
                         margin-bottom: 20px;
                         background-color: #ffffff;
+                        .j_bi{
+                            width: 77px;
+                            height: 80px;
+                            background: url(../img/j_image/j_list_img/ia_200000286.png);
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                        }
                         .j-comment_head{
                             width: 36px;
                             height: 36px;
