@@ -1309,3 +1309,7 @@ span:hover {
   position: fixed;
   bottom: 0;
   right: 60px; }
+
+.h_bottom_btn {
+  background-color: #ff7385;
+  color: #fff; }
