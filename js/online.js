@@ -49,12 +49,12 @@ function getNews(){//ajax获取远程信息
 	
 
 	$(document).on('click','.online_top .icon-sort_desc-copy',function(){//显示隐藏
-		if($('.online').css('top')=='250px'){//隐藏
+		if($('.online').css('bottom')=='460px'){//隐藏
 			$('.online_bottom').toggle( );
-			$('.online').css('top','600px')
+			$('.online').css('bottom','100px')
 		}else{
 			$('.online_bottom').toggle( );//显示
-			$('.online').css('top','250px')
+			$('.online').css('bottom','460px')
 		}
 	})
 
@@ -91,7 +91,7 @@ getdata()//请求数据图片和信息
 				var oLil=$('<li class="left">'+onews+'</li>')
 				$('.online_inner .show ul').append(oLil)
 				$('.online_bottom').toggle( );
-				$('.online').css('top','600px')
+				$('.online').css('bottom','100px')
 				clearTimeout(timeone)
 			},100)
 		}else{//第二次执行该函数进去
@@ -104,13 +104,13 @@ getdata()//请求数据图片和信息
 	}
 
 	var time_show=setTimeout(function(){//设定时间自己显示
-		if($('.online').css('top')=='250px'){
+		if($('.online').css('bottom')=='460px'){
 			console.log('到达250')
 			clearTimeout(time_show)
 			return	false
 		}else{
 			$('.online_bottom').toggle( );
-			$('.online').css('top','250px')
+			$('.online').css('bottom','460px')
 		}
 		clearTimeout(time_show)
 	},2000)
