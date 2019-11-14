@@ -469,7 +469,12 @@
     <!-- 右边固定部分 -->
     <div class="mod_right">
         <script>
-            $('.mod_right').load('mod_rightFix.html');
+            $('.mod_right').load('mod_rightFix.html',function(){
+                $(".mod_kl").click(function () {
+                    //alert(123)
+                    $('html,body').animate({ scrollTop: '0' }, 'slow');
+                });
+            });
         </script>
     </div>
 
