@@ -258,7 +258,7 @@
 #main .weedingask .weedingask_inner .massageweedingspan ul li a {font-size:18px;color:#666;line-height:52px;}
 #main .weedingask .weedingask_inner .massageweedingspan ul li a:hover {color:#FF7385}
 #main .weedingask .weedingask_inner .massageweedingspan ul li:after{content:' ';width:10px;height:12px;background:url('../img/c_image/index/list.jpg');position: absolute;left:0;top:21px;}
-#fixednav { width:100%;height:0;position: fixed;left:0;bottom:0;overflow: hidden;z-index: 999;}
+#fixednav { width:100%;height:0;position: fixed;left:0;bottom:0;overflow: hidden;z-index: 999999999;}
 #fixednav .fixednav_inner{ width:1180px;height:150px;margin:0 auto;position: relative;cursor: pointer;border-radius: 6px;}
 #fixednav .fixednav_inner span{display:block;width:30px;height:30px;background:transparent;position: absolute;left:0;top:0;cursor: pointer;}
 
