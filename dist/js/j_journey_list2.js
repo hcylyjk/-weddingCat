@@ -14,48 +14,52 @@ oL3.onclick = function () {
 
 //返回顶部
 
-$('.mod_kl').click(function(){
-    
-    var rest = document.documentElement.scrollTop;
-    var tiem = setInterval(function(){
-    rest-=50;
-      if(rest<=0){
-        clearInterval(tiem);
-        rest = 0
-        
-      }
-      document.documentElement.scrollTop = rest;
+// $('.mod_kl').click(function () {
 
-    },3)
-   
+//     var rest = document.documentElement.scrollTop;
+//     var tiem = setInterval(function () {
+//         rest -= 50;
+//         if (rest <= 0) {
+//             clearInterval(tiem);
+//             rest = 0
 
-    
-})
+//         }
+//         document.documentElement.scrollTop = rest;
+
+//     }, 3)
 
 
-// var nav = document.querySelector('.j_fiednnav');
-// var rect = nav.getBoundingClientRect();
-// var inse = document.captureEvents('div');
-// nav.parentNode.replaceChild(inse,nav);
-// inseDiv.appendChild(nav);
-// inse.style.height = rect.height+'px';
-// var navTop = nav.offsetTop;
-// var h2s = document.querySelectorAll('.j_nav_ietm');
-// var titop=document.documentElement.scrollTop
-// document.onscroll=function(){
-//     var btop = document.body.scrollTop||document.documentElement.scrollTop;
-//     if (btop > 480) {
-//         //为导航条设置fixed
-//         nav.className = "fixed";
-// }else {
-//         //移出fixed
-//         nav.className = "";
-// }
-// }
+
+// })
+
+
+
+var nav_list = document.querySelector('.j_intentions');
+var nav = document.querySelector('.j_navw');
+var h2s = document.querySelectorAll('.j_nav_item');
+console.log(h2s)
+document.onscroll = function () {
+    var btop = document.body.scrollTop || document.documentElement.scrollTop;
+    if (btop >= 480) {
+        //为导航条设置fixed
+       
+        nav.style.position = 'fixed';
+        nav.style.top = 0;
+        nav.style.left = 0;
+        nav.style.width = 100 + '%';
+        nav_list.style.display = 'block';
+       
+    } else if (btop <= 480) {
+        nav.style.position = 'initial';
+        nav_list.style.display = 'none';
+    }
+}
+
+
 // 更多摄影师
-var uls5= document.querySelector('.j_list ul');
-var oR5= document.querySelector('.nave_right5');
-var oL5= document.querySelector('.nave_left5');
+var uls5 = document.querySelector('.j_list ul');
+var oR5 = document.querySelector('.nave_right5');
+var oL5 = document.querySelector('.nave_left5');
 oR5.onclick = function () {
     uls5.style.left = -1200 + 'px';
     oL5.style.display = 'block';
